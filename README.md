@@ -69,7 +69,7 @@ The selected features are:
 The target variable 
 Target Codified as 1, 0 for basic EDA, filtered not voting.
 Categorical variables coded
-**Missing variables:** The bipartisan index for the senate majority and minority leaders was missing. Nebraska and Maine had different PVI scores for their different electoral seats (the average was taken). Any missing biographical and electoral data in the CQ Press Congress Collection was manually filled by ver
+**Missing variables:** The bipartisan index for the senate majority and minority leaders was missing. Nebraska and Maine had different PVI scores for their different electoral seats (the average was taken). Any missing biographical and electoral data in the CQ Press Congress Collection was manually filled by verifying through news reports.
 
 ### Variable Codebook
 Variable, type, description, source
@@ -79,14 +79,16 @@ The Bipartisan Index measures the frequency with which a Member co-sponsors a bi
 ### Overview
 
 ### Selection of simulation context
-### Selection of model and memory-handling
+### Selection of LLM model and memory-handling
 ### Selection of multi-agent framework
 ### Determining the order in which agents will interact
-### Controlling model parameters (temperature)
+### Controlling model parameters (temperature, system prompt cut-off date)
 
 ## Methodology
-### Exploratory Data Analysis
-### 
+### Exploratory Data Analysis (correlation matrix and statistical models)
+### Basic Simulation (without prompt engineering and without controlling any parameters)
+### Vote simulation with prompt engineering, with controlling parameters
+### Vote simulation with prompt engineering, with controlling parameters and after 3 rounds of debate
 
 ## An AI Senator
 This is what an LLM-powered senator looks like:
