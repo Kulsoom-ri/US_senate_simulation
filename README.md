@@ -41,18 +41,19 @@ This paper builds on the research from both categories, testing the potential fo
 ## Data
 For this study, an original dataset was created by webscraping, collecting variables across two dimensions:
 1. Demographic and ideological characteristics of the 118th US senators.
-2. Contextual variables for 50 randomly selected bills, including how each senator voted.
+2. Contextual variables for 50 floor votes, including how each senator voted.
 
 ### Data Sources
-For senators:
-- Congress.gov (https://www.congress.gov/): The official website for US federal legislative information. Utilized for basic demographic information (name, state, party, time served in house, time served in senate). 
+**For senators:**
+- Congress.gov (https://www.congress.gov/): The official website for US federal legislative information. Utilized for basic biogrgaphical information (such as name, state, party, time served in house, time served in senate). 
 - The Lugar Center (https://www.thelugarcenter.org/ourwork-Bipartisan-Index.html): Non-profit founded by former United States Senator Richard G. Lugar. Utilized for bipartisan index, "an objective measure of how well members of opposite parties work with one another using bill sponsorship and co-sponsorship data".
 - Voteview (https://voteview.com/congress/senate/-1/text): Mainted by UCLA's Department of Political Science and Social Science Computing. Utilized for obtaining ideological position scores (calculated using the DW-NOMINATE).
-- CQ Press Congress Collection ():
-- The Cook Political Report (): For the Cook Partisan Voting Index.
+- CQ Press Congress Collection (https://library-cqpress-com.proxy.lib.duke.edu/congress/): A research database containing biographical, political, and electoral data about every member of Congress since the 79th Congress (1945). Utilized for obtaining biographical data such as date of birth, education level, religion, race, sex; electoral data such as percentage of vote received in last election; political data such as frequency of voting, alignment with party positions, number of times senator voted with/against party, presidential support; as well as overall biography. Narrative biographies in the database are written by CQ editorial staff.
+- The Cook Political Report (https://www.cookpolitical.com/cook-pvi): Introduced in 1997, the Cook Partisan Voting Index (Cook PVI) measures how each state and district performs at the presidential level compared to the nation as a whole. The dataset was utilized to get the 2023 Cook Partisan voting score for the state of each senator. The 2023 PVI scores were claculated using 2016 and 2020 presidential election results. 
 
-For bills:
-- Congress.gov (https://www.congress.gov/)
+**For floor votes:**
+50 floor votes were selected to be simulated. These were selected based on the CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), 
+- Congress.gov (https://www.congress.gov/):
 - Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): 
 
 ### Target
