@@ -19,9 +19,9 @@ In the first category (LLMs for simulating behavior dynamics), we see prior work
 In the second category (LLMs for text-based discussions) 
 
 
-## Background
-- 
--
+## Context
+- Political Science
+- Computer Science
 
 ## Data
 
