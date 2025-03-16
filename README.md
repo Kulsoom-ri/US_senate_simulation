@@ -19,6 +19,9 @@ This research introduces a novel probabilistic approach to simulating political 
 ## File Description
 
 ## References
+
 https://tomhenighan.com/pdfs/vote_prediction.pdf
+
 https://pmc.ncbi.nlm.nih.gov/articles/PMC5425031/
+
 https://arxiv.org/abs/2402.19379
