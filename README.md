@@ -34,7 +34,7 @@ The second category of LLMs for text-based discussions explores the use of LLMs 
 This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework. It significantly expands on the work of Baker et al. (2024) by simulating an entire US senate (instead of just 6 senators) and focusing on vote outcomes (instead of just discussion).
 
 ## Context
-- How does generative AI make predictions? (review on studies using LLMs for forecasting)
+- How does generative AI make predictions? (review on studies using LLMs for forecasting/decision-making)
 - Is it approporiate to use LLMs for causal reasoning? (model collapse theory)
 - How does political decision-making happen in the actual US Senate?
 
@@ -57,27 +57,46 @@ The final dataset has 500 rows (one vote per senator per floor vote) and 49 colu
 
 50 floor votes were selected to be simulated (including roll call votes, voice votes and colture motions). These were selected based on the CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), key legislations identified on Wikipedia and the most-viewed bills identified on Congress.gov. Only bills originating in the senate were considered.
 - Congress.gov (https://www.congress.gov/): Utilized for obtaining contextual information about a bill such as title, summary, number of co-sponsors, party and name of introducing senator, policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
-- Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): Utilized for obtaining detailed records of how each senator voted on a particular bill (yea, nay, not voting).
+- Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): Utilized for obtaining detailed records of how each senator voted during a particular floor vote (yea, nay, not voting).
 
 ### Target
-Vote on bill (Yea, Nay, Not Voting). Codified as 1, 0 for basic EDA, filtered not voting.
+The target variable being predicted is a senator's vote during a specific floor vote. This can take 3 values: Yea, Nay or Not Voting.
 
 ### Features
+The selected features are: 
 
 ### Data Wrangling
+The target variable 
 Target Codified as 1, 0 for basic EDA, filtered not voting.
 Categorical variables coded
-(how missing variables were filled)
+**Missing variables:** The bipartisan index for the senate majority and minority leaders was missing. Nebraska and Maine had different PVI scores for their different electoral seats (the average was taken). Any missing biographical and electoral data in the CQ Press Congress Collection was manually filled by ver
 
 ### Variable Codebook
 Variable, type, description, source
 The Bipartisan Index measures the frequency with which a Member co-sponsors a bill introduced by the opposite party and the frequency with which a Member’s own bills attract co-sponsors from the opposite party. Measured on a scale of
 
+## Research Design
+### Overview
+
+### Selection of simulation context
+### Selection of model and memory-handling
+### Selection of multi-agent framework
+### Determining the order in which agents will interact
+### Controlling model parameters (temperature)
+
 ## Methodology
+### Exploratory Data Analysis
+### 
+
+## An AI Senator
+This is what an LLM-powered senator looks like:
+
+## A Sample Simulation
 
 ## Results
 
 ## File Description
+This github repository contains all the code and data utilized to generate results for this study.
 
 ## References
 - https://tomhenighan.com/pdfs/vote_prediction.pdf
