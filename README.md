@@ -34,17 +34,42 @@ The second category of LLMs for text-based discussions explores the use of LLMs 
 This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework.
 
 ## Context
-- How does generative AI make predictions? Is it approporiate to use LLMs for causal reasoning?
+- How does generative AI make predictions? Is it approporiate to use LLMs for causal reasoning? (model collapse theory)
 - How does political decision-making happen in the actual US Senate?
 
 ## Data
+For this study, an original dataset was created by webscraping, collecting variables across two dimensions:
+1. Demographic and ideological characteristics of the 118th US senators.
+2. Contextual variables for 50 randomly selected bills, including how each senator voted.
+
+### Data Sources
+For senators:
+- Congress.gov (https://www.congress.gov/): The official website for US federal legislative information. Utilized for basic demographic information (name, state, party, time served in house, time served in senate). 
+- The Lugar Center (https://www.thelugarcenter.org/ourwork-Bipartisan-Index.html): Non-profit founded by former United States Senator Richard G. Lugar. Utilized for bipartisan index, "an objective measure of how well members of opposite parties work with one another using bill sponsorship and co-sponsorship data".
+- Voteview (https://voteview.com/congress/senate/-1/text): Mainted by UCLA's Department of Political Science and Social Science Computing. Utilized for obtaining ideological position scores (calculated using the DW-NOMINATE).
+- CQ Press Congress Collection ():
+- The Cook Political Report (): For the Cook Partisan Voting Index.
+
+For bills:
+
+### Data Wrangling
+
+### Target
+
+### Features
+
+### Variable Codebook
+Variable, type, description, source
+The Bipartisan Index measures the frequency with which a Member co-sponsors a bill introduced by the opposite party and the frequency with which a Member’s own bills attract co-sponsors from the opposite party. Measured on a scale of 
+
 
 ## Methodology
+
+## Results
 
 ## File Description
 
 ## References
-
 - https://tomhenighan.com/pdfs/vote_prediction.pdf
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC5425031/
 - https://arxiv.org/abs/2402.19379
