@@ -25,9 +25,9 @@ This work offers contributions across several fields. In Political Science, it e
 
 In the rapidly evolving field of computational political science, December 2024 saw the introduction of the first comprehensive framework designed to integrate Large Language Models (LLMs) into the discipline. Developed by a team of multidisciplinary researchers, this framework, termed Political-LLM, represents a significant step forward in understanding how LLMs can be applied to political science research (Li et al., 2024). According to Political-LLM, applications of LLMs in political science can be divided into two primary categories: simulating behavior dynamics and facilitating text-based discussions.
 
-In the first category, LLMs for simulating behavior dynamics, prior works have explored the potential of LLMs in modeling complex interactions and strategic behaviors. One prominent example is the development of the self-evolving LLM-based diplomat, Richelieu (Guan, 2024). Richelieu utilizes a multi-agent framework that incorporates roles such as planner, negotiator, and actor, along with a memory module for effective optimization. The study then employs another multi-agent framework to test Richelieu's performance by simulating the Diplomacy Game, involving seven agents representing different countries. The study concluded that Richelieu outperformed existing models, including Cicero, which was the first Diplomacy-playing LLM to achieve human-level performance (Meta, 2024).
+In the first category, LLMs for simulating behavior dynamics, prior works have explored the potential of LLMs in modeling complex interactions and strategic behaviors. One example is the development of the self-evolving LLM-based diplomat, Richelieu (Guan, 2024). Richelieu utilizes a multi-agent framework that incorporates roles such as planner, negotiator, and actor, along with a memory module for effective optimization. The study then employs another multi-agent framework to test Richelieu's performance by simulating the Diplomacy Game, involving seven agents representing different countries. The study concluded that Richelieu outperformed existing models, including Cicero, which was the first Diplomacy-playing LLM to achieve human-level performance (Meta, 2024). 
 
-Further research in this category examines the dynamics of conflict and cooperation in political settings. For instance, a study simulating an LLM-based "Artificial Leviathan" found that while initial interactions among agents were characterized by unrestrained conflict, over time, agents sought to escape their state of nature, forming social contracts and establishing a peaceful commonwealth (Dai, 2024). Another study focused on the predictive capabilities of LLMs for social behaviour, investigating if a fine-tuned model could predict individual and aggregate policy preferences from a sample of 267 voters during Brazil’s 2022 presidential election. The LLM outperformed the traditional "bundle rule" model for out-of-sample voters, which assumes citizens vote according to the political orientation of their preferred candidate (Gudiño, 2024).
+Further research in this category examines the dynamics of conflict and cooperation in political settings. For instance, a study simulating an LLM-based "Artificial Leviathan" found that while initial interactions among agents were characterized by unrestrained conflict, over time, agents sought to escape their state of nature, forming social contracts and establishing a peaceful commonwealth (Dai, 2024). In contrast, a study on behaviour of autonomous AI agents in high-stakes military and diplomatic decision-making concluded that "that all models show forms of escalation and difficult-to-predict escalation patterns that lead to greater conflict" (Rivera et. al 2024). Another study focused on the predictive capabilities of LLMs for social behaviour, investigating if a fine-tuned model could predict individual and aggregate policy preferences from a sample of 267 voters during Brazil’s 2022 presidential election. The LLM outperformed the traditional "bundle rule" model for out-of-sample voters, which assumes citizens vote according to the political orientation of their preferred candidate (Gudiño, 2024).
 
 The second category of LLMs for text-based discussions explores the use of LLMs in simulating political discourse. Notably, Baker et al. (2024) observed that, prior to their study, no research had successfully simulated realistic government action using LLMs. Their June 2024 publication offered a proof-of-concept by simulating six AI senators in the 2024 US Senate Committee on Intelligence. In this simulation, the AI senators debated each other over three rounds on current issues (such as Russia’s invasion of Ukraine). The study found that domain experts considered the AI-generated interactions to be highly believable, and by introducing perturbations during the debate (such as "introduction of intelligence indicating imminent Russian overrun of Ukraine"), the researchers were able to identify shifts in decision-making and potential for bipartisanship. Similarly, another study introduces coalition negotiations across various European political parties as a novel NLP task by modeling them as negotiations between different LLM agents (Moghimifar 2024).
 
@@ -51,17 +51,22 @@ For senators:
 - The Cook Political Report (): For the Cook Partisan Voting Index.
 
 For bills:
-
-### Data Wrangling
+- Congress.gov (https://www.congress.gov/)
+- Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): 
 
 ### Target
+Vote on bill (Yea, Nay, Not Voting). Codified as 1, 0 for basic EDA, filtered not voting.
 
 ### Features
 
+### Data Wrangling
+Target Codified as 1, 0 for basic EDA, filtered not voting.
+Categorical variables coded
+(how missing variables were filled)
+
 ### Variable Codebook
 Variable, type, description, source
-The Bipartisan Index measures the frequency with which a Member co-sponsors a bill introduced by the opposite party and the frequency with which a Member’s own bills attract co-sponsors from the opposite party. Measured on a scale of 
-
+The Bipartisan Index measures the frequency with which a Member co-sponsors a bill introduced by the opposite party and the frequency with which a Member’s own bills attract co-sponsors from the opposite party. Measured on a scale of
 
 ## Methodology
 
