@@ -43,6 +43,8 @@ For this study, an original dataset was created by webscraping, collecting varia
 1. Demographic and ideological characteristics of the 118th US senators.
 2. Contextual variables for 50 floor votes, including how each senator voted.
 
+The final dataset has 500 rows (one vote per senator per floor vote) and 49 columns.
+
 ### Data Sources
 **For senators:**
 - Congress.gov (https://www.congress.gov/): The official website for US federal legislative information. Utilized for basic biogrgaphical information (such as name, state, party, time served in house, time served in senate). 
