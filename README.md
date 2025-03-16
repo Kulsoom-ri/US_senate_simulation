@@ -35,7 +35,7 @@ This paper builds on the research from both categories, testing the potential fo
 
 ## Context
 - How does generative AI make predictions? (review on studies using LLMs for forecasting/decision-making)
-- Is it approporiate to use LLMs for causal reasoning? (model collapse theory)
+- Is it approporiate to use LLMs for causal reasoning? (model collapse theory/generative AI paradox)
 - How does political decision-making happen in the actual US Senate?
 
 ## Data
