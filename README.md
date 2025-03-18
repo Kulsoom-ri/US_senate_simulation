@@ -92,6 +92,7 @@ The Bipartisan Index measures the frequency with which a Member co-sponsors a bi
 
 ## An AI Senator
 This is what an LLM-powered senator looks like:
+![AI_Agent_Slide-1](https://github.com/user-attachments/assets/7cc77339-7f24-448d-83b2-25c937e1ff9a)
 
 ## A Sample Simulation
 
