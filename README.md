@@ -16,11 +16,14 @@ This research tests a probabilistic approach to simulating political decision-ma
 This work offers contributions across several fields. In Political Science, it explores the potential of synthetic data for simulating survey studies, offers an alternative approach to modeling politics, and provides a sandbox for simulating social life by examining the quality and realism of LLM-generated data. In Computer Science, it contributes to understanding the predictive capabilities of LLMs and expanding their use in traditional machine learning tasks. In the field of Human-AI Co-evolution, it tests the idea of AI agents replicating human behaviour, helping us understand the potential for AI to interact with and complement human decision-making in real-world scenarios such as politics.
 
 ## Keywords
-- Computational political science
+- Computational politics: "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
 - Agent
 - LLM
 - Multi-agent framework
 - Memory stream
+- Temperature
+- System prompt
+- User prompt
 - Wisdom of the crowd
 - Fine-tuning
 
@@ -118,3 +121,4 @@ This github repository contains all the code and data utilized to generate resul
 - https://doi.org/10.1007/978-1-4939-7131-2_285
 - Rice, Stuart A. 1924. “The Political Vote as a Frequency Distribution of Opinion.” Journal of the American Statistical Association 19 (145): 70–75. doi:10.1080/01621459.1924.10502872.
 - https://ai.meta.com/research/cicero/
+- Haq, Ehsan ul, Tristan Braud, Young D Kwon, and Pan Hui. 2019. “A Survey on Computational Politics.” ArXiv.org. 2019. https://arxiv.org/abs/1908.06069.
