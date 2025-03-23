@@ -1,0 +1,228 @@
+Regression results for before_debate:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          before_debate   R-squared:                       0.925
+Model:                            OLS   Adj. R-squared:                  0.721
+Method:                 Least Squares   F-statistic:                     4.527
+Date:                Sun, 23 Mar 2025   Prob (F-statistic):            0.00563
+Time:                        12:35:39   Log-Likelihood:                -137.39
+No. Observations:                  42   AIC:                             336.8
+Df Residuals:                      11   BIC:                             390.6
+Df Model:                          30                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================================================================
+                                                                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------------------
+year                                                                      -4.1605      8.200     -0.507      0.622     -22.208      13.887
+final_vote_result                                                        -44.9427     11.978     -3.752      0.003     -71.306     -18.579
+previous_action_length                                                    61.0037    108.817      0.561      0.586    -178.500     300.507
+required_majority                                                         -1.5259      1.081     -1.411      0.186      -3.906       0.854
+measure_summary_length                                                    61.0037    108.817      0.561      0.586    -178.500     300.507
+yea                                                                       31.3311     68.229      0.459      0.655    -118.840     181.502
+nay                                                                       29.4240     68.149      0.432      0.674    -120.572     179.420
+not_voting                                                                30.7047     68.929      0.445      0.665    -121.006     182.416
+num_cosponsors                                                             0.1513      0.122      1.243      0.240      -0.117       0.419
+introduced_party_independent                                              44.1040     37.616      1.172      0.266     -38.687     126.895
+introduced_party_republican                                               24.0280     13.064      1.839      0.093      -4.727      52.783
+topic_Animals                                                             67.8600     14.371      4.722      0.001      36.229      99.491
+topic_Armed Forces and National Security                                  32.7287     13.981      2.341      0.039       1.957      63.501
+topic_Civil Rights and Liberties, Minority Issues                         63.1719     19.822      3.187      0.009      19.545     106.799
+topic_Crime and Law Enforcement                                          -32.0149     25.106     -1.275      0.229     -87.272      23.242
+topic_Economics and Public Finance                                        16.7669     15.051      1.114      0.289     -16.360      49.894
+topic_Education                                                           15.5599     17.589      0.885      0.395     -23.153      54.272
+topic_Emergency Management                                                -6.5640     19.857     -0.331      0.747     -50.270      37.142
+topic_Energy                                                              32.8029     13.547      2.421      0.034       2.987      62.619
+topic_Environmental Protection                                            47.7995     13.461      3.551      0.005      18.172      77.427
+topic_Finance and Financial Sector                                        32.7910     17.753      1.847      0.092      -6.283      71.865
+topic_Foreign Trade and International Finance                             43.5417     17.135      2.541      0.027       5.829      81.255
+topic_Government Operations and Politics                                 -21.1946     21.432     -0.989      0.344     -68.365      25.976
+topic_Health                                                              30.9766     16.479      1.880      0.087      -5.293      67.246
+topic_Immigration                                                      -2.013e-14   4.98e-15     -4.039      0.002   -3.11e-14   -9.16e-15
+topic_International Affairs                                               51.7359     15.968      3.240      0.008      16.591      86.881
+topic_Labour and Employment                                               59.7548     14.640      4.082      0.002      27.533      91.976
+topic_Public Lands and Natural Resources                                  78.9221     13.412      5.884      0.000      49.401     108.443
+topic_Social Welfare                                                     -15.4736     45.688     -0.339      0.741    -116.033      85.086
+topic_Transportation and Public Works                                     -8.9984     16.252     -0.554      0.591     -44.769      26.772
+type_vote_On Cloture on the Motion to Proceed                             -2.7037     10.877     -0.249      0.808     -26.644      21.237
+type_vote_On Motion to Discharge                                          22.1958     19.005      1.168      0.268     -19.633      64.025
+type_vote_On Motion to Proceed                                           -36.3945     19.315     -1.884      0.086     -78.906       6.117
+type_vote_On Motion to discharge Senate Committee on Foreign Relations    44.1040     37.616      1.172      0.266     -38.687     126.895
+type_vote_On Overriding the Veto                                         -21.3586     14.778     -1.445      0.176     -53.886      11.168
+type_vote_On Passage of the Bill                                          -4.4873     11.599     -0.387      0.706     -30.017      21.043
+==============================================================================
+Omnibus:                        5.797   Durbin-Watson:                   1.943
+Prob(Omnibus):                  0.055   Jarque-Bera (JB):                8.011
+Skew:                          -0.005   Prob(JB):                       0.0182
+Kurtosis:                       5.140   Cond. No.                     1.00e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.72e-24. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+Top 10 Highest Correlations with before_debate:
+topic_Transportation and Public Works                0.581047
+topic_Public Lands and Natural Resources             0.314049
+year                                                 0.238522
+topic_Labour and Employment                          0.230428
+topic_Civil Rights and Liberties, Minority Issues    0.172703
+topic_Environmental Protection                       0.165788
+topic_Animals                                        0.162376
+topic_Finance and Financial Sector                   0.156611
+topic_Education                                      0.142148
+introduced_party_republican                          0.129632
+Name: before_debate, dtype: float64
+
+Regression results for after_debate:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           after_debate   R-squared:                       0.929
+Model:                            OLS   Adj. R-squared:                  0.734
+Method:                 Least Squares   F-statistic:                     4.769
+Date:                Sun, 23 Mar 2025   Prob (F-statistic):            0.00451
+Time:                        12:35:39   Log-Likelihood:                -128.37
+No. Observations:                  42   AIC:                             318.7
+Df Residuals:                      11   BIC:                             372.6
+Df Model:                          30                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================================================================
+                                                                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------------------
+year                                                                     -12.9592      6.615     -1.959      0.076     -27.519       1.600
+final_vote_result                                                        -51.3590      9.663     -5.315      0.000     -72.628     -30.090
+previous_action_length                                                   176.3353     87.787      2.009      0.070     -16.883     369.554
+required_majority                                                         -4.5758      0.872     -5.246      0.000      -6.496      -2.656
+measure_summary_length                                                   176.3353     87.787      2.009      0.070     -16.883     369.554
+yea                                                                      107.0993     55.043      1.946      0.078     -14.050     228.249
+nay                                                                      105.3302     54.979      1.916      0.082     -15.678     226.339
+not_voting                                                               109.0849     55.608      1.962      0.076     -13.307     231.477
+num_cosponsors                                                            -0.1340      0.098     -1.364      0.200      -0.350       0.082
+introduced_party_independent                                              70.3419     30.346      2.318      0.041       3.550     137.133
+introduced_party_republican                                               50.3044     10.540      4.773      0.001      27.107      73.502
+topic_Animals                                                             50.3296     11.594      4.341      0.001      24.812      75.848
+topic_Armed Forces and National Security                                  25.4632     11.279      2.258      0.045       0.638      50.288
+topic_Civil Rights and Liberties, Minority Issues                         80.2503     15.991      5.018      0.000      45.054     115.446
+topic_Crime and Law Enforcement                                           28.2252     20.254      1.394      0.191     -16.353      72.804
+topic_Economics and Public Finance                                        22.3625     12.142      1.842      0.093      -4.362      49.087
+topic_Education                                                           53.7985     14.190      3.791      0.003      22.567      85.030
+topic_Emergency Management                                               -23.6627     16.020     -1.477      0.168     -58.922      11.597
+topic_Energy                                                              56.1799     10.929      5.141      0.000      32.126      80.234
+topic_Environmental Protection                                            58.3085     10.860      5.369      0.000      34.407      82.210
+topic_Finance and Financial Sector                                        76.7489     14.322      5.359      0.000      45.226     108.272
+topic_Foreign Trade and International Finance                             25.4334     13.823      1.840      0.093      -4.991      55.858
+topic_Government Operations and Politics                                 -43.9093     17.290     -2.540      0.028     -81.964      -5.854
+topic_Health                                                              10.8328     13.294      0.815      0.432     -18.427      40.093
+topic_Immigration                                                      -1.174e-14   4.02e-15     -2.919      0.014   -2.06e-14   -2.89e-15
+topic_International Affairs                                               67.2396     12.882      5.220      0.000      38.886      95.593
+topic_Labour and Employment                                               59.7619     11.810      5.060      0.000      33.767      85.757
+topic_Public Lands and Natural Resources                                  52.8648     10.820      4.886      0.000      29.049      76.680
+topic_Social Welfare                                                      79.7820     36.859      2.165      0.053      -1.344     160.908
+topic_Transportation and Public Works                                     68.5665     13.111      5.230      0.000      39.709      97.424
+type_vote_On Cloture on the Motion to Proceed                             12.7820      8.775      1.457      0.173      -6.532      32.096
+type_vote_On Motion to Discharge                                         -58.5952     15.332     -3.822      0.003     -92.341     -24.850
+type_vote_On Motion to Proceed                                           -22.5455     15.582     -1.447      0.176     -56.842      11.750
+type_vote_On Motion to discharge Senate Committee on Foreign Relations    70.3419     30.346      2.318      0.041       3.550     137.133
+type_vote_On Overriding the Veto                                           8.7814     11.922      0.737      0.477     -17.460      35.022
+type_vote_On Passage of the Bill                                          -6.8460      9.358     -0.732      0.480     -27.442      13.750
+==============================================================================
+Omnibus:                        1.907   Durbin-Watson:                   2.038
+Prob(Omnibus):                  0.385   Jarque-Bera (JB):                0.963
+Skew:                           0.212   Prob(JB):                        0.618
+Kurtosis:                       3.608   Cond. No.                     1.00e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.72e-24. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+Top 10 Highest Correlations with after_debate:
+topic_Armed Forces and National Security         0.305060
+type_vote_On Motion to Discharge                 0.275601
+type_vote_On Overriding the Veto                 0.253298
+topic_Public Lands and Natural Resources         0.219049
+type_vote_On Cloture on the Motion to Proceed    0.186268
+topic_Environmental Protection                   0.184853
+introduced_party_republican                      0.170051
+topic_Animals                                    0.156771
+topic_Government Operations and Politics         0.156380
+final_vote_result                                0.150470
+Name: after_debate, dtype: float64
+
+Regression results for basic_simulation:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       basic_simulation   R-squared:                       0.923
+Model:                            OLS   Adj. R-squared:                  0.464
+Method:                 Least Squares   F-statistic:                     2.009
+Date:                Sun, 23 Mar 2025   Prob (F-statistic):              0.263
+Time:                        12:35:39   Log-Likelihood:                 42.453
+No. Observations:                  29   AIC:                            -34.91
+Df Residuals:                       4   BIC:                           -0.7229
+Df Model:                          24                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================================================================
+                                                                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------------------
+year                                                                      -0.1354      0.112     -1.214      0.292      -0.445       0.174
+final_vote_result                                                         -0.1625      0.225     -0.722      0.510      -0.787       0.462
+previous_action_length                                                     1.6773      1.379      1.216      0.291      -2.151       5.506
+required_majority                                                         -0.0126      0.016     -0.791      0.473      -0.057       0.032
+measure_summary_length                                                     1.6773      1.379      1.216      0.291      -2.151       5.506
+yea                                                                        1.2467      1.016      1.227      0.287      -1.575       4.069
+nay                                                                        1.2229      1.017      1.203      0.295      -1.599       4.045
+not_voting                                                                 1.2578      1.031      1.219      0.290      -1.606       4.121
+num_cosponsors                                                            -0.0003      0.002     -0.165      0.877      -0.005       0.004
+introduced_party_independent                                           -4.255e-16   7.97e-14     -0.005      0.996   -2.22e-13    2.21e-13
+introduced_party_republican                                                0.5881      0.272      2.165      0.096      -0.166       1.342
+topic_Animals                                                              0.1297      0.263      0.493      0.648      -0.601       0.861
+topic_Armed Forces and National Security                                   0.1569      0.331      0.474      0.660      -0.762       1.076
+topic_Civil Rights and Liberties, Minority Issues                       2.865e-15   2.99e-14      0.096      0.928   -8.02e-14    8.59e-14
+topic_Crime and Law Enforcement                                            0.1025      0.351      0.292      0.785      -0.872       1.077
+topic_Economics and Public Finance                                        -0.2507      0.332     -0.755      0.492      -1.173       0.672
+topic_Education                                                            0.0071      0.268      0.027      0.980      -0.737       0.751
+topic_Emergency Management                                                -0.8183      0.310     -2.643      0.057      -1.678       0.041
+topic_Energy                                                               0.1140      0.207      0.550      0.612      -0.462       0.690
+topic_Environmental Protection                                             0.1046      0.211      0.497      0.645      -0.480       0.689
+topic_Finance and Financial Sector                                         0.2173      0.340      0.640      0.557      -0.725       1.160
+topic_Foreign Trade and International Finance                              0.0143      0.264      0.054      0.960      -0.719       0.748
+topic_Government Operations and Politics                                  -1.1206      0.341     -3.282      0.030      -2.069      -0.173
+topic_Health                                                               0.1263      0.206      0.613      0.573      -0.446       0.698
+topic_Immigration                                                       1.088e-16   5.57e-15      0.020      0.985   -1.54e-14    1.56e-14
+topic_International Affairs                                                0.5131      0.210      2.445      0.071      -0.069       1.096
+topic_Labour and Employment                                                0.1581      0.267      0.592      0.586      -0.583       0.899
+topic_Public Lands and Natural Resources                                   0.0596      0.235      0.254      0.812      -0.593       0.712
+topic_Social Welfare                                                       0.0249      0.668      0.037      0.972      -1.829       1.878
+topic_Transportation and Public Works                                      0.3070      0.305      1.006      0.371      -0.540       1.154
+type_vote_On Cloture on the Motion to Proceed                                   0          0        nan        nan           0           0
+type_vote_On Motion to Discharge                                                0          0        nan        nan           0           0
+type_vote_On Motion to Proceed                                                  0          0        nan        nan           0           0
+type_vote_On Motion to discharge Senate Committee on Foreign Relations          0          0        nan        nan           0           0
+type_vote_On Overriding the Veto                                                0          0        nan        nan           0           0
+type_vote_On Passage of the Bill                                           0.0373      0.031      1.216      0.291      -0.048       0.122
+==============================================================================
+Omnibus:                        5.760   Durbin-Watson:                   1.754
+Prob(Omnibus):                  0.056   Jarque-Bera (JB):                6.511
+Skew:                           0.130   Prob(JB):                       0.0386
+Kurtosis:                       5.307   Cond. No.                     2.63e+18
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The input rank is higher than the number of observations.
+[3] The smallest eigenvalue is 1.73e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+Top 10 Highest Correlations with basic_simulation:
+required_majority                           0.447247
+yea                                         0.412744
+topic_Government Operations and Politics    0.404556
+nay                                         0.390867
+topic_Economics and Public Finance          0.313853
+topic_Emergency Management                  0.285592
+topic_International Affairs                 0.207273
+topic_Social Welfare                        0.207273
+topic_Energy                                0.196827
+year                                        0.191064
+Name: basic_simulation, dtype: float64
