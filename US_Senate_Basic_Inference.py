@@ -1,6 +1,7 @@
-import numpy
+import numpy as np
 import pandas as pd
-import json
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.feature_extraction.text import TfidfVectorizer
 # from sklearn.feature_extraction.text import CountVectorizer
@@ -24,6 +25,7 @@ from sklearn.model_selection import cross_val_score, KFold
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score, roc_curve, auc
+from sklearn.inspection import permutation_importance
 
 data_file = 'senators_data.xlsx'
 
@@ -87,7 +89,7 @@ print('--------COMBINED DATA--------')
 print(df.head())
 # Print all the column names in the final DataFrame
 print(df.columns)
-
+print(f"The DataFrame has {df.shape[0]} rows and {df.shape[1]} columns.")
 
 # TEST DIFFERENT MODELS
 
@@ -95,61 +97,157 @@ print(df.columns)
 models = [
     BernoulliNB(),
     KNeighborsClassifier(),
-    LogisticRegression(),
+    LogisticRegression(solver='saga', max_iter=500),
     LinearSVC(),
     SVC(kernel="rbf"),
     DecisionTreeClassifier(),
     ExtraTreeClassifier(),
     ExtraTreesClassifier(),
-    AdaBoostClassifier(),
+    AdaBoostClassifier(algorithm='SAMME'),
     RandomForestClassifier(),
     Perceptron(),
-    MLPClassifier()
+    MLPClassifier(solver='adam', hidden_layer_sizes=(100,), max_iter=500)
 ]
 
 
 # 1. Preprocessing, getting the binary target 'vote' (Yea or Nay) and performing EDA
 def preprocess_data(df):
+    # EXTRACTING FEATURES OUT OF 'vote_date'
+    # Convert to 'vote_date' to datetime format
+    df['vote_date'] = pd.to_datetime(df['vote_date'], format='%m/%d/%Y')
+    # Extract useful features
+    df['year'] = df['vote_date'].dt.year  # Year of the vote
+    df['month'] = df['vote_date'].dt.month  # Month of the vote (seasonal trends)
+    # Election season (July to November of an election year)
+    df['is_election_season'] = ((df['vote_date'].dt.year == 2024) & (df['vote_date'].dt.month >= 7)).astype(int)
+    # Define session boundaries
+    session_cutoff = pd.to_datetime('1/3/2024', format='%m/%d/%Y')
+    # Create session feature (1 for first session, 2 for second)
+    df['session'] = (df['vote_date'] >= session_cutoff).astype(int) + 1
+
+    # PROCESSING 'vote'
     # Drop rows where 'vote' is 'Not Voting' and filter relevant columns
     df = df[df['vote'] != 'Not Voting']
-
     # Convert 'vote' into a binary target (Yea = 1, Nay = 0)
     df.loc[:, 'vote'] = df['vote'].map({'Yea': 1, 'Nay': 0})
 
+    # Create final_vote column: 1 if it's a final vote, else 0
+    df['final_vote'] = (df['type_vote'] == "On Passage of the Bill").astype(int)
+
+    # List of religions to group as "Protestant"
+    protestant_religions = [
+        'Church of Christ', 'Church of God', 'Congregationalist', 'Episcopalian',
+        'Evangelical', 'Evangelical Protestant', 'Lutheran', 'Methodist',
+        'Nondenominational', 'Pentecostal', 'Presbyterian', 'Protestant',
+        'Southern Baptist', 'United Church of Christ', 'United Methodist'
+    ]
+    # Apply transformation
+    df['grouped_religion'] = np.where(df['religion'].isin(protestant_religions), 'Protestant', df['religion'])
+
+    # Creating ratios for Voting Behavior
+    df['party_loyalty'] = df['AllVoteW'] / df['TotalAll']
+    df['party_defection'] = df['AllVoteO'] / df['TotalAll']
+    df['key_vote_loyalty'] = df['KeyVoteW'] / df['TotalKey']
+    df['key_vote_defection'] = df['KeyVoteO'] / df['TotalKey']
+
     # Select relevant columns from senator and bill data
     df = df.drop(
-        columns=['measure_number', 'first_name', 'last_name', 'date_of_birth',
-                 'education', 'human_bio', 'start', 'end', 'served_house', 'served_senate',
-                 'vote_date', 'measure_number', 'vote_result', 'measure_title', 'measure_summary',
-                 'yea', 'nay', 'not_voting', 'introduced_by', 'Presidential Support (PSS)', 'Presidential Opposition (PSO)', 'Party Unity Support (PUS)', 'Party Unity Opposition (PUO)', 'Voting Participation (VP)', 'last_election',
-                 'TotalAll', 'AllVoteW', 'AllVoteO', 'TotalKey', 'KeyVoteW', 'KeyVoteO'])  # Drop columns that shouldn't be features
+        columns=['vote_date', 'measure_number', 'vote_result', 'previous_action',
+                 'type_vote', 'measure_title', 'measure_summary', 'bill_text',
+                 'yea', 'nay', 'not_voting', 'sponsor',
+                 'first_name', 'last_name', 'date_of_birth', 'human_bio', 'religion', 'start', 'end',
+                 'served_house', 'served_senate', 'education', 'state',
+                 'TotalAll', 'AllVoteW', 'AllVoteO',
+                 'TotalKey', 'KeyVoteW', 'KeyVoteO',
+                 'Party Unity Opposition (PUO)',
+                 'Presidential Opposition (PSO)',
+                 'key_vote_loyalty', 'Presidential Support (PSS)', 'year'])  # Drop columns that shouldn't be features
 
     # Drop any rows that have missing values in the feature or target columns
     df = df.dropna()
 
+    # Label Encoding for 'party', 'introduced_party', 'education_category' and 'state_direction'
+    # Initialize LabelEncoder
+    le = LabelEncoder()
+    # Apply label encoding
+    for col in ['party', 'introduced_party', 'state_direction']:
+        df[col] = le.fit_transform(df[col])
+    education_order = ["associates", "undergraduate", "Masters", "postgraduate"]
+    df['education_category'] = df['education_category'].apply(lambda x: education_order.index(x))
+
+    # One-Hot Encoding for other categorical variables
+    df = pd.get_dummies(df, columns=['grouped_religion', 'race', 'topic'], drop_first=True)
+
     # Drop target variable from features
     features = df.drop(columns='vote')
 
-    # One-Hot Encoding for categorical variables
-    features = pd.get_dummies(features, columns=['party', 'state', 'religion', 'race', 'introduced_party', 'topic', 'education_category', 'state_direction'], drop_first=True)
+    print("-----------FEATURES ARE-------------")
+    print(features.columns)
 
-    return features, df['vote']
+    return df, features, df['vote'].astype(int)
 
 
-# Function to perform exploratory data analysis (EDA)
-def perform_eda(df, x_list, y_list):
+# Function to find correlations
+def perform_eda(df):
+    df, features, target = preprocess_data(df)
+    # 1. Basic info
+    print("\n🔹 Dataset Info:")
     print(df.info())
-    print(df.head(5))
+
+    # 2. Summary statistics
+    print("\n🔹 Summary Statistics:")
     print(df.describe())
-    sns.pairplot(df, x_vars=x_list, y_vars=y_list, hue='party', palette='Set1')
+
+    # 3. Check for missing values
+    missing_values = df.isnull().sum()
+    print("\n🔹 Missing Values:")
+    print(missing_values[missing_values > 0])
+
+    # 4. Correlation matrix
+    # Selecting relevant numerical features
+    num_features = [
+        'required_majority', 'num_cosponsors', 'party_loyalty',
+        'Party Unity Support (PUS)', 'Voting Participation (VP)', 'bipartisan_index',
+        'dw_nominate', 'years_senate', 'years_house', 'age', 'state_pvi', 'month', 'is_election_season', 'session',
+        'final_vote'
+    ]
+
+    # Compute correlation
+    corr_matrix = df[num_features + ['vote']].corr()
+
+    # Mask for the upper triangle (hides redundant correlations)
+    mask = np.triu(np.ones_like(corr_matrix, dtype=bool))
+
+    # Plot heatmap with smaller font
+    plt.figure(figsize=(12, 8))
+    sns.heatmap(corr_matrix, mask=mask, annot=True, cmap='coolwarm', fmt=".2f",
+                linewidths=0.5, annot_kws={"size": 8})  # Smaller font size
+
+    plt.title("Cleaned Correlation Matrix (Lower Triangle Only)", fontsize=14)
+    plt.xticks(fontsize=10)
+    plt.yticks(fontsize=10)
+    plt.show()
+
+    # Pairplots
+    # Select key features for pair plots
+    features_to_plot = ['bipartisan_index', 'dw_nominate', 'state_pvi', 'party_loyalty', 'vote']
+    # Generate pair plot
+    sns.pairplot(df[features_to_plot], hue="vote", palette="Set1", diag_kind="kde")
+    # Show plot
     plt.show()
 
 
 # 2. Split the data into training and testing sets
 def split_data(df):
-    features, target = preprocess_data(df)
+    df, features, target = preprocess_data(df)
     X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.3, random_state=42)
-    return X_train, X_test, y_train, y_test
+
+    # Scale numerical features
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)  # Use same scaler from training for test data
+
+    return X_train_scaled, X_test_scaled, y_train, y_test
 
 
 # 3. Perform model training and evaluation
@@ -192,6 +290,24 @@ def test_model(model, train_x, train_y, test_x, test_y):
     predictions = model.predict(test_x)
     accuracy = accuracy_score(test_y, predictions)
 
+    # Compute permutation importance
+    perm_importance = permutation_importance(model, test_x, test_y, scoring='accuracy', n_repeats=10, random_state=42)
+
+    # Get feature importance scores
+    feature_importance_df = pd.DataFrame({
+        'Feature': all_data.drop(columns='vote').columns,
+        'Importance': perm_importance.importances_mean
+    }).sort_values(by='Importance', ascending=False)
+
+    print(f'Feature Importance for {model.__class__.__name__}:')
+    print(feature_importance_df.head(10))  # Print top 10 features
+
+    # Plot feature importance
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Importance', y='Feature', data=feature_importance_df.head(10), palette='viridis')
+    plt.title(f'Feature Importance ({model.__class__.__name__})')
+    plt.show()
+
     # F1 Score
     f1 = f1_score(test_y, predictions, average='weighted')
     print(f'F1 Score: {f1}')
@@ -209,12 +325,15 @@ def test_model(model, train_x, train_y, test_x, test_y):
     return accuracy
 
 
+all_data, features, target = preprocess_data(df)
+
 # 5. Run training and testing for each model
 def run_test():
     X_train, X_test, y_train, y_test = split_data(df)
     for model in models:
         accuracy = train_model(X_train, y_train, model)
-        print(f'Model: {model.__class__.__name__}, Cross-validation Accuracy: {accuracy.mean():.2f} ± {accuracy.std():.2f}')
+        print(
+            f'Model: {model.__class__.__name__}, Cross-validation Accuracy: {accuracy.mean():.2f} ± {accuracy.std():.2f}')
 
 
 def run_test2():
@@ -225,9 +344,7 @@ def run_test2():
 
 
 # Run the EDA on the dataset
-y_vars = ['age', 'dw_nominate', 'bipartisan_index']
-x_vars = ['vote']
-perform_eda(df, x_vars, y_vars)
+# perform_eda(df)
 
 # Running both test functions
 # run_test()
@@ -249,4 +366,8 @@ param_grid = {
     'criterion': ['gini', 'entropy', 'log_loss']
 }
 
-# perform_grid_search_cv(param_grid, ExtraTreesClassifier(), training_features, targets['skill_level2'])
+# Get training features and target
+# X_train, X_test, y_train, y_test = split_data(df)
+
+# Perform Grid Search
+# perform_grid_search_cv(param_grid, RandomForestClassifier(), X_train, y_train)
