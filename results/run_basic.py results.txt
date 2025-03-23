@@ -1,0 +1,3081 @@
+run_basic.py
+
+--------SENATORS DATA--------
+   first_name   last_name  ...  dw_nominate  bipartisan_index
+0       Tammy     Baldwin  ...       -0.490           0.28627
+1        John    Barrasso  ...        0.539          -0.52828
+2  Michael F.      Bennet  ...       -0.232           0.24740
+3      Marsha   Blackburn  ...        0.632          -0.07916
+4     Richard  Blumenthal  ...       -0.434          -0.50813
+
+[5 rows x 34 columns]
+--------VOTES DATA--------
+   vote_date  ...                               topic
+0 2023-03-01  ...               Labour and Employment
+1 2023-03-08  ...  Government Operations and Politics
+2 2023-03-08  ...  Government Operations and Politics
+3 2023-03-29  ...               International Affairs
+4 2023-03-29  ...               International Affairs
+
+[5 rows x 16 columns]
+
+Processing bill H.J.Res.30...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.J.Res.30: 62.50%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.J.Res.26...
+Tammy Baldwin | Predicted: nay | Actual: Yea
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Yea
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Yea
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Yea
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Yea
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Yea
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Yea
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Yea
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Yea
+John W. Hickenlooper | Predicted: nay | Actual: Yea
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Yea
+Mark Kelly | Predicted: nay | Actual: Yea
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Yea
+Amy Klobuchar | Predicted: nay | Actual: Yea
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Yea
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Yea
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Yea
+Jon Ossoff | Predicted: nay | Actual: Yea
+Alex Padilla | Predicted: nay | Actual: Yea
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Yea
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Yea
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Yea
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Yea
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Yea
+Debbie Stabenow | Predicted: nay | Actual: Yea
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Yea
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Yea
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.J.Res.26: 14.74%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.316 - Passage...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+John Barrasso | Predicted: nay | Actual: Nay
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Nay
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: nay | Actual: Nay
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Nay
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: nay | Actual: Nay
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Nay
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: nay | Actual: Nay
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Nay
+Ted Cruz | Predicted: yea | Actual: Nay
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Nay
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: nay | Actual: Nay
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Nay
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Nay
+Ron Johnson | Predicted: yea | Actual: Nay
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Nay
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Nay
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: yea | Actual: Yea
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Nay
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Nay
+James E. Risch | Predicted: nay | Actual: Nay
+Mitt Romney | Predicted: yea | Actual: Nay
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: nay | Actual: Nay
+Marco Rubio | Predicted: yea | Actual: Nay
+Bernard Sanders | Predicted: yea | Actual: Yea
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Nay
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: nay | Actual: Nay
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Nay
+Thomas Tillis | Predicted: nay | Actual: Nay
+Tommy Tuberville | Predicted: yea | Actual: Nay
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: nay | Actual: Nay
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill S.316 - Passage: 80.21%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill H.J.Res.7...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Yea
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Yea
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Yea
+Joni Ernst | Predicted: nay | Actual: Yea
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: nay | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Yea
+Mark Kelly | Predicted: nay | Actual: Yea
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Yea
+Amy Klobuchar | Predicted: nay | Actual: Yea
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Yea
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Yea
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Yea
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Yea
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Yea
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Yea
+Raphael G. Warnock | Predicted: nay | Actual: Yea
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.J.Res.7: 27.47%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.J.Res.27...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Yea
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: yea | Actual: Nay
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: yea | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: yea | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Yea
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: yea | Actual: Nay
+Peter Welch | Predicted: yea | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.J.Res.27: 59.38%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.870...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Yea
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Joe Manchin III | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: yea | Actual: Yea
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: yea | Actual: Nay
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: yea | Actual: Yea
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: yea | Actual: Yea
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill S.870: 97.94%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill S.J.Res.11 - Passage...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.11 - Passage: 58.59%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.J.Res.9 - Passage...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: yea | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: yea | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: yea | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.9 - Passage: 33.67%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.J.Res.39...
+Tammy Baldwin | Predicted: nay | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Yea
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: yea | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: yea | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Nay
+Gary C. Peters | Predicted: nay | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: yea | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: yea | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Yea
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.J.Res.39: 62.89%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.J.Res.24 - Passage...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+Dianne Feinstein | Predicted: nay | Actual: Nay
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Yea
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.24 - Passage: 52.00%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.J.Res.23...
+Tammy Baldwin | Predicted: yea | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Nay
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Nay
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: yea | Actual: Yea
+Dianne Feinstein | Predicted: yea | Actual: Nay
+John Fetterman | Predicted: yea | Actual: Nay
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Nay
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Yea
+Tim Kaine | Predicted: yea | Actual: Nay
+Mark Kelly | Predicted: yea | Actual: Nay
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: yea | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Nay
+Alex Padilla | Predicted: yea | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Nay
+Jack Reed | Predicted: yea | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Nay
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: yea | Actual: Nay
+Brian Schatz | Predicted: yea | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: yea | Actual: Nay
+Debbie Stabenow | Predicted: yea | Actual: Nay
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Nay
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: yea | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: yea | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: yea | Actual: Nay
+Peter Welch | Predicted: yea | Actual: Nay
+Sheldon Whitehouse | Predicted: yea | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill S.J.Res.23: 61.00%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill H.R.3746...
+Tammy Baldwin | Predicted: nay | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Nay
+Michael F. Bennet | Predicted: nay | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Nay
+Richard Blumenthal | Predicted: nay | Actual: Yea
+Cory A. Booker | Predicted: nay | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Nay
+Katie Boyd Britt | Predicted: nay | Actual: Nay
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Yea
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Yea
+Thomas R. Carper | Predicted: nay | Actual: Yea
+Robert P. Casey Jr. | Predicted: nay | Actual: Yea
+Bill Cassidy | Predicted: nay | Actual: Nay
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Nay
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Nay
+Ted Cruz | Predicted: yea | Actual: Nay
+Steve Daines | Predicted: yea | Actual: Nay
+Tammy Duckworth | Predicted: nay | Actual: Yea
+Richard J. Durbin | Predicted: nay | Actual: Yea
+Joni Ernst | Predicted: nay | Actual: Yea
+Dianne Feinstein | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Nay
+Kirsten E. Gillibrand | Predicted: nay | Actual: Yea
+Lindsey Graham | Predicted: nay | Actual: Nay
+Chuck Grassley | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Nay
+Martin Heinrich | Predicted: nay | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: nay | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Nay
+Ron Johnson | Predicted: nay | Actual: Nay
+Tim Kaine | Predicted: nay | Actual: Yea
+Mark Kelly | Predicted: nay | Actual: Yea
+John Kennedy | Predicted: nay | Actual: Nay
+Angus S. King Jr. | Predicted: nay | Actual: Yea
+Amy Klobuchar | Predicted: nay | Actual: Yea
+James Lankford | Predicted: yea | Actual: Nay
+Mike Lee | Predicted: nay | Actual: Nay
+Ben Ray Lujan | Predicted: nay | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Nay
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Nay
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Yea
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Yea
+Patty Murray | Predicted: nay | Actual: Yea
+Jon Ossoff | Predicted: nay | Actual: Yea
+Alex Padilla | Predicted: nay | Actual: Yea
+Rand Paul | Predicted: nay | Actual: Nay
+Gary C. Peters | Predicted: nay | Actual: Yea
+Jack Reed | Predicted: nay | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Nay
+James E. Risch | Predicted: nay | Actual: Nay
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Yea
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Nay
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Nay
+Charles E. Schumer | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Nay
+Jeanne Shaheen | Predicted: nay | Actual: Yea
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Yea
+Debbie Stabenow | Predicted: nay | Actual: Yea
+Dan Sullivan | Predicted: nay | Actual: Nay
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Nay
+J. D. Vance | Predicted: nay | Actual: Nay
+Chris Van Hollen | Predicted: nay | Actual: Yea
+Mark R. Warner | Predicted: nay | Actual: Yea
+Raphael G. Warnock | Predicted: nay | Actual: Yea
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Yea
+Sheldon Whitehouse | Predicted: nay | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Nay
+Ron Wyden | Predicted: nay | Actual: Yea
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.R.3746: 29.29%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.J.Res.45...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: nay | Actual: Yea
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: nay | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+Dianne Feinstein | Predicted: nay | Actual: Nay
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.J.Res.45: 46.94%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.J.Res.44...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Nay
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Nay
+Thomas R. Carper | Predicted: yea | Actual: Nay
+Robert P. Casey Jr. | Predicted: yea | Actual: Nay
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Nay
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Nay
+Richard J. Durbin | Predicted: yea | Actual: Nay
+Joni Ernst | Predicted: yea | Actual: Yea
+Dianne Feinstein | Predicted: nay | Actual: Nay
+John Fetterman | Predicted: yea | Actual: Nay
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Nay
+Amy Klobuchar | Predicted: yea | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: yea | Actual: Nay
+Edward J. Markey | Predicted: yea | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Nay
+Kyrsten Sinema | Predicted: yea | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: yea | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: yea | Actual: Yea
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: yea | Actual: Nay
+Raphael G. Warnock | Predicted: yea | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.J.Res.44: 59.60%
+Simulated Outcome: passed | Actual Outcome: rejected | Match: False
+
+Processing bill S.J.Res.42...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Nay
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Nay
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.42: 54.64%
+Simulated Outcome: rejected | Actual Outcome: rejected | Match: True
+
+Processing bill H.R.662...
+Tammy Baldwin | Predicted: yea | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Nay
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: yea | Actual: Nay
+Maria Cantwell | Predicted: yea | Actual: Nay
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Nay
+Thomas R. Carper | Predicted: yea | Actual: Nay
+Robert P. Casey Jr. | Predicted: yea | Actual: Nay
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Nay
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Nay
+Richard J. Durbin | Predicted: yea | Actual: Nay
+Joni Ernst | Predicted: yea | Actual: Nay
+John Fetterman | Predicted: yea | Actual: Nay
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Nay
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Nay
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Nay
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Nay
+John W. Hickenlooper | Predicted: yea | Actual: Nay
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: yea | Actual: Nay
+Mark Kelly | Predicted: yea | Actual: Nay
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Nay
+Amy Klobuchar | Predicted: yea | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: yea | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Nay
+Alex Padilla | Predicted: yea | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Nay
+Jack Reed | Predicted: yea | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Nay
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Nay
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: yea | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Nay
+Kyrsten Sinema | Predicted: yea | Actual: Nay
+Tina Smith | Predicted: yea | Actual: Nay
+Debbie Stabenow | Predicted: yea | Actual: Nay
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Nay
+John Thune | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: yea | Actual: Nay
+Raphael G. Warnock | Predicted: yea | Actual: Nay
+Elizabeth Warren | Predicted: yea | Actual: Nay
+Peter Welch | Predicted: yea | Actual: Nay
+Sheldon Whitehouse | Predicted: yea | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.R.662: 42.71%
+Simulated Outcome: passed | Actual Outcome: rejected | Match: False
+
+Processing bill H.R.6363...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Nay
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Nay
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Nay
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Joe Manchin III | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: yea | Actual: Yea
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: nay | Actual: Nay
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Nay
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Yea
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Nay
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Nay
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: yea | Actual: Nay
+J. D. Vance | Predicted: yea | Actual: Nay
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.R.6363: 87.76%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill S.J.Res.43...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.43: 60.61%
+Simulated Outcome: rejected | Actual Outcome: rejected | Match: True
+
+Processing bill H.R.7463...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Nay
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Nay
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Nay
+Laphonza R. Butler | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Nay
+Ted Cruz | Predicted: nay | Actual: Nay
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Nay
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Nay
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: yea | Actual: Nay
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Yea
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Nay
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Nay
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Nay
+J. D. Vance | Predicted: yea | Actual: Nay
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.R.7463: 90.00%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.3853...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Nay
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Nay
+Laphonza R. Butler | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: yea | Actual: Nay
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Nay
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Nay
+Susan M. Collins | Predicted: yea | Actual: Nay
+Christopher A. Coons | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Nay
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Nay
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Nay
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Nay
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Nay
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Nay
+Cindy Hyde-Smith | Predicted: yea | Actual: Nay
+Ron Johnson | Predicted: yea | Actual: Nay
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Nay
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Nay
+Mike Lee | Predicted: yea | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Nay
+Joe Manchin III | Predicted: yea | Actual: Nay
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: yea | Actual: Yea
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Nay
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: yea | Actual: Nay
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Nay
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Nay
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: yea | Actual: Yea
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Nay
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Nay
+Thomas Tillis | Predicted: yea | Actual: Nay
+Tommy Tuberville | Predicted: yea | Actual: Nay
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Nay
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Nay
+
+Accuracy for Bill S.3853: 69.70%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill S.J.Res.62...
+Tammy Baldwin | Predicted: nay | Actual: Yea
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Yea
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Laphonza R. Butler | Predicted: yea | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Nay
+Thomas R. Carper | Predicted: yea | Actual: Nay
+Robert P. Casey Jr. | Predicted: yea | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Nay
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: yea | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Yea
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: nay | Actual: Yea
+James Lankford | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Yea
+Jerry Moran | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Yea
+Jon Ossoff | Predicted: nay | Actual: Yea
+Alex Padilla | Predicted: nay | Actual: Yea
+Rand Paul | Predicted: nay | Actual: Nay
+Gary C. Peters | Predicted: nay | Actual: Yea
+Jack Reed | Predicted: nay | Actual: Yea
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Yea
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Yea
+Brian Schatz | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Nay
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Yea
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Nay
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: yea | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Yea
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Yea
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.62: 25.26%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.R.7888 - Passage...
+Tammy Baldwin | Predicted: yea | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Nay
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Nay
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: yea | Actual: Nay
+Maria Cantwell | Predicted: yea | Actual: Nay
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Nay
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Nay
+Steve Daines | Predicted: yea | Actual: Nay
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Nay
+Joni Ernst | Predicted: yea | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Nay
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: nay | Actual: Nay
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Nay
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Nay
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Nay
+Edward J. Markey | Predicted: yea | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Nay
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: yea | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: yea | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: nay | Actual: Nay
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Nay
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Nay
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Nay
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Nay
+Peter Welch | Predicted: yea | Actual: Nay
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.R.7888 - Passage: 71.28%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill H.J.Res.98...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Nay
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: nay | Actual: Yea
+Laphonza R. Butler | Predicted: yea | Actual: Nay
+Maria Cantwell | Predicted: yea | Actual: Nay
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Nay
+Thomas R. Carper | Predicted: yea | Actual: Nay
+Robert P. Casey Jr. | Predicted: yea | Actual: Nay
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: yea | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Nay
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Nay
+Josh Hawley | Predicted: yea | Actual: Nay
+Martin Heinrich | Predicted: yea | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: yea | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Yea
+Tim Kaine | Predicted: yea | Actual: Nay
+Mark Kelly | Predicted: yea | Actual: Nay
+John Kennedy | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: yea | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: yea | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Nay
+Debbie Stabenow | Predicted: yea | Actual: Nay
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Nay
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: yea | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: yea | Actual: Nay
+Raphael G. Warnock | Predicted: yea | Actual: Nay
+Elizabeth Warren | Predicted: yea | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: yea | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.J.Res.98: 51.02%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill S.J.Res.61...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill S.J.Res.61: 60.00%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.4072...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: yea | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: yea | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Nay
+Richard J. Durbin | Predicted: yea | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Josh Hawley | Predicted: nay | Actual: Yea
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: yea | Actual: Nay
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Joe Manchin III | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Robert Menendez | Predicted: nay | Actual: Nay
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: yea | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: yea | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Nay
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Nay
+Mark R. Warner | Predicted: yea | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.4072: 44.90%
+Simulated Outcome: rejected | Actual Outcome: rejected | Match: True
+
+Processing bill S.J.Res.57...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Nay
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Bill Hagerty | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Nay
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Nay
+John Thune | Predicted: nay | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.57: 60.00%
+Simulated Outcome: rejected | Actual Outcome: rejected | Match: True
+
+Processing bill H.J.Res.109...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Nay
+Ted Budd | Predicted: yea | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Yea
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Yea
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Yea
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Nay
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: yea | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Yea
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+Jon Tester | Predicted: nay | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Yea
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill H.J.Res.109: 63.27%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill S.J.Res.58...
+Tammy Baldwin | Predicted: nay | Actual: Nay
+John Barrasso | Predicted: nay | Actual: Yea
+Michael F. Bennet | Predicted: nay | Actual: Nay
+Marsha Blackburn | Predicted: nay | Actual: Yea
+Richard Blumenthal | Predicted: nay | Actual: Nay
+Cory A. Booker | Predicted: nay | Actual: Nay
+John Boozman | Predicted: nay | Actual: Yea
+Mike Braun | Predicted: nay | Actual: Yea
+Katie Boyd Britt | Predicted: nay | Actual: Yea
+Sherrod Brown | Predicted: nay | Actual: Yea
+Ted Budd | Predicted: nay | Actual: Yea
+Laphonza R. Butler | Predicted: nay | Actual: Nay
+Maria Cantwell | Predicted: nay | Actual: Nay
+Shelley Moore Capito | Predicted: nay | Actual: Yea
+Benjamin L. Cardin | Predicted: nay | Actual: Nay
+Thomas R. Carper | Predicted: nay | Actual: Nay
+Robert P. Casey Jr. | Predicted: nay | Actual: Yea
+Bill Cassidy | Predicted: nay | Actual: Yea
+Susan M. Collins | Predicted: nay | Actual: Yea
+Christopher A. Coons | Predicted: nay | Actual: Nay
+John Cornyn | Predicted: nay | Actual: Yea
+Catherine Cortez Masto | Predicted: nay | Actual: Nay
+Tom Cotton | Predicted: nay | Actual: Yea
+Kevin Cramer | Predicted: nay | Actual: Yea
+Mike Crapo | Predicted: nay | Actual: Yea
+Ted Cruz | Predicted: nay | Actual: Yea
+Steve Daines | Predicted: nay | Actual: Yea
+Tammy Duckworth | Predicted: nay | Actual: Nay
+Richard J. Durbin | Predicted: nay | Actual: Nay
+Joni Ernst | Predicted: nay | Actual: Yea
+John Fetterman | Predicted: nay | Actual: Nay
+Deb Fischer | Predicted: nay | Actual: Yea
+Kirsten E. Gillibrand | Predicted: nay | Actual: Nay
+Lindsey Graham | Predicted: nay | Actual: Yea
+Chuck Grassley | Predicted: nay | Actual: Yea
+Margaret Wood Hassan | Predicted: nay | Actual: Nay
+Martin Heinrich | Predicted: nay | Actual: Nay
+John W. Hickenlooper | Predicted: nay | Actual: Nay
+Mazie K. Hirono | Predicted: nay | Actual: Nay
+John Hoeven | Predicted: nay | Actual: Yea
+Cindy Hyde-Smith | Predicted: nay | Actual: Yea
+Ron Johnson | Predicted: nay | Actual: Yea
+Tim Kaine | Predicted: nay | Actual: Nay
+Mark Kelly | Predicted: nay | Actual: Nay
+John Kennedy | Predicted: nay | Actual: Yea
+Angus S. King Jr. | Predicted: nay | Actual: Nay
+Amy Klobuchar | Predicted: nay | Actual: Nay
+James Lankford | Predicted: nay | Actual: Yea
+Mike Lee | Predicted: nay | Actual: Yea
+Ben Ray Lujan | Predicted: nay | Actual: Nay
+Cynthia M. Lummis | Predicted: nay | Actual: Yea
+Joe Manchin III | Predicted: nay | Actual: Yea
+Edward J. Markey | Predicted: nay | Actual: Nay
+Roger Marshall | Predicted: nay | Actual: Yea
+Mitch McConnell | Predicted: nay | Actual: Yea
+Jeff Merkley | Predicted: nay | Actual: Nay
+Jerry Moran | Predicted: nay | Actual: Yea
+Markwayne Mullin | Predicted: nay | Actual: Yea
+Lisa Murkowski | Predicted: nay | Actual: Yea
+Christopher Murphy | Predicted: nay | Actual: Nay
+Patty Murray | Predicted: nay | Actual: Nay
+Jon Ossoff | Predicted: nay | Actual: Nay
+Alex Padilla | Predicted: nay | Actual: Nay
+Rand Paul | Predicted: nay | Actual: Yea
+Gary C. Peters | Predicted: nay | Actual: Nay
+Jack Reed | Predicted: nay | Actual: Nay
+Pete Ricketts | Predicted: nay | Actual: Yea
+James E. Risch | Predicted: nay | Actual: Yea
+Mitt Romney | Predicted: nay | Actual: Yea
+Jacky Rosen | Predicted: nay | Actual: Nay
+Mike Rounds | Predicted: nay | Actual: Yea
+Marco Rubio | Predicted: nay | Actual: Yea
+Bernard Sanders | Predicted: nay | Actual: Nay
+Brian Schatz | Predicted: nay | Actual: Nay
+Eric Schmitt | Predicted: nay | Actual: Yea
+Charles E. Schumer | Predicted: nay | Actual: Nay
+Rick Scott | Predicted: nay | Actual: Yea
+Rick Scott | Predicted: nay | Actual: Yea
+Jeanne Shaheen | Predicted: nay | Actual: Nay
+Kyrsten Sinema | Predicted: nay | Actual: Yea
+Tina Smith | Predicted: nay | Actual: Nay
+Debbie Stabenow | Predicted: nay | Actual: Nay
+Dan Sullivan | Predicted: nay | Actual: Yea
+John Thune | Predicted: nay | Actual: Yea
+Tommy Tuberville | Predicted: nay | Actual: Yea
+J. D. Vance | Predicted: nay | Actual: Yea
+Chris Van Hollen | Predicted: nay | Actual: Nay
+Mark R. Warner | Predicted: nay | Actual: Nay
+Raphael G. Warnock | Predicted: nay | Actual: Nay
+Elizabeth Warren | Predicted: nay | Actual: Nay
+Peter Welch | Predicted: nay | Actual: Nay
+Sheldon Whitehouse | Predicted: nay | Actual: Nay
+Roger F. Wicker | Predicted: nay | Actual: Yea
+Ron Wyden | Predicted: nay | Actual: Nay
+Todd Young | Predicted: nay | Actual: Yea
+
+Accuracy for Bill S.J.Res.58: 47.37%
+Simulated Outcome: rejected | Actual Outcome: passed | Match: False
+
+Processing bill H.R.10545...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Yea
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Nay
+Katie Boyd Britt | Predicted: yea | Actual: Yea
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Yea
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Nay
+Ted Cruz | Predicted: yea | Actual: Yea
+Steve Daines | Predicted: yea | Actual: Yea
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Yea
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Yea
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: yea | Actual: Nay
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Nay
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Nay
+Andy Kim | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: yea | Actual: Yea
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Yea
+Jeff Merkley | Predicted: yea | Actual: Yea
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: yea | Actual: Nay
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Nay
+Mitt Romney | Predicted: yea | Actual: Nay
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Yea
+Bernard Sanders | Predicted: yea | Actual: Nay
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Nay
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Yea
+Thomas Tillis | Predicted: yea | Actual: Yea
+Tommy Tuberville | Predicted: yea | Actual: Yea
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Yea
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Yea
+
+Accuracy for Bill H.R.10545: 88.54%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Processing bill H.R.82 - Passage...
+Tammy Baldwin | Predicted: yea | Actual: Yea
+John Barrasso | Predicted: yea | Actual: Nay
+Michael F. Bennet | Predicted: yea | Actual: Yea
+Marsha Blackburn | Predicted: yea | Actual: Yea
+Richard Blumenthal | Predicted: yea | Actual: Yea
+Cory A. Booker | Predicted: yea | Actual: Yea
+John Boozman | Predicted: yea | Actual: Yea
+Mike Braun | Predicted: yea | Actual: Yea
+Katie Boyd Britt | Predicted: yea | Actual: Nay
+Sherrod Brown | Predicted: yea | Actual: Yea
+Ted Budd | Predicted: yea | Actual: Nay
+Maria Cantwell | Predicted: yea | Actual: Yea
+Shelley Moore Capito | Predicted: yea | Actual: Yea
+Benjamin L. Cardin | Predicted: yea | Actual: Yea
+Thomas R. Carper | Predicted: yea | Actual: Yea
+Robert P. Casey Jr. | Predicted: yea | Actual: Yea
+Bill Cassidy | Predicted: yea | Actual: Yea
+Susan M. Collins | Predicted: yea | Actual: Yea
+Christopher A. Coons | Predicted: yea | Actual: Yea
+John Cornyn | Predicted: yea | Actual: Yea
+Catherine Cortez Masto | Predicted: yea | Actual: Yea
+Tom Cotton | Predicted: yea | Actual: Yea
+Kevin Cramer | Predicted: yea | Actual: Yea
+Mike Crapo | Predicted: yea | Actual: Nay
+Ted Cruz | Predicted: yea | Actual: Nay
+Steve Daines | Predicted: yea | Actual: Nay
+Tammy Duckworth | Predicted: yea | Actual: Yea
+Richard J. Durbin | Predicted: yea | Actual: Yea
+Joni Ernst | Predicted: yea | Actual: Nay
+John Fetterman | Predicted: yea | Actual: Yea
+Deb Fischer | Predicted: yea | Actual: Yea
+Kirsten E. Gillibrand | Predicted: yea | Actual: Yea
+Lindsey Graham | Predicted: yea | Actual: Yea
+Chuck Grassley | Predicted: yea | Actual: Nay
+Bill Hagerty | Predicted: yea | Actual: Yea
+Margaret Wood Hassan | Predicted: yea | Actual: Yea
+Josh Hawley | Predicted: yea | Actual: Yea
+Martin Heinrich | Predicted: yea | Actual: Yea
+John W. Hickenlooper | Predicted: yea | Actual: Yea
+Mazie K. Hirono | Predicted: yea | Actual: Yea
+John Hoeven | Predicted: yea | Actual: Yea
+Cindy Hyde-Smith | Predicted: yea | Actual: Yea
+Ron Johnson | Predicted: yea | Actual: Nay
+Tim Kaine | Predicted: yea | Actual: Yea
+Mark Kelly | Predicted: yea | Actual: Yea
+John Kennedy | Predicted: yea | Actual: Yea
+Andy Kim | Predicted: yea | Actual: Yea
+Angus S. King Jr. | Predicted: yea | Actual: Yea
+Amy Klobuchar | Predicted: yea | Actual: Yea
+James Lankford | Predicted: yea | Actual: Yea
+Mike Lee | Predicted: yea | Actual: Nay
+Ben Ray Lujan | Predicted: yea | Actual: Yea
+Cynthia M. Lummis | Predicted: nay | Actual: Nay
+Edward J. Markey | Predicted: yea | Actual: Yea
+Roger Marshall | Predicted: yea | Actual: Yea
+Mitch McConnell | Predicted: yea | Actual: Nay
+Jeff Merkley | Predicted: yea | Actual: Yea
+Jerry Moran | Predicted: yea | Actual: Yea
+Markwayne Mullin | Predicted: yea | Actual: Yea
+Lisa Murkowski | Predicted: yea | Actual: Yea
+Christopher Murphy | Predicted: yea | Actual: Yea
+Patty Murray | Predicted: yea | Actual: Yea
+Jon Ossoff | Predicted: yea | Actual: Yea
+Alex Padilla | Predicted: yea | Actual: Yea
+Rand Paul | Predicted: yea | Actual: Nay
+Gary C. Peters | Predicted: yea | Actual: Yea
+Jack Reed | Predicted: yea | Actual: Yea
+Pete Ricketts | Predicted: yea | Actual: Yea
+James E. Risch | Predicted: yea | Actual: Yea
+Mitt Romney | Predicted: yea | Actual: Nay
+Jacky Rosen | Predicted: yea | Actual: Yea
+Mike Rounds | Predicted: yea | Actual: Nay
+Bernard Sanders | Predicted: yea | Actual: Yea
+Brian Schatz | Predicted: yea | Actual: Yea
+Eric Schmitt | Predicted: yea | Actual: Yea
+Charles E. Schumer | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Rick Scott | Predicted: yea | Actual: Yea
+Jeanne Shaheen | Predicted: yea | Actual: Yea
+Kyrsten Sinema | Predicted: yea | Actual: Yea
+Tina Smith | Predicted: yea | Actual: Yea
+Debbie Stabenow | Predicted: yea | Actual: Yea
+Dan Sullivan | Predicted: yea | Actual: Yea
+Jon Tester | Predicted: yea | Actual: Yea
+John Thune | Predicted: yea | Actual: Nay
+Thomas Tillis | Predicted: yea | Actual: Nay
+Tommy Tuberville | Predicted: yea | Actual: Nay
+Chris Van Hollen | Predicted: yea | Actual: Yea
+Mark R. Warner | Predicted: yea | Actual: Yea
+Raphael G. Warnock | Predicted: yea | Actual: Yea
+Elizabeth Warren | Predicted: yea | Actual: Yea
+Peter Welch | Predicted: yea | Actual: Yea
+Sheldon Whitehouse | Predicted: yea | Actual: Yea
+Roger F. Wicker | Predicted: yea | Actual: Nay
+Ron Wyden | Predicted: yea | Actual: Yea
+Todd Young | Predicted: yea | Actual: Nay
+
+Accuracy for Bill H.R.82 - Passage: 80.21%
+Simulated Outcome: passed | Actual Outcome: passed | Match: True
+
+Overall Model Accuracy: 58.11%
+
+Bill Outcome Prediction Accuracy: 43.33%
+
+Process finished with exit code 0
