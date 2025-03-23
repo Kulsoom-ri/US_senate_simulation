@@ -17,10 +17,10 @@ This work offers contributions across several fields. In Political Science, it e
 
 ## Keywords
 - Computational politics: "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
-- Agent
-- LLM
+- Agent: A software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
 - Multi-agent framework
-- Memory stream
+- LLM: Large Language Models or LLMs are 
+- Memory stream: 
 - Temperature
 - System prompt
 - User prompt
@@ -61,7 +61,7 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 
 **For floor votes:**
 
-50 floor votes were selected to be simulated (including roll call votes, voice votes and colture motions). These were selected based on the CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), key legislations identified on Wikipedia and the most-viewed bills identified on Congress.gov. Only bills originating in the senate were considered.
+45 floor votes were selected to be simulated (votes included "On Motion to Discharge Committee", "On Overriding the Veto", "On Passage of the Bill", "On Cloture on the Motion to Proceed" etc.). These were randomly selected from a list containing CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), key legislations identified on Wikipedia and the most-viewed bills on Congress.gov. Bills originating in both the house and senate as well as joint resolutions were considered, although votes were limited to those for which there was a roll call vote in the senate.
 - Congress.gov (https://www.congress.gov/): Utilized for obtaining contextual information about a bill such as title, summary, number of co-sponsors, party and name of introducing senator, policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
 - Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): Utilized for obtaining detailed records of how each senator voted during a particular floor vote (yea, nay, present or not voting).
 
@@ -122,3 +122,4 @@ This github repository contains all the code and data utilized to generate resul
 - Rice, Stuart A. 1924. “The Political Vote as a Frequency Distribution of Opinion.” Journal of the American Statistical Association 19 (145): 70–75. doi:10.1080/01621459.1924.10502872.
 - https://ai.meta.com/research/cicero/
 - Haq, Ehsan ul, Tristan Braud, Young D Kwon, and Pan Hui. 2019. “A Survey on Computational Politics.” ArXiv.org. 2019. https://arxiv.org/abs/1908.06069.
+- “What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS.” 2024. Amazon Web Services, Inc. 2024. https://aws.amazon.com/what-is/ai-agents/.
