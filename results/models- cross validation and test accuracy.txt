@@ -1,0 +1,78 @@
+Cross-validation Accuracy
+
+Model: BernoulliNB, Cross-validation Accuracy: 0.72 ± 0.03
+Model: KNeighborsClassifier, Cross-validation Accuracy: 0.88 ± 0.01
+Model: LogisticRegression, Cross-validation Accuracy: 0.80 ± 0.03
+Model: LinearSVC, Cross-validation Accuracy: 0.80 ± 0.03
+Model: SVC, Cross-validation Accuracy: 0.89 ± 0.02
+Model: DecisionTreeClassifier, Cross-validation Accuracy: 0.91 ± 0.02
+Model: ExtraTreeClassifier, Cross-validation Accuracy: 0.87 ± 0.02
+Model: ExtraTreesClassifier, Cross-validation Accuracy: 0.93 ± 0.01
+Model: AdaBoostClassifier, Cross-validation Accuracy: 0.77 ± 0.04
+Model: RandomForestClassifier, Cross-validation Accuracy: 0.93 ± 0.01
+Model: Perceptron, Cross-validation Accuracy: 0.70 ± 0.04
+Model: MLPClassifier, Cross-validation Accuracy: 0.92 ± 0.02
+
+____________________________________
+
+Train-Test Split Scores
+
+F1 Score: 0.7105576754839436
+ROC AUC: 0.76
+Model: BernoulliNB, Test Accuracy: 0.71
+
+F1 Score: 0.8787842524893928
+ROC AUC: 0.94
+Model: KNeighborsClassifier, Test Accuracy: 0.88
+
+F1 Score: 0.8065954694153129
+ROC AUC: 0.81
+Model: LogisticRegression, Test Accuracy: 0.81
+
+F1 Score: 0.8004311818287873
+ROC AUC: 0.81
+Model: LinearSVC, Test Accuracy: 0.80
+
+F1 Score: 0.9108742240627844
+ROC AUC: 0.95
+Model: SVC, Test Accuracy: 0.91
+
+F1 Score: 0.916936874909667
+ROC AUC: 0.92
+Model: DecisionTreeClassifier, Test Accuracy: 0.92
+
+F1 Score: 0.8648114363130486
+ROC AUC: 0.86
+Model: ExtraTreeClassifier, Test Accuracy: 0.87
+
+F1 Score: 0.9247151638677914
+ROC AUC: 0.98
+Model: ExtraTreesClassifier, Test Accuracy: 0.92
+
+F1 Score: 0.7966452262963525
+ROC AUC: 0.80
+Model: AdaBoostClassifier, Test Accuracy: 0.80
+
+F1 Score: 0.9238699444885012
+ROC AUC: 0.98
+Model: RandomForestClassifier, Test Accuracy: 0.92
+
+F1 Score: 0.7121570036849715
+ROC AUC: 0.74
+Model: Perceptron, Test Accuracy: 0.72
+
+F1 Score: 0.9182098252286114
+ROC AUC: 0.97
+Model: MLPClassifier, Test Accuracy: 0.92
+
+___________________________________________
+
+After fine-tuning:
+
+ExtraTreesClassifier
+Best params: {'ccp_alpha': 0.0001, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'n_estimators': 100}
+Best score: 0.9309523809523809
+
+RandomForestClassifier
+Best params: {'ccp_alpha': 0.0001, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'n_estimators': 50}
+Best score: 0.9340136054421768
