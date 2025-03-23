@@ -18,8 +18,8 @@ This work offers contributions across several fields. In Political Science, it e
 ## Keywords
 - Computational politics: "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
 - Agent: A software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
-- Multi-agent framework
-- LLM: Large Language Models or LLMs are 
+- LLM: Large Language Models or LLMs are . The underlying system consists of a series of neural networks.
+- Multiagent (MA) framework: A multiagent system or framework consists of multiple AI agents, often LLM powered (referred to as LLM-MA), working collectively and interacting with each other in either a hierarchical or non-hierarchical manner to collectively perform tasks. ()
 - Memory stream: 
 - Temperature
 - System prompt
@@ -41,8 +41,11 @@ This paper builds on the research from both categories, testing the potential fo
 
 ## Context
 - How does generative AI make predictions? (review on studies using LLMs for forecasting/decision-making)
+  
 - Is it approporiate to use LLMs for causal reasoning? (model collapse theory/generative AI paradox)
+  
 - How does political decision-making happen in the actual US Senate?
+  
 
 ## Data
 For this study, an original dataset was created by webscraping, collecting variables across two dimensions:
@@ -69,7 +72,7 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 The target variable being predicted is a senator's vote during a specific floor vote. This can take 4 values: Yea, Nay, Present or Not Voting. 
 
 ### Features
-The selected features are: 
+The features fed into were: 
 
 ### Data Wrangling
 The target variable 
