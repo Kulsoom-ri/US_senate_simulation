@@ -104,6 +104,9 @@ This is what an LLM-powered senator looks like:
 ![AI_Agent_Slide-1](https://github.com/user-attachments/assets/7cc77339-7f24-448d-83b2-25c937e1ff9a)
 
 ## A Sample Simulation
+![Thesis_Code_USSenate – run py 2025-03-21 11-29-57 00_00_01_8 Still001](https://github.com/user-attachments/assets/686df0f5-551a-45cb-aa1e-8f44af45364f)
+![Thesis_Code_USSenate – run py 3_21_2025 11_40_56 AM](https://github.com/user-attachments/assets/9b55a353-dcd1-483b-9d46-c33366d422aa)
+![Thesis_Code_USSenate – run py 3_21_2025 1_10_05 PM](https://github.com/user-attachments/assets/b527b306-9dbd-42f1-9d5f-420e7b715401)
 
 ## Results
 
