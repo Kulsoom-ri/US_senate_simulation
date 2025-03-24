@@ -74,9 +74,7 @@ The U.S. Senate consists of 100 members, with two senators representing each sta
 
 <p align="center"><b>Summary: Introduced → Committee Review → Floor Debate (House or Senate) → Passed by Both Chambers → President's Signature (becomes law) or Vetoed (and potentially overridden)</b></p>
 
-However, decision-making in the Senate is not purely procedural- it is shaped by party influence, bipartisan negotiations, lobbying from interest groups, backroom deals, and constituency pressure. Party-line voting in the U.S. Senate has become increasingly prevalent in recent years. 
-
-Senators often vote along party lines but may form coalitions on shared interests. Lobbying organizations and corporations exert influence through campaign funding and policy research, while informal negotiations allow lawmakers to trade votes or attach amendments that benefit their states. Public opinion and presidential influence further shape legislative outcomes, making Senate decision-making a complex interplay of institutional rules, political strategy, and external pressures.
+However, decision-making in the Senate is not purely procedural- it is shaped by party influence, bipartisan negotiations, lobbying from interest groups, backroom deals, and constituency pressure. Party-line voting in the U.S. Senate has become increasingly prevalent in recent years. In 2022, a record 83.1% of Senate votes were divided along party lines, surpassing the previous high of 79.2% set in 2021. (Kelly 2023) They may also form coalitions on shared interests. Lobbying organizations and corporations exert influence through campaign funding and policy research, while informal negotiations allow lawmakers to trade votes or attach amendments that benefit their states. Public opinion and presidential influence further shape legislative outcomes, making Senate decision-making a complex interplay of institutional rules, political strategy, and external pressures (challenges that make computational simulation particularly difficult).
 
 ## Data
 For this study, an original dataset was created by webscraping, collecting variables across two dimensions:
@@ -173,6 +171,9 @@ This github repository contains all the code and data utilized to generate resul
 - West, Peter, Ximing Lu, Nouha Dziri, Faeze Brahman, Linjie Li, Jena D Hwang, Liwei Jiang, et al. 2023. “The Generative AI Paradox: ‘What It Can Create, It May Not Understand.’” ArXiv.org. 2023. https://arxiv.org/abs/2311.00059.
 - Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631 (8022): 755–59. https://doi.org/10.1038/s41586-024-07566-y.
 - Banerjee, Sourav, Ayushi Agarwal, and Saloni Singla. 2024. “LLMs Will Always Hallucinate, and We Need to Live with This.” ArXiv.org. 2024. https://arxiv.org/abs/2409.05746.
+- Kelly, Ryan. 2023. “2022 Vote Studies: Division Hit New High in Senate, Fell in House - Roll Call.” Roll Call. March 24, 2023. https://rollcall.com/2023/03/24/2022-vote-studies-division-hit-new-high-in-senate-fell-in-house/?utm_source=chatgpt.com.
+
+‌
 ‌
 
 ‌
