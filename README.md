@@ -135,6 +135,7 @@ The features fed into the LLM simulation were:
 - The Bipartisan Index was unavailable for the Senate Majority and Minority Leaders. These values were left missing rather than imputed.
 - Nebraska and Maine report different Cook Partisan Voting Index (PVI) scores for their respective congressional districts. To ensure consistency, the average PVI for the state was taken.
 - Missing biographical and electoral data from the CQ Press Congress Collection were manually verified and filled using news reports.
+- Missing bill summaries (specifically for S.J.Res.51 and H.R.10545) were generated using an LLM based on bill text.
 
 **Feature Engineering:**
 To avoid multicollinearity in classification models and simplify input for LLM, following ratios were constructed: 
