@@ -88,8 +88,8 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 - *Congress.gov (“Congress.gov | Library of Congress” 2025):* This website serves as the official source for U.S. federal legislative information and was utilized to obtain basic biographical details on senators, including name, state, party affiliation, time served in the House, and time served in the Senate.
 - *The Lugar Center (“Bipartisan Index” 2023):* The Lugar Center is a non-profit founded by former United States Senator Richard G. Lugar. It was used to obtain the Bipartisan Index, "an objective measure of how well members of opposite parties work with one another using bill sponsorship and co-sponsorship data." The index assigns scores based on how a member’s bipartisan bill sponsorship and co-sponsorship compare to a 20-year historical baseline, with positive scores indicating above-average bipartisanship and negative scores indicating below-average performance. Scores above 1.0 are considered outstanding, while those below -1.0 are very poor. Raw data is sourced from GovTrack, and certain exclusions apply: members serving less than 10 months, minority/majority leaders, and those sponsoring fewer than three qualifying bills (since the 113th Congress) are not scored to ensure fair comparisons.
 - *Voteview (“Voteview | Congress View” 2025):* Voteview, maintained by UCLA's Department of Political Science and Social Science Computing, provides ideological position scores for legislators based on roll call voting records. These scores are computed using the DW-NOMINATE (Dynamic Weighted NOMINAl Three-step Estimation) method, which maps legislators onto a spatial scale where ideological similarity is reflected by proximity. The primary dimension, consistent throughout American history, represents a left-right (liberal-conservative) spectrum, while a second dimension captures intra-party differences on issues like civil rights and economic policy. Scores typically range from -1 (most liberal) to +1 (most conservative), allowing for quantitative analysis of congressional polarization and voting behavior.
-- CQ Press Congress Collection (https://library-cqpress-com.proxy.lib.duke.edu/congress/): A research database containing biographical, political, and electoral data about every member of Congress since the 79th Congress (1945). Utilized for obtaining biographical data such as date of birth, education level, religion, race, sex; electoral data such as percentage of vote received in last election; political data such as frequency of voting, alignment with party positions, number of times senator voted with/against party, presidential support; as well as overall biography. Narrative biographies in the database are written by CQ editorial staff.
-- The Cook Political Report (https://www.cookpolitical.com/cook-pvi): Introduced in 1997, the Cook Partisan Voting Index (Cook PVI) measures how each state and district performs at the presidential level compared to the nation as a whole. The dataset was utilized to get the 2023 Cook Partisan voting score for the state of each senator. The 2023 PVI scores were claculated using 2016 and 2020 presidential election results. 
+- *CQ Press Congress Collection (“CQ Congress Collection” 2025):* A comprehensive research database containing biographical, political, and electoral data on every member of Congress since the 79th Congress (1945). This resource was utilized to obtain biographical details such as date of birth, education level, religion, race, and sex; electoral data including the percentage of votes received in the most recent election; and political data such as voting frequency, party alignment, instances of voting with or against party positions, and presidential support. Additionally, the database provides narrative biographies authored by CQ editorial staff.
+- *The Cook Political Report (“The 2023 Cook Partisan Voting Index (Cook PVISM)” 2023):* Introduced in 1997, the Cook Partisan Voting Index (Cook PVI) measures how each state and district performs at the presidential level compared to the nation as a whole. The dataset was utilized to get the 2023 Cook Partisan voting score for the state of each senator. The 2023 PVI scores were claculated using 2016 and 2020 presidential election results. The Cook PVI scores indicate a state's partisan lean by comparing its average Democratic or Republican performance to the national average, expressed in terms such as D+5 (Democratic-leaning by 5 points) or R+3 (Republican-leaning by 3 points). A score of EVEN signifies a state that votes in line with the national average.
 
 **For floor votes:**
 
@@ -101,7 +101,8 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 The target variable being predicted is a senator's vote during a specific floor vote. This can take 4 values: Yea, Nay, Present or Not Voting. 
 
 ### Features
-The features fed into were: 
+The features fed into the models were:
+
 
 ### Data Wrangling
 The target variable 
@@ -111,7 +112,7 @@ Categorical variables coded
 
 ### Variable Codebook
 Variable, type, description, source
-The Bipartisan Index measures the frequency with which a Member co-sponsors a bill introduced by the opposite party and the frequency with which a Member’s own bills attract co-sponsors from the opposite party. Measured on a scale of
+
 
 ## Research Design
 ### Overview
@@ -176,7 +177,7 @@ This github repository contains all the code and data utilized to generate resul
 - “Congress.gov | Library of Congress.” 2025. Congress.gov. 2025. https://www.congress.gov/.
 - “Bipartisan Index” 2023. Thelugarcenter.org. 2023. https://www.thelugarcenter.org/ourwork-Bipartisan-Index.html.
 - “Voteview | Congress View.” 2025. Voteview.com. 2025. https://voteview.com/congress/senate/-1/text.
-- 
+- “CQ Congress Collection.” 2025. Duke.edu. 2025. https://library-cqpress-com.proxy.lib.duke.edu/congress/.
 - 
 
 ‌
