@@ -16,20 +16,20 @@ This research tests a probabilistic approach to simulating political decision-ma
 This work offers contributions across several fields. In Political Science, it explores the potential of synthetic data for simulating survey studies, offers an alternative approach to modeling politics, and provides a sandbox for simulating social life by examining the quality and realism of LLM-generated data. In Computer Science, it contributes to understanding the predictive capabilities of LLMs and expanding their use in traditional machine learning tasks. In the field of Human-AI Co-evolution, it tests the idea of AI agents replicating human behaviour, helping us understand the potential for AI to interact with and complement human decision-making in real-world scenarios such as politics.
 
 ## Keywords
-- Computational politics: "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
-- Agent: A software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
-- LLM: Large Language Models or LLMs are . The underlying system consists of a series of neural networks.
-- Multiagent (MA) framework: A multiagent system or framework consists of multiple AI agents, often LLM powered (referred to as LLM-MA), working collectively and interacting with each other in either a hierarchical or non-hierarchical manner to collectively perform tasks. ()
-- Memory stream: 
-- Temperature
-- System prompt
+- **Computational politics:** "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
+- **Agent:** A software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
+- **LLM:** Large Language Models or LLMs are a class of foundation models trained on massive datasets to generate human-like text. The underlying transformer is a set of neural networks. (“What Is LLM? - Large Language Models Explained - AWS” 2023)
+- **Multiagent (MA) framework:** A multiagent system or framework consists of multiple AI agents, often LLM powered (referred to as LLM-MA), working collectively and interacting with each other in either a hierarchical or non-hierarchical manner to perform tasks. (Gutowska 2024)
+- **Context window:** The amount of text (in tokens) that a LLM can remember at any one point. (IBM 2024)
+- **Temperature:** A parameter ranging from 0 to 1 affecting the variability and predictability of the generated output. A lower temperature value generates more deterministic output. A higher temperature value generates more creative and random output. ("LLM Settings" 2024)
+- **System prompt:**
 - User prompt
 - Wisdom of the crowd
 - Fine-tuning
 
 ## Literature Review
 
-In the rapidly evolving field of computational political science, December 2024 saw the introduction of the first comprehensive framework designed to integrate Large Language Models (LLMs) into the discipline. Developed by a team of multidisciplinary researchers, this framework, termed Political-LLM, represents a significant step forward in understanding how LLMs can be applied to political science research (Li et al., 2024). According to Political-LLM, applications of LLMs in political science can be divided into two primary categories: simulating behavior dynamics and facilitating text-based discussions.
+In the rapidly evolving field of computational political science, December 2024 saw the introduction of the first comprehensive framework designed to integrate Large Language Models (LLMs) into the discipline. Developed by a team of multidisciplinary researchers, this framework, termed Political-LLM, represents a significant step forward in understanding how LLMs can be applied to political science research (Li et al., 2024). According to Political-LLM, applications of LLMs in political science for simulation can be divided into two primary categories: simulating behavior dynamics and facilitating text-based discussions.
 
 In the first category, LLMs for simulating behavior dynamics, prior works have explored the potential of LLMs in modeling complex interactions and strategic behaviors. One example is the development of the self-evolving LLM-based diplomat, Richelieu (Guan, 2024). Richelieu utilizes a multi-agent framework that incorporates roles such as planner, negotiator, and actor, along with a memory module for effective optimization. The study then employs another multi-agent framework to test Richelieu's performance by simulating the Diplomacy Game, involving seven agents representing different countries. The study concluded that Richelieu outperformed existing models, including Cicero, which was the first Diplomacy-playing LLM to achieve human-level performance (Meta, 2024). 
 
@@ -129,3 +129,10 @@ This github repository contains all the code and data utilized to generate resul
 - https://ai.meta.com/research/cicero/
 - Haq, Ehsan ul, Tristan Braud, Young D Kwon, and Pan Hui. 2019. “A Survey on Computational Politics.” ArXiv.org. 2019. https://arxiv.org/abs/1908.06069.
 - “What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS.” 2024. Amazon Web Services, Inc. 2024. https://aws.amazon.com/what-is/ai-agents/.
+- Gutowska, Anna. 2024. “Multiagent System.” Ibm.com. August 6, 2024. https://www.ibm.com/think/topics/multiagent-system.
+- “What Is LLM? - Large Language Models Explained - AWS.” 2023. Amazon Web Services, Inc. 2023. https://aws.amazon.com/what-is/large-language-model/
+- IBM. 2024. “Context Window.” Ibm.com. November 7, 2024. https://www.ibm.com/think/topics/context-window.
+- “LLM Settings” 2024. Promptingguide.ai. 2024. https://www.promptingguide.ai/introduction/settings.
+- 
+
+‌
