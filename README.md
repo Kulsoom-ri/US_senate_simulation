@@ -59,8 +59,12 @@ Similarly, across various disciplines studies have tested the predictive power o
 Another study assessed LLMs on theory of mind (ToM) tasks i.e. evaluations designed to assess an individual's ability to understand and attribute mental states (like beliefs, desires, and intentions) to others. Eleven LLMs were tested on 40 false-belief tasks, a gold-standard benchmark for evaluating ToM capabilities. While older models failed entirely, GPT-3.5-turbo achieved 20% accuracy, and GPT-4 reached 75%, performing at the level of a six-year-old child. These results suggest that ToM-like reasoning may have emerged as an unintended byproduct of language model training (Kosinski 2024). This has significant implications for forecasting and decision-making, as improved reasoning capabilities could enhance LLMs’ ability to predict human behavior, market trends, and social dynamics. However, the study also underscores limitations- LLMs may still struggle with nuanced, open-ended reasoning, meaning their forecasts could lack depth or misinterpret complex scenarios. Moreover, if these capabilities emerge unintentionally, it raises concerns about unpredictability in decision-making applications. While LLMs show promise in assisting with forecasting, their results must be interpreted with caution.
   
 ### Can LLMs provide explainable predictions, and are they appropriate for causal reasoning?
-(model collapse theory/generative AI paradox/hallucinations/LLMs do not understand what they are generating)
-  
+Political-LLM notes that explanability of LLM outputs is essential as it ensures that results are interpretable and transparent, "fostering trust in politically sensitive applications". LLMs potentially offer novel tools for causal analysis by identifying patterns, modeling causal relationships, and generating counterfactual scenarios to explore "what-if" conditions. Explainability tools, including attention mechanisms, hypertuning parameters and prompt engineering, could enhance the transparency of LLM-driven causal analysis.
+
+Despite these strengths, LLMs face limitations that challenge their reliability for causal reasoning. A study from 2023 presents the 'Generative AI Paradox' which states that "generative models seem to acquire generation abilities more effectively than understanding, in contrast to human intelligence where generation is usually harder." (West et al. 2023) The study tests whether language models (such as GPT4) truly understand their own generated content by asking them multiple-choice questions about it. The LLMs perform worse than humans in discerning their own generations as well as in answering questions about them (although only slightly worse on the latter with an average accuracy of almost 87%).
+
+Model collapse, a degenerative process where models gradually lose touch with the true underlying data distribution when trained on AI-generated content, poses another challenge for predictive multi-agent frameworks (Shumailov et al. 2024). In such systems, where one model’s output serves as another’s input, errors and biases can compound over time, leading to degraded performance. This issue arises because generative models, without regular exposure to diverse, high-quality human-generated data, increasingly reinforce their own distortions rather than accurately reflecting real-world distributions. Addressing model collapse andrequires a combination of fine-tuning, data filtering, and reinforcement learning techniques to maintain model integrity and prevent systemic degradation.
+
 ### How does political decision-making happen in the actual US Senate?
   
 
@@ -156,6 +160,12 @@ This github repository contains all the code and data utilized to generate resul
 - Luo, Xiaoliang, Akilles Rechardt, Guangzhi Sun, Kevin K Nejad, Felipe Yáñez, Bati Yilmaz, Kangjoo Lee, et al. 2024. “Large Language Models Surpass Human Experts in Predicting Neuroscience Results.” Nature Human Behaviour, November. https://doi.org/10.1038/s41562-024-02046-9.
 - Wolff, Malcolm L, Shenghao Yang, Kari Torkkola, and Michael W Mahoney. 2025. “Using Pre-Trained LLMs for Multivariate Time Series Forecasting.” ArXiv.org. 2025. https://arxiv.org/abs/2501.06386.
 - Kosinski, Michal. 2024. “Evaluating Large Language Models in Theory of Mind Tasks.” Proceedings of the National Academy of Sciences 121 (45). https://doi.org/10.1073/pnas.2405460121.
+- West, Peter, Ximing Lu, Nouha Dziri, Faeze Brahman, Linjie Li, Jena D Hwang, Liwei Jiang, et al. 2023. “The Generative AI Paradox: ‘What It Can Create, It May Not Understand.’” ArXiv.org. 2023. https://arxiv.org/abs/2311.00059.
+- Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631 (8022): 755–59. https://doi.org/10.1038/s41586-024-07566-y.
+
+‌
+
+‌
 
 ‌
 
