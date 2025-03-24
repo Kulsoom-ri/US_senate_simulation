@@ -101,19 +101,38 @@ A total of 45 floor votes were selected for simulation, including votes on motio
 The target variable being predicted is a senator's vote during a specific floor vote. This can take 4 values: Yea, Nay, Present or Not Voting. 
 
 ### Features
-The features fed into the models were:
+The features fed into the LLM simulation were:
 1. #### For Senators:
-   -
-   - 
+   - name – Senator's name
+   - age – Senator's age
+   - religion – Senator's religious affiliation (or Unaffliated/Not Mentioned)
+   - education – Senator's highest level of education
+   - party – Political party affiliation
+   - state – State represented by the senator
+   - state_pvi – Cook Partisan Voting Index for the senator's state
+   - years_house – Total years served in the U.S. House of Representatives
+   - years_senate – Total years served in the U.S. Senate
+   - last_election – Percentage of vote secured in senator's last election (or appointed)
+   - party_loyalty – Measure of how often the senator votes in line with their party
+   - party_unity – Measure of the senator's alignment with their party on key votes
+   - presidential_support – Measure of how often the senator votes in support of the president’s agenda
+   - voting_participation – Rate of participation in votes
+   - dw_nominate – Ideological score (-1 to +1, liberal to conservative) based on roll call votes
+   - bipartisan_index – Measure of how frequently the senator works with the opposing party
+   - backstory – Senator's biographical background
+
 2. #### For Bills:
-   -
-   -
-  
+   - vote_date – Date of the floor vote
+   - type_vote – Type of vote (e.g., Passage, Cloture)
+   - measure_summary – Summary of the bill under consideration
+   - sponsor – Name of the senator who introduced the bill
+   - introduced_party – Political party affiliation of the sponsor
+   - num_cosponsors – Number of senators who cosponsored the bill
+   - previous_action – Summary of prior legislative actions related to the bil
 
 ### Data Wrangling
-Target Codified as 1, 0; filtered not voting and present
-Categorical variables coded
 **Missing variables:** The bipartisan index for the senate majority and minority leaders was missing. Nebraska and Maine had different PVI scores for their different electoral seats (the average was taken). Any missing biographical and electoral data in the CQ Press Congress Collection was manually filled by verifying through news reports.
+For 
 
 ### Variable Codebook
 #### senators_data
@@ -228,7 +247,6 @@ This github repository contains all the code and data utilized to generate resul
 - “CQ Congress Collection.” 2025. Duke.edu. 2025. https://library-cqpress-com.proxy.lib.duke.edu/congress/.
 - “U.S. Senate: Roll Call Votes 118th Congress” 2024. Senate.gov. February 8, 2024. https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm.
 
-‌
 
 ‌
 ‌
