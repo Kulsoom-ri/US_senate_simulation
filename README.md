@@ -17,15 +17,13 @@ This work offers contributions across several fields. In Political Science, it e
 
 ## Keywords
 - **Computational politics:** "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
-- **Agent:** A software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
+- **Agent:** An agent is software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
 - **LLM:** Large Language Models or LLMs are a class of foundation models trained on massive datasets to generate human-like text. The underlying transformer is a set of neural networks. (“What Is LLM? - Large Language Models Explained - AWS” 2023)
 - **Multiagent (MA) framework:** A multiagent system or framework consists of multiple AI agents, often LLM powered (referred to as LLM-MA), working collectively and interacting with each other in either a hierarchical or non-hierarchical manner to perform tasks. (Gutowska 2024)
-- **Context window:** The amount of text (in tokens) that a LLM can remember at any one point. (IBM 2024)
-- **Temperature:** A parameter ranging from 0 to 1 affecting the variability and predictability of the generated output. A lower temperature value generates more deterministic output. A higher temperature value generates more creative and random output. ("LLM Settings" 2024)
-- **System prompt:**
-- User prompt
-- Wisdom of the crowd
-- Fine-tuning
+- **Context window:** The context window or length is the amount of text (in tokens) that a LLM can remember at any one point. (IBM 2024)
+- **Temperature:** Temperature is a parameter ranging from 0 to 1 affecting the variability and predictability of the generated output. A lower temperature value generates more deterministic output. A higher temperature value generates more creative and random output. ("LLM Settings" 2024)
+- **System prompt:** This is the initial set of instructions that define the behaviour, role, goals and personality of a LLM.
+- **Fine-tuning:** This involves additional training on examples specific to a task that refines the predictive capabilities of a model for that task. (Google for Developers 2025)
 
 ## Literature Review
 
@@ -133,6 +131,9 @@ This github repository contains all the code and data utilized to generate resul
 - “What Is LLM? - Large Language Models Explained - AWS.” 2023. Amazon Web Services, Inc. 2023. https://aws.amazon.com/what-is/large-language-model/
 - IBM. 2024. “Context Window.” Ibm.com. November 7, 2024. https://www.ibm.com/think/topics/context-window.
 - “LLM Settings” 2024. Promptingguide.ai. 2024. https://www.promptingguide.ai/introduction/settings.
+- Google for Developers. 2025. “LLMs: Fine-Tuning, Distillation, and Prompt Engineering.” developers.google.com. 2025. https://developers.google.com/machine-learning/crash-course/llm/tuning.
 - 
+
+‌
 
 ‌
