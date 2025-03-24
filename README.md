@@ -93,20 +93,25 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 
 **For floor votes:**
 
-45 floor votes were selected to be simulated (votes included "On Motion to Discharge Committee", "On Overriding the Veto", "On Passage of the Bill", "On Cloture on the Motion to Proceed" etc.). These were randomly selected from a list containing CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), key legislations identified on Wikipedia and the most-viewed bills on Congress.gov. Bills originating in both the house and senate as well as joint resolutions were considered, although votes were limited to those for which there was at least one roll call vote in the senate.
-- Congress.gov (https://www.congress.gov/): Utilized for obtaining contextual information about a bill such as title, summary, number of co-sponsors, party and name of introducing senator, policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
-- Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): Utilized for obtaining detailed records of how each senator voted during a particular floor vote (yea, nay, present or not voting).
+A total of 45 floor votes were selected for simulation, including votes on motions such as "On Motion to Discharge Committee," "On Overriding the Veto," "On Passage of the Bill," and "On Cloture on the Motion to Proceed." These votes were randomly chosen from a curated list comprising CQ Key Votes, which are identified by CQ's editorial staff as the most significant floor votes in determining legislative outcomes, as well as key pieces of legislation highlighted on Wikipedia and the most-viewed bills on Congress.gov. The selection included bills originating in both the House and Senate, as well as joint resolutions, but was limited to votes that involved at least one roll call vote in the Senate.
+- *Congress.gov (“Congress.gov | Library of Congress” 2025):* This webstie was utilized for obtaining contextual information about each bill, including its title, summary, number of co-sponsors, the party and name of the introducing senator, and its policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
+- *Senate.gov (“U.S. Senate: Roll Call Votes 118th Congress” 2024):* This website was utilized to obtain detailed records of senators' voting behavior during floor votes, including whether they voted "yea," "nay," were present, or did not vote.
 
 ### Target
 The target variable being predicted is a senator's vote during a specific floor vote. This can take 4 values: Yea, Nay, Present or Not Voting. 
 
 ### Features
 The features fed into the models were:
-
+1. For Senators:
+   -
+   - 
+2. For Bills:
+   -
+   -
+  
 
 ### Data Wrangling
-The target variable 
-Target Codified as 1, 0 for basic EDA, filtered not voting.
+Target Codified as 1, 0; filtered not voting and present
 Categorical variables coded
 **Missing variables:** The bipartisan index for the senate majority and minority leaders was missing. Nebraska and Maine had different PVI scores for their different electoral seats (the average was taken). Any missing biographical and electoral data in the CQ Press Congress Collection was manually filled by verifying through news reports.
 
@@ -178,7 +183,7 @@ This github repository contains all the code and data utilized to generate resul
 - “Bipartisan Index” 2023. Thelugarcenter.org. 2023. https://www.thelugarcenter.org/ourwork-Bipartisan-Index.html.
 - “Voteview | Congress View.” 2025. Voteview.com. 2025. https://voteview.com/congress/senate/-1/text.
 - “CQ Congress Collection.” 2025. Duke.edu. 2025. https://library-cqpress-com.proxy.lib.duke.edu/congress/.
-- 
+- “U.S. Senate: Roll Call Votes 118th Congress” 2024. Senate.gov. February 8, 2024. https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm.
 
 ‌
 
