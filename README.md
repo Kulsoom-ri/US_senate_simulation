@@ -132,11 +132,9 @@ The features fed into the LLM simulation were:
 
 ### Data Wrangling
 **Handling Missing variables:**
-The Bipartisan Index was unavailable for the Senate Majority and Minority Leaders. These values were left missing rather than imputed.
-
-Nebraska and Maine report different Cook Partisan Voting Index (PVI) scores for their respective congressional districts. To ensure consistency, the average PVI for the state was taken.
-
-Missing biographical and electoral data from the CQ Press Congress Collection were manually verified and filled using news reports.
+- The Bipartisan Index was unavailable for the Senate Majority and Minority Leaders. These values were left missing rather than imputed.
+- Nebraska and Maine report different Cook Partisan Voting Index (PVI) scores for their respective congressional districts. To ensure consistency, the average PVI for the state was taken.
+- Missing biographical and electoral data from the CQ Press Congress Collection were manually verified and filled using news reports.
 
 **Feature Engineering:**
 To avoid multicollinearity in classification models and simplify input for LLM, following ratios were constructed: 
@@ -145,15 +143,11 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 - Key Vote Ratios: The same loyalty and defection ratios were calculated specifically for key votes to capture differences in party alignment on high-profile legislation. 
 
 **Preprocessing for Classification Models:**
-The target variable (bill outcome) was encoded as 1 for passed and 0 for rejected. All other vote types were excluded.
-
-Session extraction: The legislative session (1 or 2) was determined based on the year recorded in the vote date.
-
-Religion categorization: Individual religious affiliations were grouped into broader categories for analytical consistency.
-
-Label Encoding was applied to: Party affiliation, education level, state partisan direction and bill sponsor's party.
-
-One-Hot Encoding was applied to: Religion, race and topic of the bill.
+- The target variable (bill outcome) was encoded as 1 for passed and 0 for rejected. All other vote types were excluded.
+- Session extraction: The legislative session (1 or 2) was determined based on the year recorded in the vote date.
+- Religion categorization: Individual religious affiliations were grouped into broader categories for analytical consistency.
+- Label Encoding was applied to: Party affiliation, education level, state partisan direction and bill sponsor's party.
+- One-Hot Encoding was applied to: Religion, race and topic of the bill.
 
 ### Variable Codebook
 #### senators_data
