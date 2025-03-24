@@ -65,8 +65,7 @@ Despite these strengths, LLMs face limitations that challenge their reliability 
 
 Model collapse, a degenerative process where models gradually lose touch with the true underlying data distribution when trained on AI-generated content, poses another challenge for predictive multi-agent frameworks (Shumailov et al. 2024). In such systems, where one model’s output serves as another’s input, errors and biases can compound over time, leading to degraded performance. This issue arises because generative models, without regular exposure to diverse, high-quality human-generated data, increasingly reinforce their own distortions rather than accurately reflecting real-world distributions. Addressing model collapse requires a combination of fine-tuning, data filtering, and reinforcement learning techniques to maintain model integrity and prevent systemic degradation.
 
-Hallucina
-
+Finally, the issue of hallucinations in LLMs poses a significant limitation for any predictive task. One study positions hallucinations as a structural issue by proving rigorously that: (1) no training dataset can achieve 100% completeness, thus guaranteeing the model will encounter unknown or contradictory information; (2) the "needle in a haystack" problem, or accurate information retrieval, is mathematically undecidable, meaning LLMs cannot deterministically locate correct facts within their data; (3) intent classification is also undecidable, preventing accurate interpretation of user prompts; (4) the LLM halting problem is undecidable, rendering the length and content of generated outputs unpredictable; and (5) even with fact-checking, the inherent limitations of LLMs prevent complete elimination of hallucinations. (Banerjee, Agarwal, and Singla 2024)
 
 ### How does political decision-making happen in the actual US Senate?
   
@@ -165,7 +164,7 @@ This github repository contains all the code and data utilized to generate resul
 - Kosinski, Michal. 2024. “Evaluating Large Language Models in Theory of Mind Tasks.” Proceedings of the National Academy of Sciences 121 (45). https://doi.org/10.1073/pnas.2405460121.
 - West, Peter, Ximing Lu, Nouha Dziri, Faeze Brahman, Linjie Li, Jena D Hwang, Liwei Jiang, et al. 2023. “The Generative AI Paradox: ‘What It Can Create, It May Not Understand.’” ArXiv.org. 2023. https://arxiv.org/abs/2311.00059.
 - Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631 (8022): 755–59. https://doi.org/10.1038/s41586-024-07566-y.
-
+- Banerjee, Sourav, Ayushi Agarwal, and Saloni Singla. 2024. “LLMs Will Always Hallucinate, and We Need to Live with This.” ArXiv.org. 2024. https://arxiv.org/abs/2409.05746.
 ‌
 
 ‌
