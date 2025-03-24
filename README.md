@@ -155,22 +155,23 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 |---------------------|-----------|-------------|---------|
 | first_name         | String    | Senator's first name | Congress.gov |
 | last_name          | String    | Senator's last name | Congress.gov |
-| TotalAll           | Integer   | Total votes cast | Senate.gov |
-| AllVoteW           | Integer   | Votes with party | Senate.gov |
-| AllVoteO           | Integer   | Votes against party | Senate.gov |
-| TotalKey           | Integer   | Total key votes cast | Senate.gov |
-| KeyVoteW           | Integer   | Key votes with party | Senate.gov |
-| KeyVoteO           | Integer   | Key votes against party | Senate.gov |
-| date_of_birth      | Date      | Date of birth | CQ Press Congress Collection |
-| education          | String    | Highest education level attained | CQ Press Congress Collection |
+| TotalAll           | Integer   | Total votes cast | CQ Congress Collection |
+| AllVoteW           | Integer   | Votes with party | CQ Congress Collection |
+| AllVoteO           | Integer   | Votes against party | CQ Congress Collection |
+| TotalKey           | Integer   | Total key votes cast | CQ Congress Collection |
+| KeyVoteW           | Integer   | Key votes with party | CQ Congress Collection |
+| KeyVoteO           | Integer   | Key votes against party | CQ Congress Collection |
+| date_of_birth      | Date      | Date of birth | CQ Congress Collection |
+| education          | String    | Highest degree attained | CQ Congress Collection |
+| education_category | String    | Highest level of education attained (highschool, associates, undergraduate or postgraduate) | CQ Congress Collection |
 | state              | String    | State represented | Congress.gov |
 | state_pvi         | Float     | Cook Partisan Voting Index for senator's state | Cook Political Report |
 | party             | String    | Political party affiliation | Congress.gov |
 | start             | Date      | Start date of current term | Congress.gov |
 | end               | Date      | End date of current term | Congress.gov |
-| served_house      | String    | Years served in the U.S. House (if applicable) | Congress.gov |
+| served_house      | String    | Range of years served in the U.S. House (if applicable) | Congress.gov |
 | years_house       | Integer   | Total years served in the House | Congress.gov |
-| served_senate     | String    | Years served in the Senate | Congress.gov |
+| served_senate     | String    | Range of years served in the Senate | Congress.gov |
 | years_senate      | Integer   | Total years served in the Senate | Congress.gov |
 | dw_nominate       | Float     | Ideological score (-1 to +1, liberal to conservative) | Voteview |
 | bipartisan_index  | Float     | Bipartisan Index score | The Lugar Center |
@@ -185,7 +186,7 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 | required_majority | Integer   | Number of votes required for passage | Senate.gov |
 | type_vote        | String    | Type of vote (e.g., Passage, Cloture) | Senate.gov |
 | measure_title    | String    | Official title of the measure | Congress.gov |
-| measure_summary  | String    | Summary of the measure | Congress.gov |
+| measure_summary  | String    | Summary of the measure authored by CRS | Congress.gov |
 | bill_text        | String    | Full text of the bill | Congress.gov |
 | yea             | Integer   | Number of "yea" votes | Senate.gov |
 | nay             | Integer   | Number of "nay" votes | Senate.gov |
@@ -195,6 +196,14 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 | num_cosponsors  | Integer   | Number of cosponsors | Congress.gov |
 | topic           | String    | Primary policy area of the bill | Congress.gov |
 
+#### For each vote
+| Variable Name       | Data Type  | Description | Source |
+|---------------------|-----------|-------------|---------|
+| first_name         | String    | Senator's first name | Senate.gov |
+| last_name          | String    | Senator's last name | Senate.gov |
+| party             | String    | Political party affiliation | Senate.gov |
+| state              | String    | State represented | Senate.gov |
+| vote              | String    | Vote casted (yea, nay, present or not voting)  | Senate.gov |
 
 ## Research Design
 ### Overview
