@@ -132,9 +132,9 @@ The features fed into the LLM simulation were:
 
 ### Data Wrangling
 **Handling Missing variables:**
-- The Bipartisan Index was unavailable for the Senate Majority and Minority Leaders. These values were left missing rather than imputed.
+- The Bipartisan Index was unavailable for the then Senate Majority (Charles E. Schumer) and Minority Leaders (Mitch McConnell). These values were left missing rather than imputed.
 - Nebraska and Maine report different Cook Partisan Voting Index (PVI) scores for their respective congressional districts. To ensure consistency, the average PVI for the state was taken.
-- Missing biographical and electoral data from the CQ Press Congress Collection were manually verified and filled using news reports.
+- Missing biographical and electoral data from the CQ Press Congress Collection (such as for Laphonza Butler) were manually verified and filled using news reports.
 - Missing bill summaries (specifically for S.J.Res.51 and H.R.10545) were generated using an LLM based on bill text.
 
 **Feature Engineering:**
@@ -216,7 +216,23 @@ The simulation reconstructs 45 roll call votes that took place in the 118th U.S.
 - **Performance Evaluation:** Votes cast before and after the debate are compared with actual voting records. Any LLM-generated response that deviates from "yea" or "nay" votes is categorized as "maybe." Accuracy is assessed by measuring how closely the simulated votes align with actual voting records. The final outcome of the simulation (passed/rejected) is calculated based on Senate voting thresholds (1/2, 2/3, or 3/5 majority) and compared to the actual legislative result.
 
 ### Selection of simulation context
-The 118th U.S. Senate was chosen as the simulation environment due to its recentness, comprehensive data availability, and diverse political landscape. The 118th Congress is the most racially and ethnically diverse in U.S. history, making it an ideal context for evaluating contemporary legislative dynamics.
+The 118th U.S. Senate was chosen as the simulation environment due to its recentness, comprehensive data availability, and diverse political landscape. According to a 2023 analysis by the Pew Research Center, the "118th Congress is the most racially and ethnically diverse in U.S. history" (Geiger 2023), making it an ideal context for evaluating contemporary legislative dynamics.
+
+At the start of the 118th Congress, the Senate consisted of: 52 Democrats (including the Vice President), 4 Independents and 49 Republicans. The study accounts for six membership changes that occurred during the session, ensuring accuracy in the composition of the simulated Senate.
+
+The first session took place between January 3, 2023 – January 3, 2024 and the second session took place between January 3, 2024 – January 3, 2025. According to Congress.gov there were 352 Roll call votes in the first session and 339 Roll call votes in the second session. Democrats remained the majority party throughout when caucusing with Independents.
+
+| Date | Democrats | Independents | Republicans | Total Seats | Vacant |
+|-------|-----------|--------------|------------|-------------|--------|
+| End of 117th Congress | 48 | 2 | 50 | 100 | 0 |
+| January 3, 2023 | 48 | 3 | 49 | 100 | 0 |
+| January 8, 2023 | 48 | 3 | 48 | 99 | 1 |
+| January 23, 2023 | 49 | 3 | 48 | 100 | 0 |
+| September 29, 2023 | 47 | 3 | 49 | 99 | 1 |
+| October 3, 2023 | 48 | 3 | 49 | 100 | 0 |
+| May 31, 2024 | 47 | 4 | 49 | 100 | 0 |
+| August 20, 2024 | 46 | 4 | 49 | 99 | 1 |
+| September 9, 2024 | 47 | 4 | 49 | 100 | 0 |
 
 ### Selection of LLM model and memory-handling
 ### Selection of multi-agent framework
@@ -278,16 +294,5 @@ This github repository contains all the code and data utilized to generate resul
 - “Voteview | Congress View.” 2025. Voteview.com. 2025. https://voteview.com/congress/senate/-1/text.
 - “CQ Congress Collection.” 2025. Duke.edu. 2025. https://library-cqpress-com.proxy.lib.duke.edu/congress/.
 - “U.S. Senate: Roll Call Votes 118th Congress” 2024. Senate.gov. February 8, 2024. https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm.
-
-
-‌
-‌
-
-‌
-
-‌
-
-‌
-
-‌
-‌
+- Geiger, Abigail. 2023. “The Changing Face of Congress in 8 Charts.” Pew Research Center. February 7, 2023. https://www.pewresearch.org/short-reads/2023/02/07/the-changing-face-of-congress/.
+- 
