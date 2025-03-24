@@ -116,7 +116,50 @@ Categorical variables coded
 **Missing variables:** The bipartisan index for the senate majority and minority leaders was missing. Nebraska and Maine had different PVI scores for their different electoral seats (the average was taken). Any missing biographical and electoral data in the CQ Press Congress Collection was manually filled by verifying through news reports.
 
 ### Variable Codebook
-Variable, type, description, source
+#### senators_data
+| Variable Name       | Data Type  | Description | Source |
+|---------------------|-----------|-------------|---------|
+| first_name         | String    | Senator's first name | Congress.gov |
+| last_name          | String    | Senator's last name | Congress.gov |
+| TotalAll           | Integer   | Total votes cast | Senate.gov |
+| AllVoteW           | Integer   | Votes with party | Senate.gov |
+| AllVoteO           | Integer   | Votes against party | Senate.gov |
+| TotalKey           | Integer   | Total key votes cast | Senate.gov |
+| KeyVoteW           | Integer   | Key votes with party | Senate.gov |
+| KeyVoteO           | Integer   | Key votes against party | Senate.gov |
+| date_of_birth      | Date      | Date of birth | CQ Press Congress Collection |
+| education          | String    | Highest education level attained | CQ Press Congress Collection |
+| state              | String    | State represented | Congress.gov |
+| state_pvi         | Float     | Cook Partisan Voting Index for senator's state | Cook Political Report |
+| party             | String    | Political party affiliation | Congress.gov |
+| start             | Date      | Start date of current term | Congress.gov |
+| end               | Date      | End date of current term | Congress.gov |
+| served_house      | String    | Years served in the U.S. House (if applicable) | Congress.gov |
+| years_house       | Integer   | Total years served in the House | Congress.gov |
+| served_senate     | String    | Years served in the Senate | Congress.gov |
+| years_senate      | Integer   | Total years served in the Senate | Congress.gov |
+| dw_nominate       | Float     | Ideological score (-1 to +1, liberal to conservative) | Voteview |
+| bipartisan_index  | Float     | Bipartisan Index score | The Lugar Center |
+
+#### bills_data
+| Variable Name       | Data Type  | Description | Source |
+|---------------------|-----------|-------------|---------|
+| vote_date         | Date      | Date of the vote | Senate.gov |
+| measure_number    | String    | Bill or resolution number | Congress.gov |
+| vote_result      | String    | Outcome of the vote (e.g., passed, rejected) | Senate.gov |
+| previous_action   | String    | Summary of prior legislative actions | Congress.gov |
+| required_majority | Integer   | Number of votes required for passage | Senate.gov |
+| type_vote        | String    | Type of vote (e.g., Passage, Cloture) | Senate.gov |
+| measure_title    | String    | Official title of the measure | Congress.gov |
+| measure_summary  | String    | Summary of the measure | Congress.gov |
+| bill_text        | String    | Full text of the bill | Congress.gov |
+| yea             | Integer   | Number of "yea" votes | Senate.gov |
+| nay             | Integer   | Number of "nay" votes | Senate.gov |
+| not_voting      | Integer   | Number of senators not voting | Senate.gov |
+| sponsor         | String    | Name of the bill's primary sponsor | Congress.gov |
+| introduced_party | String    | Party affiliation of the sponsor | Congress.gov |
+| num_cosponsors  | Integer   | Number of cosponsors | Congress.gov |
+| topic           | String    | Primary policy area of the bill | Congress.gov |
 
 
 ## Research Design
