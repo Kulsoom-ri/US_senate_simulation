@@ -38,18 +38,14 @@ The second category of LLMs for text-based discussions explores the use of LLMs 
 This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework. It significantly expands on the work of Baker et al. (2024) by simulating an entire US senate (instead of just 6 senators) and focusing on vote outcomes (instead of just discussion).
 
 ## Background Knowledge
-- **Mechanisms of Generative AI and LLMs:**
+**Mechanisms of Generative AI and LLMs:**
 The training of Large Language Models (LLMs) follows a multi-step process:
 
-(1) Data Collection - The model is trained on massive text datasets sourced from books, articles, and websites to learn language patterns and contextual relationships.
-
-(2) Tokenization - The text is broken down into tokens, which are numerical representations that the model processes.
-
-(3) Pretraining - Using a neural network, typically a transformer architecture, the model undergoes unsupervised learning by predicting missing words or the next token in a sequence, adjusting billions of parameters to minimize prediction errors.
-
-(4) Fine-tuning - Some models undergo additional training on specialized datasets with supervised learning to improve performance on specific tasks.
-
-(5) Alignment - Reinforcement learning from human feedback (RLHF) is used to refine responses, ensuring relevance, coherence, and safety.
+1. Data Collection - The model is trained on massive text datasets sourced from books, articles, and websites to learn language patterns and contextual relationships.
+2. Tokenization - The text is broken down into tokens, which are numerical representations that the model processes.
+3. Pretraining - Using a neural network, typically a transformer architecture, the model undergoes unsupervised learning by predicting missing words or the next token in a sequence, adjusting billions of parameters to minimize prediction errors.
+4. Fine-tuning - Some models undergo additional training on specialized datasets with supervised learning to improve performance on specific tasks.
+5. Alignment - Reinforcement learning from human feedback (RLHF) is used to refine responses, ensuring relevance, coherence, and safety.
 
 Once trained, LLMs make predictions by processing an input prompt, converting it into token embeddings, and passing these embeddings through multiple transformer layers. Each layer refines contextual understanding using mechanisms like self-attention, where the model assigns different weights to words based on their relevance to the context. The final layer generates probabilities for the next token, selecting the most likely sequence based on learned patterns, which is then decoded back into human-readable text. (Liu et al. 2024)
 
