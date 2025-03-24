@@ -106,7 +106,7 @@ This is what an LLM-powered senator looks like:
 ## A Sample Simulation
 ![Simulation GIF](https://drive.google.com/file/d/1POynwNtnqPtFz3r4F1MvRnP7tvvrsoFv/view?usp=sharing)
 ![Simulation Screenshot 1](https://github.com/user-attachments/assets/686df0f5-551a-45cb-aa1e-8f44af45364f)
-!Simulation Screenshot 2](https://github.com/user-attachments/assets/9b55a353-dcd1-483b-9d46-c33366d422aa)
+![Simulation Screenshot 2](https://github.com/user-attachments/assets/9b55a353-dcd1-483b-9d46-c33366d422aa)
 ![Simulation Screenshot 3](https://github.com/user-attachments/assets/b527b306-9dbd-42f1-9d5f-420e7b715401)
 
 ## Results
