@@ -85,9 +85,9 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 
 ### Data Sources
 **For senators:**
-- Congress.gov (https://www.congress.gov/): The official website for US federal legislative information. Utilized for basic biogrgaphical information (such as name, state, party, time served in house, time served in senate). 
-- The Lugar Center (https://www.thelugarcenter.org/ourwork-Bipartisan-Index.html): Non-profit founded by former United States Senator Richard G. Lugar. Utilized for bipartisan index, "an objective measure of how well members of opposite parties work with one another using bill sponsorship and co-sponsorship data".
-- Voteview (https://voteview.com/congress/senate/-1/text): Mainted by UCLA's Department of Political Science and Social Science Computing. Utilized for obtaining ideological position scores (calculated using the DW-NOMINATE).
+- *Congress.gov (“Congress.gov | Library of Congress” 2025):* This website serves as the official source for U.S. federal legislative information and was utilized to obtain basic biographical details on senators, including name, state, party affiliation, time served in the House, and time served in the Senate.
+- *The Lugar Center (“Bipartisan Index” 2023):* The Lugar Center is a non-profit founded by former United States Senator Richard G. Lugar. It was used to obtain the Bipartisan Index, "an objective measure of how well members of opposite parties work with one another using bill sponsorship and co-sponsorship data." The index assigns scores based on how a member’s bipartisan bill sponsorship and co-sponsorship compare to a 20-year historical baseline, with positive scores indicating above-average bipartisanship and negative scores indicating below-average performance. Scores above 1.0 are considered outstanding, while those below -1.0 are very poor. Raw data is sourced from GovTrack, and certain exclusions apply: members serving less than 10 months, minority/majority leaders, and those sponsoring fewer than three qualifying bills (since the 113th Congress) are not scored to ensure fair comparisons.
+- *Voteview (“Voteview | Congress View” 2025):* Voteview, maintained by UCLA's Department of Political Science and Social Science Computing, provides ideological position scores for legislators based on roll call voting records. These scores are computed using the DW-NOMINATE (Dynamic Weighted NOMINAl Three-step Estimation) method, which maps legislators onto a spatial scale where ideological similarity is reflected by proximity. The primary dimension, consistent throughout American history, represents a left-right (liberal-conservative) spectrum, while a second dimension captures intra-party differences on issues like civil rights and economic policy. Scores typically range from -1 (most liberal) to +1 (most conservative), allowing for quantitative analysis of congressional polarization and voting behavior.
 - CQ Press Congress Collection (https://library-cqpress-com.proxy.lib.duke.edu/congress/): A research database containing biographical, political, and electoral data about every member of Congress since the 79th Congress (1945). Utilized for obtaining biographical data such as date of birth, education level, religion, race, sex; electoral data such as percentage of vote received in last election; political data such as frequency of voting, alignment with party positions, number of times senator voted with/against party, presidential support; as well as overall biography. Narrative biographies in the database are written by CQ editorial staff.
 - The Cook Political Report (https://www.cookpolitical.com/cook-pvi): Introduced in 1997, the Cook Partisan Voting Index (Cook PVI) measures how each state and district performs at the presidential level compared to the nation as a whole. The dataset was utilized to get the 2023 Cook Partisan voting score for the state of each senator. The 2023 PVI scores were claculated using 2016 and 2020 presidential election results. 
 
@@ -172,6 +172,13 @@ This github repository contains all the code and data utilized to generate resul
 - Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631 (8022): 755–59. https://doi.org/10.1038/s41586-024-07566-y.
 - Banerjee, Sourav, Ayushi Agarwal, and Saloni Singla. 2024. “LLMs Will Always Hallucinate, and We Need to Live with This.” ArXiv.org. 2024. https://arxiv.org/abs/2409.05746.
 - Kelly, Ryan. 2023. “2022 Vote Studies: Division Hit New High in Senate, Fell in House - Roll Call.” Roll Call. March 24, 2023. https://rollcall.com/2023/03/24/2022-vote-studies-division-hit-new-high-in-senate-fell-in-house/?utm_source=chatgpt.com.
+- “Congress.gov | Library of Congress.” 2025. Congress.gov. 2025. https://www.congress.gov/.
+- “Bipartisan Index” 2023. Thelugarcenter.org. 2023. https://www.thelugarcenter.org/ourwork-Bipartisan-Index.html.
+- “Voteview | Congress View.” 2025. Voteview.com. 2025. https://voteview.com/congress/senate/-1/text.
+- 
+- 
+
+‌
 
 ‌
 ‌
