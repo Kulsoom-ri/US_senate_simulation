@@ -72,7 +72,7 @@ Despite the challenges of applying LLMs to forecasting tasks, rapid advancements
 
 The U.S. Senate consists of 100 members, with two senators representing each state. Most senators are elected through statewide popular votes, but Maine and Nebraska use ranked-choice voting for their elections. In some cases, senators can be appointed by a state's governor if a seat becomes vacant. Legislative votes in the Senate can occur through roll call (where each senator's vote is recorded individually), unanimous consent (where legislation passes without objection), or voice vote (where senators respond collectively without individual records). The legislative process follows a structured path: a bill is introduced, undergoes committee review, then moves to the floor for debate in either the House or Senate. If passed, it must be approved by both chambers before reaching the president, who can either sign it into law or veto it, with Congress holding the power to override a veto with a two-thirds majority in both houses. 
 
-:**Summary: Introduced → Committee Review → Floor Debate (House or Senate) → Passed by Both Chambers → President's Signature (becomes law) or Vetoed (and potentially overridden)**:
+<p align="center">**Summary: Introduced → Committee Review → Floor Debate (House or Senate) → Passed by Both Chambers → President's Signature (becomes law) or Vetoed (and potentially overridden)**</p>
 
 However, decision-making in the Senate is not purely procedural- it is shaped by party influence, bipartisan negotiations, lobbying from interest groups, backroom deals, and constituency pressure. Party-line voting in the U.S. Senate has become increasingly prevalent in recent years. 
 
