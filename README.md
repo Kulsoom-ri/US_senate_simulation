@@ -102,10 +102,10 @@ The target variable being predicted is a senator's vote during a specific floor 
 
 ### Features
 The features fed into the models were:
-1. For Senators:
+1. #### For Senators:
    -
    - 
-2. For Bills:
+2. #### For Bills:
    -
    -
   
