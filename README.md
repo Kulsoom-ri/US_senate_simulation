@@ -37,10 +37,16 @@ The second category of LLMs for text-based discussions explores the use of LLMs 
 
 This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework. It significantly expands on the work of Baker et al. (2024) by simulating an entire US senate (instead of just 6 senators) and focusing on vote outcomes (instead of just discussion).
 
-## Context
-- How does generative AI make predictions? (review on studies using LLMs for forecasting/decision-making)
+## Background Knowledge
+- **Mechanisms of Generative AI and LLMs:**
+The training of Large Language Models (LLMs) follows a multi-step process: (1) Data Collection - The model is trained on massive text datasets sourced from books, articles, and websites to learn language patterns and contextual relationships. (2) Tokenization - The text is broken down into tokens, which are numerical representations that the model processes. (3) Pretraining - Using a neural network, typically a transformer architecture, the model undergoes unsupervised learning by predicting missing words or the next token in a sequence, adjusting billions of parameters to minimize prediction errors. (4) Fine-tuning - Some models undergo additional training on specialized datasets with supervised learning to improve performance on specific tasks. (5) Alignment - Reinforcement learning from human feedback (RLHF) is used to refine responses, ensuring relevance, coherence, and safety. Once trained, LLMs make predictions by processing an input prompt, converting it into token embeddings, and passing these embeddings through multiple transformer layers. Each layer refines contextual understanding using mechanisms like self-attention, where the model assigns different weights to words based on their relevance to the context. The final layer generates probabilities for the next token, selecting the most likely sequence based on learned patterns, which is then decoded back into human-readable text. (Liu et al. 2024)
+
+- **LLMs for forecasting applications:**
+Different forecasting methodoligies
+
   
-- Is it approporiate to use LLMs for causal reasoning? (model collapse theory/generative AI paradox)
+  
+- Is it approporiate to use LLMs for causal reasoning? (model collapse theory/generative AI paradox/hallucinations)
   
 - How does political decision-making happen in the actual US Senate?
   
@@ -132,6 +138,7 @@ This github repository contains all the code and data utilized to generate resul
 - IBM. 2024. “Context Window.” Ibm.com. November 7, 2024. https://www.ibm.com/think/topics/context-window.
 - “LLM Settings” 2024. Promptingguide.ai. 2024. https://www.promptingguide.ai/introduction/settings.
 - Google for Developers. 2025. “LLMs: Fine-Tuning, Distillation, and Prompt Engineering.” developers.google.com. 2025. https://developers.google.com/machine-learning/crash-course/llm/tuning.
+- Liu, Yiheng, Hao He, Tianle Han, Xu Zhang, Mengyuan Liu, Jiaming Tian, Yutong Zhang, et al. 2024. “Understanding LLMs: A Comprehensive Overview from Training to Inference.” ArXiv.org. 2024. https://arxiv.org/abs/2401.02038.
 - 
 
 ‌
