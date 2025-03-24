@@ -209,8 +209,15 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 ## Research Design
 ### Overview
 ![Thesis Presentation](https://github.com/user-attachments/assets/1a9a42a7-ba5b-4735-8e90-ecf3d5a4048f)
+The simulation reconstructs 45 roll call votes that took place in the 118th U.S. Senate between January 3, 2023, and January 3, 2025. It models individual senators as agents, each instantiated with biographical attributes, political affiliations and backstories to approximate real-world behavior.The study follows a structured multi-stage approach to simulate Senate voting dynamics:
+- **Initial Vote:** Senators cast an initial vote based solely on basic bill characteristics (bill summary, date of the vote, number of co-sponsors, name and party affiliation of the bill’s primary sponsor, all legislative actions on the bill up to that point). Senators are only allowed to vote “yea” or “nay” (abstentions and "present" votes are excluded).
+- **Debate Phase:** Senators engage in two rounds of debate in a round-robin format, ensuring all participants have an opportunity to contribute and respond to the debate at least once.
+- **Final Vote:** Following the debate, senators cast a final vote based on all previous bill characteristics and a LLM generated conversation summary. Again, only “yea” or “nay” votes are permitted.
+- **Performance Evaluation:** Votes cast before and after the debate are compared with actual voting records. Any LLM-generated response that deviates from "yea" or "nay" votes is categorized as "maybe." Accuracy is assessed by measuring how closely the simulated votes align with actual voting records. The final outcome of the simulation (passed/rejected) is calculated based on Senate voting thresholds (1/2, 2/3, or 3/5 majority) and compared to the actual legislative result.
 
 ### Selection of simulation context
+The 118th U.S. Senate was chosen as the simulation environment due to its recentness, comprehensive data availability, and diverse political landscape. The 118th Congress is the most racially and ethnically diverse in U.S. history, making it an ideal context for evaluating contemporary legislative dynamics.
+
 ### Selection of LLM model and memory-handling
 ### Selection of multi-agent framework
 ### Determining the order in which agents will interact
