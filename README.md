@@ -38,7 +38,7 @@ The second category of LLMs for text-based discussions explores the use of LLMs 
 This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework. It significantly expands on the work of Baker et al. (2024) by simulating an entire US senate (instead of just 6 senators) and focusing on vote outcomes (instead of just discussion).
 
 ## Background Knowledge
-### Mechanisms of Generative AI and LLMs:
+### How do LLMs work?
 The training of Large Language Models (LLMs) follows a multi-step process:
 
 1. Data Collection - The model is trained on massive text datasets sourced from books, articles, and websites to learn language patterns and contextual relationships.
@@ -49,14 +49,15 @@ The training of Large Language Models (LLMs) follows a multi-step process:
 
 Once trained, LLMs make predictions by processing an input prompt, converting it into token embeddings, and passing these embeddings through multiple transformer layers. Each layer refines contextual understanding using mechanisms like self-attention, where the model assigns different weights to words based on their relevance to the context. The final layer generates probabilities for the next token, selecting the most likely sequence based on learned patterns, which is then decoded back into human-readable text. (Liu et al. 2024)
 
-### LLMs for forecasting applications:
+### Can LLMs be used for forecasting?
 Forecasting methodologies are generally categorized into statistical and judgmental approaches. Statistical forecasting relies on quantitative data and mathematical models to predict future events. Techniques such as time series analysis, regression models, and econometric models are commonly used. On the other hand, judgmental forecasting involves subjective assessments and expert opinions to predict future events. This approach is often employed when historical data is limited, unreliable, or when forecasting unprecedented events. It leverages human intuition and experience, making it valuable in complex and uncertain environments. (Halawi et al. 2024)
 
 Halawi et al. (2024) notes that since judgemental forecasting relies on human effort it can be cost and time intensive. This motivates the use of LLMs to automate forecasting since they are already trained on vast amounts of cross-domain data. Their retrieval-augmented language model system for automated forecasting achieves a Brier score of 0.179 and an accuracy of 71.5%, coming close to the human crowd’s 0.149 Brier score and 77.0% accuracy (Brier scores are a measure of the accuracy of probabilistic predictions, calculated as the mean squared difference between a predicted probability and the actual outcome). The system excels when the crowd is uncertain and when more relevant articles are retrieved but struggles with over-hedging in high-certainty cases.
 
 
   
-### Is it approporiate to use LLMs for causal reasoning? (model collapse theory/generative AI paradox/hallucinations/LLMs do not understand what they are generating)
+### Can LLMs provide explainable predictions, and are they appropriate for causal reasoning?
+(model collapse theory/generative AI paradox/hallucinations/LLMs do not understand what they are generating)
   
 ### How does political decision-making happen in the actual US Senate?
   
