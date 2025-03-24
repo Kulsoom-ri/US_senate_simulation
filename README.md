@@ -50,7 +50,7 @@ The training of Large Language Models (LLMs) follows a multi-step process:
 Once trained, LLMs make predictions by processing an input prompt, converting it into token embeddings, and passing these embeddings through multiple transformer layers. Each layer refines contextual understanding using mechanisms like self-attention, where the model assigns different weights to words based on their relevance to the context. The final layer generates probabilities for the next token, selecting the most likely sequence based on learned patterns, which is then decoded back into human-readable text. (Liu et al. 2024)
 
 ### LLMs for forecasting applications:
-Different forecasting methodoligies
+Forecasting methodologies are generally categorized into statistical and judgmental approaches. Statistical forecasting relies on quantitative data and mathematical models to predict future events. Techniques such as time series analysis, regression models, and econometric models are commonly used. On the other hand, judgmental forecasting involves subjective assessments and expert opinions to predict future events. This approach is often employed when historical data is limited, unreliable, or when forecasting unprecedented events. It leverages human intuition and experience, making it valuable in complex and uncertain environments. (Halawi et al. 2024)
 
   
   
@@ -147,4 +147,5 @@ This github repository contains all the code and data utilized to generate resul
 - “LLM Settings” 2024. Promptingguide.ai. 2024. https://www.promptingguide.ai/introduction/settings.
 - Google for Developers. 2025. “LLMs: Fine-Tuning, Distillation, and Prompt Engineering.” developers.google.com. 2025. https://developers.google.com/machine-learning/crash-course/llm/tuning.
 - Liu, Yiheng, Hao He, Tianle Han, Xu Zhang, Mengyuan Liu, Jiaming Tian, Yutong Zhang, et al. 2024. “Understanding LLMs: A Comprehensive Overview from Training to Inference.” ArXiv.org. 2024. https://arxiv.org/abs/2401.02038.
+- Halawi, Danny, Fred Zhang, Chen Yueh-Han, and Jacob Steinhardt. 2024. “Approaching Human-Level Forecasting with Language Models.” ArXiv.org. 2024. https://arxiv.org/abs/2402.18563.
 ‌
