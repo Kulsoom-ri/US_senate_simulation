@@ -104,9 +104,9 @@ This is what an LLM-powered senator looks like:
 ![AI_Agent_Slide-1](https://github.com/user-attachments/assets/7cc77339-7f24-448d-83b2-25c937e1ff9a)
 
 ## A Sample Simulation
-![Simulation Screenshot1](https://github.com/user-attachments/assets/09cefb2e-1701-4434-8a83-694719d98f03)
-![Simulation Screenshot2](https://github.com/user-attachments/assets/03962bfa-d0c1-4c08-ad24-a2223d0215a4)
-![Simulation Screenshot3](https://github.com/user-attachments/assets/15400582-18d9-4a41-af65-104856f574ff)
+<img src="https://github.com/user-attachments/assets/09cefb2e-1701-4434-8a83-694719d98f03" width="200"/>
+<img src="https://github.com/user-attachments/assets/03962bfa-d0c1-4c08-ad24-a2223d0215a4" width="200"/>
+<img src="https://github.com/user-attachments/assets/15400582-18d9-4a41-af65-104856f574ff" width="200"/>
 
 ## Results
 
