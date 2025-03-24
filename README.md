@@ -115,6 +115,7 @@ The Bipartisan Index measures the frequency with which a Member co-sponsors a bi
 
 ## Research Design
 ### Overview
+![Thesis Presentation](https://github.com/user-attachments/assets/1a9a42a7-ba5b-4735-8e90-ecf3d5a4048f)
 
 ### Selection of simulation context
 ### Selection of LLM model and memory-handling
