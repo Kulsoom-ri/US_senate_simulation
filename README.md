@@ -218,9 +218,9 @@ The simulation reconstructs 45 roll call votes that took place in the 118th U.S.
 ### Selection of simulation context
 The 118th U.S. Senate was chosen as the simulation environment due to its recentness, comprehensive data availability, and diverse political landscape. According to a 2023 analysis by the Pew Research Center, the "118th Congress is the most racially and ethnically diverse in U.S. history" (Geiger 2023), making it an ideal context for evaluating contemporary legislative dynamics.
 
-At the start of the 118th Congress, the Senate consisted of: 52 Democrats (including the Vice President), 4 Independents and 49 Republicans. The study accounts for six membership changes that occurred during the session, ensuring accuracy in the composition of the simulated Senate.
+At the start of the 118th Congress, the Senate consisted of: 52 Democrats (including the Vice President), 4 Independents and 49 Republicans. The study accounts for six membership changes that occurred during the session, ensuring accuracy in the composition of the simulated Senate. Ben Sasse resigned January 8, 2023 and was replaced by Pete Rickettes starting January 23, 2023. Joe Manchin III changed his party affiliation to independent. Dianne Feinstein died September 29, 2023 and Laphonza Butler was appointed October 3, 2023 to replace her. Bob Menendez resigned August 20, 2024 and was replaced by George Helmy starting September 9, 2024. Finally, Butler and Helmy resigned from their appointments December 8, 2024 to allow successors Andy Kim and Adam Schiff to take office early.
 
-The first session took place between January 3, 2023 – January 3, 2024 and the second session took place between January 3, 2024 – January 3, 2025. According to Congress.gov there were 352 Roll call votes in the first session and 339 Roll call votes in the second session. Democrats remained the majority party throughout when caucusing with Independents.
+The first session took place between January 3, 2023 – January 3, 2024 and the second session took place between January 3, 2024 – January 3, 2025. According to Congress.gov, in the Senate there were 352 roll call votes in the first session and 339 roll call votes in the second session. Democrats remained the majority party throughout when caucusing with Independents.
 
 | Date | Democrats | Independents | Republicans | Total Seats | Vacant |
 |-------|-----------|--------------|------------|-------------|--------|
@@ -233,6 +233,14 @@ The first session took place between January 3, 2023 – January 3, 2024 and the
 | May 31, 2024 | 47 | 4 | 49 | 100 | 0 |
 | August 20, 2024 | 46 | 4 | 49 | 99 | 1 |
 | September 9, 2024 | 47 | 4 | 49 | 100 | 0 |
+
+The simulation focuses on roll call votes, specifically:
+- Votes on Overriding a Presidential Veto
+- Motions to Discharge a Bill from Committee
+- Motions to Invoke Cloture (end debate)
+- Votes on Final Passage of a Bill
+
+Roll call votes were selected due to their clear, public recording of individual senator positions. These votes require a simple majority (1/2) in most cases, though some decisions, such as veto overrides and constitutional amendments, require higher thresholds (2/3 or 3/5 majority).
 
 ### Selection of LLM model and memory-handling
 ### Selection of multi-agent framework
