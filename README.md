@@ -65,6 +65,7 @@ Despite these strengths, LLMs face limitations that challenge their reliability 
 
 Model collapse, a degenerative process where models gradually lose touch with the true underlying data distribution when trained on AI-generated content, poses another challenge for predictive multi-agent frameworks (Shumailov et al. 2024). In such systems, where one model’s output serves as another’s input, errors and biases can compound over time, leading to degraded performance. This issue arises because generative models, without regular exposure to diverse, high-quality human-generated data, increasingly reinforce their own distortions rather than accurately reflecting real-world distributions. Addressing model collapse requires a combination of fine-tuning, data filtering, and reinforcement learning techniques to maintain model integrity and prevent systemic degradation.
 
+Hallucina
 
 
 ### How does political decision-making happen in the actual US Senate?
