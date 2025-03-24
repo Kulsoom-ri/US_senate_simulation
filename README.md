@@ -52,11 +52,13 @@ Once trained, LLMs make predictions by processing an input prompt, converting it
 ### LLMs for forecasting applications:
 Forecasting methodologies are generally categorized into statistical and judgmental approaches. Statistical forecasting relies on quantitative data and mathematical models to predict future events. Techniques such as time series analysis, regression models, and econometric models are commonly used. On the other hand, judgmental forecasting involves subjective assessments and expert opinions to predict future events. This approach is often employed when historical data is limited, unreliable, or when forecasting unprecedented events. It leverages human intuition and experience, making it valuable in complex and uncertain environments. (Halawi et al. 2024)
 
-  
+Halawi et al. (2024) notes that since judgemental forecasting relies on human effort it can be cost and time intensive. This motivates the use of LLMs to automate forecasting since they are already trained on vast amounts of cross-domain data. Their retrieval-augmented language model system for automated forecasting achieves a Brier score of 0.179 and an accuracy of 71.5%, coming close to the human crowd’s 0.149 Brier score and 77.0% accuracy (Brier scores are a measure of the accuracy of probabilistic predictions, calculated as the mean squared difference between a predicted probability and the actual outcome). The system excels when the crowd is uncertain and when more relevant articles are retrieved but struggles with over-hedging in high-certainty cases.
+
+
   
 ### Is it approporiate to use LLMs for causal reasoning? (model collapse theory/generative AI paradox/hallucinations/LLMs do not understand what they are generating)
   
-- How does political decision-making happen in the actual US Senate?
+### How does political decision-making happen in the actual US Senate?
   
 
 ## Data
@@ -76,7 +78,7 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 
 **For floor votes:**
 
-45 floor votes were selected to be simulated (votes included "On Motion to Discharge Committee", "On Overriding the Veto", "On Passage of the Bill", "On Cloture on the Motion to Proceed" etc.). These were randomly selected from a list containing CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), key legislations identified on Wikipedia and the most-viewed bills on Congress.gov. Bills originating in both the house and senate as well as joint resolutions were considered, although votes were limited to those for which there was a roll call vote in the senate.
+45 floor votes were selected to be simulated (votes included "On Motion to Discharge Committee", "On Overriding the Veto", "On Passage of the Bill", "On Cloture on the Motion to Proceed" etc.). These were randomly selected from a list containing CQ Key Votes ("for each series of related votes on an issue, only one vote is usually identified as a CQ Key Vote. This vote is the floor vote in the House or Senate that in the opinion of CQ's editorial staff was the most important in determining the outcome."), key legislations identified on Wikipedia and the most-viewed bills on Congress.gov. Bills originating in both the house and senate as well as joint resolutions were considered, although votes were limited to those for which there was at least one roll call vote in the senate.
 - Congress.gov (https://www.congress.gov/): Utilized for obtaining contextual information about a bill such as title, summary, number of co-sponsors, party and name of introducing senator, policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
 - Senate.gov (https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm): Utilized for obtaining detailed records of how each senator voted during a particular floor vote (yea, nay, present or not voting).
 
