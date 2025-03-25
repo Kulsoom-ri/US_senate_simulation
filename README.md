@@ -234,18 +234,25 @@ The first session took place between January 3, 2023 – January 3, 2024 and the
 | August 20, 2024 | 46 | 4 | 49 | 99 | 1 |
 | September 9, 2024 | 47 | 4 | 49 | 100 | 0 |
 
-The simulation focuses on roll call votes, specifically:
-- Votes on Overriding a Presidential Veto
-- Motions to Discharge a Bill from Committee
-- Motions to Invoke Cloture (end debate)
-- Votes on Final Passage of a Bill
-
-Roll call votes were selected due to their clear, public recording of individual senator positions. These votes require a simple majority (1/2) in most cases, though some decisions, such as veto overrides and constitutional amendments, require higher thresholds (2/3 or 3/5 majority).
+The simulation focuses exclusively on roll call votes, particularly those cast on overriding a presidential veto, motions to discharge a bill from committee, motions to invoke cloture (to end debate), and votes on final passage of a bill. Roll call votes were selected due to their clear documentation and formal recording of each senator’s position. These votes occur when at least one-fifth of a quorum requests them, ensuring transparency. In most cases, a simple majority (1/2) is required for passage, though in the event of a tie, the vice president may cast the deciding vote. Certain measures require a higher threshold: a two-thirds majority (2/3) is needed to override a presidential veto, propose constitutional amendments, convict an impeached official, ratify treaties, or expel a senator. Additionally, a three-fifths majority (3/5) is required to invoke cloture and end debate on legislation. (“U.S. Senate: About Voting” 2024)
 
 ### Selection of LLM model and memory-handling
+Two different LLMs were used to facilitate the simulation. **Meta’s Llama-3.3-70B-Versatile** was used for the debate simulation, as it offers a 128K context window and a maximum completion length of 32,768 tokens. For generating the debate summary, **Meta’s Llama-3.1-8B-Instant** was selected, with a 128K context window and a maximum completion length of 8,192 tokens. (Meta-Llama 2025) These models were chosen primarily for their large context windows, which allow for long-form discussions with minimal information loss and easy memory handling.
+
+Additionally, the models’ knowledge cutoff in December 2023 ensured that votes from 2024 were unknown to them, allowing the study to test predictive reasoning rather than model memorization. The models were accessed via the Groq API, which provides significantly faster inference speeds (due to its hardware specifically designed for single-batch, high-throughput processing) compared to traditional cloud-based deployments. Faster inference was particularly crucial given the large number of agents involved and the need for maintaining continuity across multiple rounds of debate and voting.
+
+Due to resource constraints, a context window limit of 15,000 tokens was imposed during debates. Given that each senator’s response averaged approximately 300 tokens, this meant that once the total conversation history exceeded 15,000 tokens, the oldest messages were deleted. As a result, senators who spoke later in the debate only had access to the most recent portion of the discussion, typically around 25 percent of the total debate content.
+
 ### Selection of multi-agent framework
+The simulation was implemented using the LlamaSim multi-agent framework (Wu 2025), a system designed specifically for modeling large-scale human interactions. The framework simulates how a given target population (such as voters or students) responds to specific questions/events. LlamaSim was selected because it is optimized for structured simulations of real-world social contexts, unlike alternatives such as CrewAI and LangChain, which experience significant latency issues when handling large-scale interactions. Additionally, LlamaSim integrates seamlessly with fast inference providers such as Groq and Cerebras, reducing the computational bottlenecks typically associated with multi-agent modeling.
+
 ### Determining the order in which agents will interact
-### Controlling model parameters (temperature, system prompt cut-off date)
+Within LlamaSim, agents can interact either in a random order or in a structured round-robin format. The round-robin approach was selected because it ensures that every senator has an opportunity to participate in the debate. This method also closely resembles the structured speaking order used in real-world Senate deliberations, preventing a small subset of senators from dominating the conversation while allowing for a more balanced exchange of ideas.
+
+### Controlling model parameters
+To ensure the reliability of the simulation, several key model parameters were controlled. The system prompt was designed to respect the models’ knowledge cutoff of December 2023, ensuring that LLM-generated responses were based on reasoning rather than memorization. This cutoff was particularly useful, as it prevented the models from having prior knowledge of the actual votes cast in 2024, allowing for an unbiased evaluation of predictive reasoning.
+
+Temperature settings were also adjusted to optimize model performance. For debate simulation, a temperature of 0.4 was used to allow for a moderate degree of randomness, fostering a diversity of arguments and reasoning styles. For debate summary generation, a lower temperature of 0.2 was set to make the output more deterministic and fact-based. Additionally, a fixed random seed was used to ensure the reproducibility of results across multiple simulation runs. Setting a random seed allows for consistent agent responses by preventing variations caused by stochastic randomness in LLM outputs.
 
 ## Methodology
 ### Exploratory Data Analysis (correlation matrix and statistical models)
@@ -303,4 +310,10 @@ This github repository contains all the code and data utilized to generate resul
 - “CQ Congress Collection.” 2025. Duke.edu. 2025. https://library-cqpress-com.proxy.lib.duke.edu/congress/.
 - “U.S. Senate: Roll Call Votes 118th Congress” 2024. Senate.gov. February 8, 2024. https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_118_1.htm.
 - Geiger, Abigail. 2023. “The Changing Face of Congress in 8 Charts.” Pew Research Center. February 7, 2023. https://www.pewresearch.org/short-reads/2023/02/07/the-changing-face-of-congress/.
-- 
+- “U.S. Senate: About Voting.” 2024. Senate.gov. December 27, 2024. https://www.senate.gov/about/powers-procedures/voting.htm.
+- Meta-Llama. “Llama-Models/Models/Llama3_3/MODEL_CARD.md at Main · Meta-Llama/Llama-Models.” 2025. GitHub. 2025. https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md.
+- Wu, Jet. 2025 “Jw-Source/LlamaSim: Simulate Human Behavior with Mass LLMs.” GitHub. 2025. https://github.com/jw-source/LlamaSim.
+
+‌
+
+‌
