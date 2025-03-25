@@ -255,10 +255,12 @@ To ensure the reliability of the simulation, several key model parameters were c
 Temperature settings were also adjusted to optimize model performance. For debate simulation, a temperature of 0.4 was used to allow for a moderate degree of randomness, fostering a diversity of arguments and reasoning styles. For debate summary generation, a lower temperature of 0.2 was set to make the output more deterministic and fact-based. Additionally, a fixed random seed was used to ensure the reproducibility of results across multiple simulation runs. Setting a random seed allows for consistent agent responses by preventing variations caused by stochastic randomness in LLM outputs.
 
 ## Methodology
-### Exploratory Data Analysis (correlation matrix and statistical models)
+### Exploratory Data Analysis
+
+
 ### Basic Simulation (without prompt engineering and without controlling any parameters)
 ### Vote simulation with prompt engineering, with controlling parameters
-### Vote simulation with prompt engineering, with controlling parameters and after 3 rounds of debate
+### Vote simulation with prompt engineering, with controlling parameters and after 2 rounds of debate
 
 ## An AI Senator
 This is what an LLM-powered senator looks like:
