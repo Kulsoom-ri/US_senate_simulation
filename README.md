@@ -174,7 +174,7 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 | education          | String    | Highest degree attained | CQ Congress Collection |
 | education_category | String    | Highest level of education attained (highschool, associates, undergraduate or postgraduate) | CQ Congress Collection |
 | state              | String    | State represented | Congress.gov |
-| state_pvi         | Float     | Cook Partisan Voting Index for senator's state | Cook Political Report |
+| state_pvi         | Float     | Cook Partisan Voting Index for senator's state. Negative means more conservative. Positive means more liberal.| Cook Political Report |
 | party             | String    | Political party affiliation | Congress.gov |
 | start             | Date      | Start date of current term | Congress.gov |
 | end               | Date      | End date of current term | Congress.gov |
