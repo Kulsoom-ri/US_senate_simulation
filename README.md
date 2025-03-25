@@ -339,6 +339,22 @@ For the target variable (vote), DW-Nominate and State PVI scores demonstrated th
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/AdaBoostClassifier.png?raw=true" width="32%"/>
 </p>
 
+| Model                      | Cross-validation Accuracy | Test Accuracy | F1 Score | ROC AUC |
+|----------------------------|--------------------------|---------------|----------|---------|
+| BernoulliNB                | 0.72 ± 0.03              | 0.71          | 0.71     | 0.76    |
+| KNeighborsClassifier        | 0.88 ± 0.01              | 0.88          | 0.88     | 0.94    |
+| LogisticRegression          | 0.80 ± 0.03              | 0.81          | 0.806     | 0.81    |
+| LinearSVC                  | 0.80 ± 0.03              | 0.80          | 0.80     | 0.81    |
+| SVC                        | 0.89 ± 0.02              | 0.91          | 0.91     | 0.95    |
+| DecisionTreeClassifier      | 0.91 ± 0.02              | 0.92          | 0.92     | 0.92    |
+| ExtraTreeClassifier         | 0.87 ± 0.02              | 0.87          | 0.87     | 0.86    |
+| ExtraTreesClassifier        | 0.93 ± 0.01              | 0.92          | 0.93     | 0.98   |
+| AdaBoostClassifier          | 0.77 ± 0.04              | 0.80          | 0.80     | 0.80    |
+| RandomForestClassifier      | 0.93 ± 0.01              | 0.92          | 0.93     | 0.98    |
+| Perceptron                 | 0.70 ± 0.04              | 0.72          | 0.712     | 0.74    |
+| MLPClassifier               | 0.92 ± 0.02              | 0.92          | 0.92     | 0.97      |
+
+
 ### Basic Simulation
 
 ### Advanced Simulation
