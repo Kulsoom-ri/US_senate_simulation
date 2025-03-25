@@ -151,10 +151,12 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 - One-Hot Encoding was applied to: Religion, race and topic of the bill.
 
 ### Exploratory Data Analysis (EDA)
+<p align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda1.png?raw=true" width="600"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda2.png?raw=true" width="600"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda3.png?raw=true" width="600"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/bills_eda.png?raw=true" width="600"/>
+</p>
 
 ### Variable Codebook
 #### senators_data
@@ -283,9 +285,11 @@ This is what an LLM-powered senator looks like:
 ![AI_Agent_Slide-1](https://github.com/user-attachments/assets/7cc77339-7f24-448d-83b2-25c937e1ff9a)
 
 ## A Sample Simulation
+<p float="left" align="middle">
 <img src="https://github.com/user-attachments/assets/09cefb2e-1701-4434-8a83-694719d98f03" width="600"/>
 <img src="https://github.com/user-attachments/assets/03962bfa-d0c1-4c08-ad24-a2223d0215a4" width="600"/>
 <img src="https://github.com/user-attachments/assets/15400582-18d9-4a41-af65-104856f574ff" width="600"/>
+</p>
 
 ## Results
 ### Correlations
@@ -312,7 +316,18 @@ This is what an LLM-powered senator looks like:
 </p>
 
 <p float="left" align="middle">
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/Bernoulli.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/KNeighborsClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/LogisticRegression.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/DecisionTreeClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/ExtraTreeClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/ExtraTreesClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/RandomForestClassifer.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/LinearSVC.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/SVC.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/Perceptron.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/MLPClassifer.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/AdaBoostClassifier.png?raw=true" width="32%"/>
 </p>
 
 ### Classification Models
