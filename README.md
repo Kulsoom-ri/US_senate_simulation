@@ -483,7 +483,7 @@ Before debate: The before-debate regression demonstrated a high R-squared value 
 
 After debate: The R-squared value of 0.925 indicates that the model explains approximately 92.5% of the variance in prediction accuracy after the debate. The adjusted R-squared of 0.721 also indicates that the model maintains its explanatory power even when accounting for the number of predictors used. The F-statistic of 4.527 with a significant p-value (0.00563) confirms that the model is statistically significant, meaning that the independent variables collectively have a meaningful relationship with the dependent variable.
 
-
+## Summary of findings
 
 
 ## Discussion
