@@ -290,22 +290,26 @@ This is what an LLM-powered senator looks like:
 ## Results
 ### Correlations
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/correlations_feature_target.png?raw=true" width="600"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="600"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="600"/>
-### Classification Models
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/KNeighborsClassifier.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/LogisticRegression.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/DecisionTreeClassifier.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/ExtraTreeClassifier.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/ExtraTreesClassifier.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/RandomForestClassifer.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/LinearSVC.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/SVC.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Perceptron.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/MLPClassifer.png?raw=true" width="300"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/AdaBoostClassifier.png?raw=true" width="300"/>
+<p float="left">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="50%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="50%"/>
+</p>
 
+### Classification Models
+<p float="left">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/KNeighborsClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/LogisticRegression.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/DecisionTreeClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/ExtraTreeClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/ExtraTreesClassifier.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/RandomForestClassifer.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/LinearSVC.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/SVC.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Perceptron.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/MLPClassifer.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/AdaBoostClassifier.png?raw=true" width="32%"/>
+</p>
 
 ### Classification Models
 
