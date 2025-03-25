@@ -307,6 +307,7 @@ Additionally, there is a negative correlation of -0.39 between party loyalty and
 For the target variable (vote), DW-Nominate and State PVI scores demonstrated the highest correlations, with values of 0.35 and -0.33, respectively. This supports the notion that voting along party lines is a significant factor.
 
 ### Classification Models
+#### ROC Curves:
 <p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/KNeighborsClassifier.png?raw=true" width="32%"/>
@@ -322,6 +323,7 @@ For the target variable (vote), DW-Nominate and State PVI scores demonstrated th
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/AdaBoostClassifier.png?raw=true" width="32%"/>
 </p>
 
+#### Feature Importance:
 <p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/Bernoulli.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/KNeighborsClassifier.png?raw=true" width="32%"/>
