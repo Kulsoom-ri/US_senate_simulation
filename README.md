@@ -150,6 +150,12 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 - Label Encoding was applied to: Party affiliation, education level, state partisan direction and bill sponsor's party.
 - One-Hot Encoding was applied to: Religion, race and topic of the bill.
 
+### Exploratory Data Analysis (EDA)
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda1.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda2.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda3.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/bills_eda.png?raw=true" width="600"/>
+
 ### Variable Codebook
 #### senators_data
 | Variable Name       | Data Type  | Description | Source |
@@ -255,11 +261,8 @@ To ensure the reliability of the simulation, several key model parameters were c
 Temperature settings were also adjusted to optimize model performance. For debate simulation, a temperature of 0.4 was used to allow for a moderate degree of randomness, fostering a diversity of arguments and reasoning styles. For debate summary generation, a lower temperature of 0.2 was set to make the output more deterministic and fact-based. Additionally, a fixed random seed was used to ensure the reproducibility of results across multiple simulation runs. Setting a random seed allows for consistent agent responses by preventing variations caused by stochastic randomness in LLM outputs.
 
 ## Methodology
-### Exploratory Data Analysis
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda1.png?raw=true" width="600"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda2.png?raw=true" width="600"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda3.png?raw=true" width="600"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/bills_eda.png?raw=true" width="600"/>
+### Correlations and Classifications
+
 
 ### Basic Simulation (without prompt engineering and without controlling any parameters)
 ### Vote simulation with prompt engineering, with controlling parameters
