@@ -268,6 +268,16 @@ To explore the predictive capability of various features on voting behavior, cor
 
 To assess classification accuracy, 12 different statistical models on the dataset were tested. Each model was trained and evaluated using cross-validation as well as a train-test split to determine its predictive performance in classifying voting outcomes. The models were evaluated by calculating the F1 score and ROC curve for each. Feature importance for all models was also calculated to analyze weights. The hyperparameters for the best performing models were tuned using GridSeachCV. The models included Naïve Bayes, k-Nearest Neighbors, Logistic Regression, Linear Support Vector Classification, Support Vector Classification, Decision Tree Classifier, Extra Tree Classifier, Extra Trees Classifier, AdaBoost Classifier, Random Forest Classifier, Perceptron and Multi-layer Perceptron (MLP) Classifier. These models allowed us to compare how forecasting through LLMs compares to predictions made through traditional classification methods.
 
+Formula:
+<p align = "middle">
+Vote = β₀ + β₁ * Required Majority + β₂ * Introduced Party + β₃ * Number of Cosponsors + β₄ * Education Category + β₅ * Party Unity Support + β₆ * Voting Participation + β₇ * Percentage Scored in Last Election + β₈ * Age + β₉ * Sex + β₁₀ * State Direction + β₁₁ * State PVI + β₁₂ * Party + β₁₃ * Years in House + β₁₄ * Years in Senate + β₁₅ * DW-Nominate + β₁₆ * Bipartisan Index + β₁₇ * Month + β₁₈ * Is Election Season + β₁₉ * Session + β₂₀ * Passage Vote Or Not + β₂₁ * Party Loyalty + β₂₂ * Party Defection + β₂₃ * Key Vote Defection + β₂₄ * Religion + β₂₅ * Race + β₂₆ * Topic of the Bill + ε </p>
+
+Where:
+- **Vote**: Predicted vote of the senator (1 or 0).
+- **β₀**: Intercept of the model.
+- **β₁, β₂, ..., β₂₆**: Coefficients for each independent variable.
+- **ε**: Error term representing unobserved factors affecting the vote.
+
 ### Basic Simulation (Without Prompt Engineering or Parameter Controls)
 A baseline simulation was conducted in which the system prompt was kept minimal: "You are US senator {full_name}." Senators were only provided with a bill summary and asked to vote. No additional contextual information, deliberation, or parameter tuning was included in this stage. A total of 30 floor votes were simulated in this manner, focusing solely on passage votes.
 
@@ -284,6 +294,11 @@ Formula:
 
 <p align="middle">
 <i></i>Simulation Accuracy = β₀ + β₁ * year + β₂ * final_vote_result + β₃ * previous_action_length + β₄ * required_majority + β₅ * measure_summary_length + β₆ * not_voting + β₇ * num_cosponsors + β₈ * vote_margin + β₉ * introduced_party + β₁₀ * topic + β₁₁ * type_vote + ε</i></p>
+
+Where:
+- **β₀** is the intercept of the regression model.
+- **β₁, β₂, ..., β₁₁** are the coefficients for each independent variable.
+- **ε** is the error term.
 
 ## An AI Senator
 This is what an LLM-powered senator looks like:
