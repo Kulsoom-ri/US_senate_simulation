@@ -477,15 +477,13 @@ Notably, the model demonstrated relatively stable performance across legislative
 - topic_Animals, 0.1297, 0.648
 
 
+The regression analyses were conducted to determine the weights affecting prediction accuracy for bills before debate, after debate, and during the basic simulation. The target variable for each model was the prediction accuracy for each bill in the respective phases. The features were bill charecteristics.
 
-Similarly, the before-debate model demonstrated a high R-squared value of 0.929, indicating that it explains approximately 92.9% of the variance in prediction accuracy before the debate. The adjusted R-squared of 0.734 shows robust explanatory power, suggesting the model is well-specified.
+Before debate: The before-debate regression demonstrated a high R-squared value of 0.929, indicating that it explains approximately 92.9% of the variance in prediction accuracy before the debate. The adjusted R-squared of 0.734 shows robust explanatory power, suggesting the model is well-specified. The F-statistic of 4.769, with a p-value of 0.00451, indicates that the independent variables significantly predict the dependent variable, further supporting the model's effectiveness.
 
-The F-statistic of 4.769, with a p-value of 0.00451, indicates that the independent variables significantly predict the dependent variable, further supporting the model's effectiveness.
+After debate: The R-squared value of 0.925 indicates that the model explains approximately 92.5% of the variance in prediction accuracy after the debate. The adjusted R-squared of 0.721 also indicates that the model maintains its explanatory power even when accounting for the number of predictors used. The F-statistic of 4.527 with a significant p-value (0.00563) confirms that the model is statistically significant, meaning that the independent variables collectively have a meaningful relationship with the dependent variable.
 
 
-The R-squared value of 0.925 indicates that the model explains approximately 92.5% of the variance in prediction accuracy after the debate. This high R-squared value suggests that the model performed exceptionally well, capturing a significant portion of the factors influencing the legislative outcomes post-debate. The adjusted R-squared of 0.721 also indicates that the model maintains its explanatory power even when accounting for the number of predictors used.
-
-The F-statistic of 4.527 with a significant p-value (0.00563) confirms that the model is statistically significant, meaning that the independent variables collectively have a meaningful relationship with the dependent variable.
 
 
 ## Discussion
