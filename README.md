@@ -293,7 +293,7 @@ To gain insight into the factors influencing prediction accuracy across various 
 Formula:
 
 <p align="middle">
-<i></i>Simulation Accuracy = β₀ + β₁ * year + β₂ * final_vote_result + β₃ * previous_action_length + β₄ * required_majority + β₅ * measure_summary_length + β₆ * not_voting + β₇ * num_cosponsors + β₈ * vote_margin + β₉ * introduced_party + β₁₀ * topic + β₁₁ * type_vote + ε</i></p>
+<i></i>Simulation Accuracy = β₀ + β₁ * Year + β₂ * Final Vote Result + β₃ * Previous Action Length + β₄ * Required Majority + β₅ * Measure Summary Length + β₆ * Number of Senators Not Voting + β₇ * Number of Cosponsors + β₈ * Margin Between Yeas and Nays + β₉ * Introduced Party + β₁₀ * Topic + β₁₁ * Type of Vote + ε</i></p>
 
 Where:
 - **β₀** is the intercept of the regression model.
