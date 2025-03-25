@@ -35,7 +35,7 @@ Further research in this category examines the dynamics of conflict and cooperat
 
 The second category of LLMs for text-based discussions explores the use of LLMs in simulating political discourse. Notably, Baker and Azher (2024) observed that, prior to their study, no research had successfully simulated realistic government action using LLMs. Their work submitted for peer-review in June 2024 offered a proof-of-concept by simulating six AI senators in the 2024 US Senate Committee on Intelligence. In this simulation, the AI senators debated each other over three rounds on current issues (such as Russia’s invasion of Ukraine). The study found that domain experts considered the AI-generated interactions to be highly believable, and by introducing perturbations during the debate (such as "introduction of intelligence indicating imminent Russian overrun of Ukraine"), the researchers were able to identify shifts in decision-making and potential for bipartisanship. Similarly, another study introduces coalition negotiations across various European political parties as a novel NLP task by modeling them as negotiations between different LLM agents (Moghimifar 2024).
 
-This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework. It significantly expands on the work of Baker et al. (2024) by simulating an entire US senate (instead of just 6 senators) and focusing on vote outcomes (instead of just discussion).
+This paper builds on the research from both categories, testing the potential for the integration of LLMs into political science. Primarily, it utilizes demographic data to construct LLM agents that will simulate the behavior of US senators and their vote outcomes on different bills. It also places the agents in conversation with each other for text-based discussions, with the goal of adding a layer of realism in simulating the US Senate process and also identifying the changes (if any) that happen in decision-making through a multi-agent framework. It significantly expands on the work of Baker and Azher (2024) by simulating an entire US senate (instead of just 6 senators) and focusing on vote outcomes (instead of just discussion).
 
 ## Background Knowledge
 ### How do LLMs work?
@@ -52,7 +52,7 @@ Once trained, LLMs make predictions by processing an input prompt, converting it
 ### Can LLMs be used for forecasting?
 Forecasting methodologies are generally categorized into statistical and judgmental approaches. Statistical forecasting relies on quantitative data and mathematical models to predict future events. Techniques such as time series analysis, regression models, and econometric models are commonly used. On the other hand, judgmental forecasting involves subjective assessments and expert opinions to predict future events. This approach is often employed when historical data is limited, unreliable, or when forecasting unprecedented events. It leverages human intuition and experience, making it valuable in complex and uncertain environments. (Halawi et al. 2024)
 
-However, judgmental forecasting is time- and labor-intensive, prompting interest in automating the process using large language models (LLMs) since they are already trained on vast amounts of cross-domain data. LLMs forecast by integrating diverse textual data, reasoning through context, and generating probabilistic predictions, in comparison to traditional ML classifiers that rely on structured historical data. Halawi et al. (2024) demonstrate that a retrieval-augmented LLM-based forecasting system achieves a Brier score of 0.179 and an accuracy of 71.5%, coming close to the human crowd’s 0.149 Brier score and 77.0% accuracy (Brier scores are a measure of the accuracy of probabilistic predictions, calculated as the mean squared difference between a predicted probability and the actual outcome). The system excels when the crowd is uncertain and when more relevant articles are retrieved but struggles with over-hedging in high-certainty cases.
+However, judgmental forecasting is time- and labor-intensive, prompting interest in automating the process using large language models (LLMs) since they are already trained on vast amounts of cross-domain data. LLMs forecast by integrating diverse textual data, reasoning through context, and generating probabilistic predictions, in comparison to traditional ML classifiers that rely on structured data. Halawi et al. (2024) demonstrate that a retrieval-augmented LLM-based forecasting system achieves a Brier score of 0.179 and an accuracy of 71.5%, coming close to the human crowd’s 0.149 Brier score and 77.0% accuracy (Brier scores are a measure of the accuracy of probabilistic predictions, calculated as the mean squared difference between a predicted probability and the actual outcome). The system excels when the crowd is uncertain and when more relevant articles are retrieved but struggles with over-hedging in high-certainty cases.
 
 Similarly, across various disciplines studies have tested the predictive power of LLMs on diverse datasets, revealing both their strengths and limitations. In neuroscience, a study evaluted general-purpose LLMs against expert neuroscientists on BenchBrain, a benchmark designed for predicting neuroscience research outcomes. The general-purpose LLMs achieved 81% accuracy in predicting experimental outcomes and the fine-tuned model (BrainGPT) performed even better (Luo et al. 2024). Another study explored whether LLMs trained for language prediction could effectively forecast multivariate time series data, showing preliminary but definitive success in demand forecasting tasks, albeit with concerns about overfitting (Wolff et al. 2025).
 
@@ -372,23 +372,30 @@ Overall, these results indicate that the baseline performance of the model was o
 </p>
 Introducing structured prompts and parameter tuning led to a significant improvement in model accuracy. Before the debate, the average accuracy for individual votes reached 80.49%, but after deliberation, it declined to 66.38%, highlighting the impact of discussion on voting decisions.
 
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_7.png?raw=true" width="45%"/>
+<p align="middle">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_7.png?raw=true" width="50%"/>
+</p>
+The accuracy of bill predictions varied widely, ranging from 98% for the most accurately predicted bills to just 25% for the least accurate ones. Before debate, 23 out of 45 bills had an accuracy exceeding 90%. Interestingly, bills with close-margin votes (less than a five-vote difference between "yea" and "nay") tended to have the highest prediction accuracy, whereas those with large-margin votes (near-unanimous decisions) had the lowest accuracy. This pattern aligns with the findings of Halawi et al. (2024), whose forecasting system similarly struggled with over-hedging in high-certainty cases.
 
-
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_5.png?raw=true" width="45%"/>
+<p align="middle">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_5.png?raw=true" width="50%"/></p>
 Overall, this advanced simulation demonstrated higher accuracy in predicting individual votes compared to the basic simulation.
 
+<p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_3.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_6.png?raw=true" width="32%"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/></p>
 Debate influenced voting outcomes in several key ways:
 - Accuracy decreased by 14.11% post-debate, suggesting that agents reconsidered and changed their decisions based on discussion.
-- The percentage of simulated votes matching actual outcomes dropped slightly from 57.78% to 55.56% (the model did not do as well in predicting overall outcomes of the vote (passed or rejected). This was largely due to the prevalence of close-margin votes- while the model could accurately predict most individual votes, small deviations led to misclassification of the final outcome.).
+- The percentage of simulated votes matching actual outcomes dropped slightly from 57.78% to 55.56% (the model did not do as well in predicting overall outcomes of the vote (passed or rejected) when compared to individual votes. This was largely due to the nature of close nature-margin votes- while the model could accurately predict most individual votes, small deviations led to misclassification of the final outcome.).
 - The overall bill passage rate declined from 35.56% to 28.89% after debate.
-- 
+- Post debate, there was an average decrease in 'yea' votes by 13.75% and a corresponding increase in 'nay' votes by 13.73%.
 
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/>
-Notably, the model maintained relatively stable performance across legislative sessions from 2023 to 2024, indicating that its reasoning process was not significantly influenced by this data being potentially included in its training dataset which had a cutoff date of December 2023. This suggests that the model was engaging with the debate dynamically and giving outputs through reasoning instead of regurgitating memorized outcomes.
+<p align="middle">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_10.png?raw=true" width="50%"/></p>
+Notably, the model demonstrated relatively stable performance across legislative sessions from 2023 to 2024, suggesting that its reasoning process was not significantly influenced by the potential inclusion of this data in its training set, which had a cutoff date of December 2023. This indicates that the model was actively engaging with the debate and the data it was fed rather than merely recalling memorized outcomes.
+
+
 
 ## Discussion
 ### Significance of findings for Political Science
