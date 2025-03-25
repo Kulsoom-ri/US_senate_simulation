@@ -489,7 +489,11 @@ Key Predictors:
 However, the presence of multicollinearity, as noted in the regression outputs, remains a critical concern. The model's overall fit, as indicated by the adjusted R-squared, suggests that other factors not captured in the model are influencing simulation accuracy. LLMs have billions of parameters, making direct analysis extremely difficult. A viable approach could be to fine-tune the LLM being used for simulation that would allow us to get some insight into how specific data is influencing its output. Chain-of-Thought Prompting (prompting the LLM to explicitly show its step-by-step reasoning process before providing a final answer) or self-explanation prompts could be other reasonable strategies to get some insight into explanability.
 
 ## Summary of findings
-
+- For the target variable (vote), DW-Nominate and State PVI scores had highest correlations indicating that party-line voting is prevalent.
+- Many classifier models performed exceptionally well in predicting the votes of senators, achieving a high test accuracy of 93%. This aligns with previous literature. The most important features included the party affiliation of the senator, the party of the bill sponsor, the DW-Nominate score, State PVI, the topic of the bill, the required majority, and the legislative session.
+- Without tuning and prompt engineering, the LLM's accuracy was 58.11% for individual votes and 43.33% for overall bill outcomes, performing no better than a random model.
+- Introducing parameter tuning and prompt engineering improved simulation accuracy. Pre-debate accuracy was 80.49%, dropping to 66.38% post-debate. Fewer bills were passed after the debate. Simulation accuracy was similar for both legislative sessions despite the LLM having a knowledge cutoff date in December 2023. The LLM seemed to performed better on close-margin votes, and senators often used similar phrases, warranting further NLP analysis.
+- Statistically significant models for simulation accuracy before and after debates were developed, but significant limitations exist in using this approach for understanding the underlying mechanisms, necessitating further research.
 
 ## Discussion
 ### Significance of findings for Political Science
