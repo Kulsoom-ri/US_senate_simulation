@@ -289,6 +289,16 @@ This is what an LLM-powered senator looks like:
 
 ## Results
 ### Correlations and Classifications
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/correlations_feature_target.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="300"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="300"/>
+
+
+## Discussion
+### Significance of findings for Political Science
+### Significance of findings for Computer Science
+### Limitations
+### Future Work
 
 ## File Description
 This github repository contains all the code and data utilized to generate results for this study.
