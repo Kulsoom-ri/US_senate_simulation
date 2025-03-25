@@ -266,7 +266,7 @@ Temperature settings were also adjusted to optimize model performance. For debat
 ### Correlations and Classifications
 To explore the predictive capability of various features on voting behavior, correlations between different variables and the target outcome (vote) were analyzed. The goal was to identify the strongest predictors of legislative decision-making. A correlation matrix was constructed to examine the relationships between key numerical variables, and pairwise scatterplots were used to visualize patterns in the data.
 
-To assess classification accuracy, 12 different statistical models on the dataset were tested. Each model was trained and evaluated using cross-validation as well as a train-test split to determine its predictive performance in classifying voting outcomes. The models included Naïve Bayes, k-Nearest Neighbors, Logistic Regression, Linear Support Vector Classification, Support Vector Classification, Decision Tree Classifier, Extra Tree Classifier, Extra Trees Classifier, AdaBoost Classifier, Random Forest Classifier, Perceptron and Multi-layer Perceptron (MLP) Classifier. These models allowed us to compare how forecasting through LLMs compares to predictions made through traditional classification methods.
+To assess classification accuracy, 12 different statistical models on the dataset were tested. Each model was trained and evaluated using cross-validation as well as a train-test split to determine its predictive performance in classifying voting outcomes. The models were evaluated by calculating the F1 score and ROC curve for each. Feature importance for all models was also calculated to analyze weights. The hyperparameters for the best performing models were tuned using GridSeachCV. The models included Naïve Bayes, k-Nearest Neighbors, Logistic Regression, Linear Support Vector Classification, Support Vector Classification, Decision Tree Classifier, Extra Tree Classifier, Extra Trees Classifier, AdaBoost Classifier, Random Forest Classifier, Perceptron and Multi-layer Perceptron (MLP) Classifier. These models allowed us to compare how forecasting through LLMs compares to predictions made through traditional classification methods.
 
 ### Basic Simulation (Without Prompt Engineering or Parameter Controls)
 A baseline simulation was conducted in which the system prompt was kept minimal: "You are US senator {full_name}." Senators were only provided with a bill summary and asked to vote. No additional contextual information, deliberation, or parameter tuning was included in this stage. A total of 30 floor votes were simulated in this manner, focusing solely on passage votes.
@@ -354,18 +354,41 @@ For the target variable (vote), DW-Nominate and State PVI scores demonstrated th
 | Perceptron                 | 0.70 ± 0.04              | 0.72          | 0.712     | 0.74    |
 | MLPClassifier               | 0.92 ± 0.02              | 0.92          | 0.92     | 0.97      |
 
-Overall, the ExtraTreesClassifier and RandomForestClassifier exhibited the highest performance metrics regarding both cross-validation accuracy and test accuracy. Fine-tuning these two models based on their optimal parameters resulted in a test accuracy of 0.93 for both. The MLPClassifier also performed well, achieving a test accuracy of 0.92.
+Overall, the ExtraTreesClassifier and RandomForestClassifier exhibited the highest performance metrics. Fine-tuning these two models based on their optimal parameters resulted in a test accuracy of 0.93 for both. The MLPClassifier also performed well, achieving a test accuracy of 0.92.
 
-Analysis of feature importance revealed that, for all these classifiers, several factors held significant predictive power: the party affiliation of the senator, the party of the bill sponsor, the DW-Nominate score, State PVI, the topic of the bill, the required majority and the legislative session.
+Analysis of feature importance revealed that, for all these classifiers, several common factors held significant predictive power: the party affiliation of the senator, the party of the bill sponsor, the DW-Nominate score, State PVI, the topic of the bill, the required majority and the legislative session.
 
 These high accuracy rates align with previous literature, which has demonstrated the effectiveness of ensemble models in modeling legislative behavior.
 
 ### Basic Simulation
-In the initial vote simulation without any adjustments, the average model accuracy for individual votes was 58.11%. The average accuracy for predicting bill outcomes- specifically whether a bill was passed or rejected- was significantly lower at 43.33%. The model demonstrated better performance on high-margin votes, characterized by strong "yea" or "nay" majorities, as well as on key legislative decisions. This improved accuracy can be attributed to the tendency of the LLM to predict uniform votes across the board.
+In the initial vote simulation without any adjustments, the average model accuracy for individual votes was 58.11%. The average accuracy for predicting bill outcomes- whether a bill was passed or rejected- was significantly lower at 43.33%. The model demonstrated better performance on high-margin votes, characterized by strong "yea" or "nay" majorities, as well as on key legislative decisions. This improved accuracy can be attributed to the tendency of the LLM to predict uniform votes across the board.
 
 Overall, these results indicate that the baseline performance of the model was only slightly better than that of a random binary model, which would yield an accuracy rate of around 50%. 
 
 ### Advanced Simulation
+<p float="left" align="middle">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_1.png?raw=true" width="45%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_2.png?raw=true" width="45%"/>
+</p>
+Introducing structured prompts and parameter tuning led to a significant improvement in model accuracy. Before the debate, the average accuracy for individual votes reached 80.49%, but after deliberation, it declined to 66.38%, highlighting the impact of discussion on voting decisions.
+
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_7.png?raw=true" width="45%"/>
+
+
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_5.png?raw=true" width="45%"/>
+Overall, this advanced simulation demonstrated higher accuracy in predicting individual votes compared to the basic simulation.
+
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_3.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_6.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/>
+Debate influenced voting outcomes in several key ways:
+- Accuracy decreased by 14.11% post-debate, suggesting that agents reconsidered and changed their decisions based on discussion.
+- The percentage of simulated votes matching actual outcomes dropped slightly from 57.78% to 55.56% (the model did not do as well in predicting overall outcomes of the vote (passed or rejected). This was largely due to the prevalence of close-margin votes- while the model could accurately predict most individual votes, small deviations led to misclassification of the final outcome.).
+- The overall bill passage rate declined from 35.56% to 28.89% after debate.
+- 
+
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/>
+Notably, the model maintained relatively stable performance across legislative sessions from 2023 to 2024, indicating that its reasoning process was not significantly influenced by this data being potentially included in its training dataset which had a cutoff date of December 2023. This suggests that the model was engaging with the debate dynamically and giving outputs through reasoning instead of regurgitating memorized outcomes.
 
 ## Discussion
 ### Significance of findings for Political Science
