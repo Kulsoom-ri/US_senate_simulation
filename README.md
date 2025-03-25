@@ -372,14 +372,17 @@ Overall, these results indicate that the baseline performance of the model was o
 </p>
 Introducing structured prompts and parameter tuning led to a significant improvement in model accuracy. Before the debate, the average accuracy for individual votes reached 80.49%, but after deliberation, it declined to 66.38%, highlighting the impact of discussion on voting decisions.
 
+
 <p align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_7.png?raw=true" width="50%"/>
 </p>
 The accuracy of bill predictions varied widely, ranging from 98% for the most accurately predicted bills to just 25% for the least accurate ones. Before debate, 23 out of 45 bills had an accuracy exceeding 90%. Interestingly, bills with close-margin votes (less than a five-vote difference between "yea" and "nay") tended to have the highest prediction accuracy, whereas those with large-margin votes (near-unanimous decisions) had the lowest accuracy. This pattern aligns with the findings of Halawi et al. (2024), whose forecasting system similarly struggled with over-hedging in high-certainty cases.
 
+
 <p align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_5.png?raw=true" width="50%"/></p>
 Overall, this advanced simulation demonstrated higher accuracy in predicting individual votes compared to the basic simulation.
+
 
 <p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_3.png?raw=true" width="32%"/>
@@ -391,11 +394,15 @@ Debate influenced voting outcomes in several key ways:
 - The overall bill passage rate declined from 35.56% to 28.89% after debate.
 - Post debate, there was an average decrease in 'yea' votes by 13.75% and a corresponding increase in 'nay' votes by 13.73%.
 
+
+<p align="middle">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_4.png?raw=true" width="50%"/></p>
+The most frequently used phrases in the debate were analyzed, with words such as "believe," "colleagues," "rule," "bill," "resolution," and "must" emerging as the most common after removing stopwords. Senators often repeated similar phrases and wording, which could be influenced by factors such as temperature settings in the model or access to previous senator comments. Additionally, some garbage outputs were observed during the debate, including unknown symbols or text in different languages, raising concerns about the quality of the output. Further NLP analysis of the generated discourse is needed to better understand these anomalies and the output.
+
+
 <p align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_10.png?raw=true" width="50%"/></p>
 Notably, the model demonstrated relatively stable performance across legislative sessions from 2023 to 2024, suggesting that its reasoning process was not significantly influenced by the potential inclusion of this data in its training set, which had a cutoff date of December 2023. This indicates that the model was actively engaging with the debate and the data it was fed rather than merely recalling memorized outcomes.
-
-
 
 ## Discussion
 ### Significance of findings for Political Science
