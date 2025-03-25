@@ -322,11 +322,11 @@ This is what an LLM-powered senator looks like:
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/DecisionTreeClassifier.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/ExtraTreeClassifier.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/ExtraTreesClassifier.png?raw=true" width="32%"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/RandomForestClassifer.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/RandomForestClassifier.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/LinearSVC.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/SVC.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/Perceptron.png?raw=true" width="32%"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/MLPClassifer.png?raw=true" width="32%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/MLPClassifier.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/AdaBoostClassifier.png?raw=true" width="32%"/>
 </p>
 
