@@ -282,7 +282,8 @@ To gain insight into the factors influencing prediction accuracy across various 
 
 Formula:
 
-Simulation Accuracy = β₀ + β₁ * year + β₂ * final_vote_result + β₃ * previous_action_length + β₄ * required_majority + β₅ * measure_summary_length + β₆ * not_voting + β₇ * num_cosponsors + β₈ * vote_margin + β₉ * introduced_party + β₁₀ * topic + β₁₁ * type_vote + ε
+<p align="middle">
+<i></i>Simulation Accuracy = β₀ + β₁ * year + β₂ * final_vote_result + β₃ * previous_action_length + β₄ * required_majority + β₅ * measure_summary_length + β₆ * not_voting + β₇ * num_cosponsors + β₈ * vote_margin + β₉ * introduced_party + β₁₀ * topic + β₁₁ * type_vote + ε</i></p>
 
 ## An AI Senator
 This is what an LLM-powered senator looks like:
