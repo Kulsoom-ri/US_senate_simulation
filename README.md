@@ -289,14 +289,14 @@ This is what an LLM-powered senator looks like:
 
 ## Results
 ### Correlations
+<p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/correlations_feature_target.png?raw=true" width="600"/>
-<p float="left">
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="50%"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="50%"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="600"/>
 </p>
 
 ### Classification Models
-<p float="left">
+<p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/KNeighborsClassifier.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/LogisticRegression.png?raw=true" width="32%"/>
@@ -309,6 +309,10 @@ This is what an LLM-powered senator looks like:
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Perceptron.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/MLPClassifer.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/AdaBoostClassifier.png?raw=true" width="32%"/>
+</p>
+
+<p float="left" align="middle">
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="32%"/>
 </p>
 
 ### Classification Models
