@@ -1,7 +1,7 @@
-Regression results for before_debate:
+Regression results for after_debate:
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:          before_debate   R-squared:                       0.925
+Dep. Variable:          after_debate   R-squared:                       0.925
 Model:                            OLS   Adj. R-squared:                  0.721
 Method:                 Least Squares   F-statistic:                     4.527
 Date:                Sun, 23 Mar 2025   Prob (F-statistic):            0.00563
@@ -74,10 +74,10 @@ topic_Education                                      0.142148
 introduced_party_republican                          0.129632
 Name: before_debate, dtype: float64
 
-Regression results for after_debate:
+Regression results for before_debate:
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:           after_debate   R-squared:                       0.929
+Dep. Variable:           before_debate   R-squared:                       0.929
 Model:                            OLS   Adj. R-squared:                  0.734
 Method:                 Least Squares   F-statistic:                     4.769
 Date:                Sun, 23 Mar 2025   Prob (F-statistic):            0.00451
