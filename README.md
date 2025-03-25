@@ -426,7 +426,6 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | 372.6        |
 
 **Five Most Statistically Significant Factors:**
-
 | Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
 |---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
 | final_vote_result                                           | -51.3590    | 9.663      | -5.315  | 0.000 | [-72.628,  -30.090] |
@@ -451,7 +450,6 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | 390.6        |
 
 **Five Most Statistically Significant Factors:**
-
 | Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
 |---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
 | final_vote_result                                           | -44.9427    | 11.978     | -3.752  | 0.003 | [-71.306,  -18.579] |
@@ -475,7 +473,6 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | -0.7229       |
 
 **Five Most Statistically Significant Factors:**
-
 | Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
 |---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
 | introduced_party_republican                                 | 0.5881      | 0.272      | 2.165   | 0.096 | [-0.166,    1.342]   |
