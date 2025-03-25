@@ -412,7 +412,6 @@ Notably, the model demonstrated relatively stable performance across legislative
 ### Regression Analysis
 
 #### Before Debate:
-
 | Metric                     | Value        |
 |----------------------------|--------------|
 | **Dependent Variable**     | before_debate |
@@ -426,18 +425,15 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | 372.6        |
 
 **Five Most Statistically Significant Factors:**
-| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
-|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
-| final_vote_result                                           | -51.3590    | 9.663      | -5.315  | 0.000 | [-72.628,  -30.090] |
-| required_majority                                          | -4.5758     | 0.872      | -5.246  | 0.000 | [-6.496,    -2.656] |
-| topic_Civil Rights and Liberties, Minority Issues          | 80.2503     | 15.991     | 5.018   | 0.000 | [45.054,   115.446]  |
-| topic_Environmental Protection                              | 58.3085     | 10.860     | 5.369   | 0.000 | [34.407,    82.210]  |
-| topic_Energy                                               | 56.1799     | 10.929     | 5.141   | 0.000 | [32.126,    80.234]  |
-
-
+*Variable, Coefficient, P-Value*
+- final_vote_result, -51.3590, 0.000
+- required_majority, -4.5758, 0.000
+- topic_Civil Rights and Liberties, Minority Issues, 80.2503, 0.000
+- topic_Environmental Protection, 58.3085, 0.000
+- topic_Energy, 56.1799, 0.000
+  
 
 #### After Debate:
-
 | Metric                     | Value        |
 |----------------------------|--------------|
 | **Dependent Variable**     | after_debate |
@@ -451,15 +447,12 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | 390.6        |
 
 **Five Most Statistically Significant Factors:**
-
-
-| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
-|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
-| final_vote_result                                           | -44.9427    | 11.978     | -3.752  | 0.003 | [-71.306,  -18.579] |
-| topic_Animals                                              | 67.8600     | 14.371     | 4.722   | 0.001 | [36.229,    99.491]  |
-| topic_Civil Rights and Liberties, Minority Issues          | 63.1719     | 19.822     | 3.187   | 0.009 | [19.545,   106.799]  |
-| topic_Environmental Protection                              | 47.7995     | 13.461     | 3.551   | 0.005 | [18.172,    77.427]  |
-| topic_Labour and Employment                                  | 59.7548     | 14.640     | 4.082   | 0.002 | [27.533,    91.976]  |
+*Variable, Coefficient, P-Value*
+- final_vote_result, -44.9427, 0.003
+- topic_Civil Rights and Liberties, Minority Issues, 63.1719, 0.009
+- topic_Environmental Protection, 47.7995, 0.005
+- topic_Labour and Employment, 59.7548, 0.002
+- topic_Animals, 67.8600, 0.001
 
 
 #### Basic simulation:
@@ -476,15 +469,12 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | -0.7229       |
 
 **Five Most Statistically Significant Factors:**
-
-
-| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
-|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
-| introduced_party_republican                                 | 0.5881      | 0.272      | 2.165   | 0.096 | [-0.166,    1.342]   |
-| topic_Government Operations and Politics                    | -1.1206     | 0.341      | -3.282  | 0.030 | [-2.069,    -0.173]  |
-| topic_International Affairs                                  | 0.5131      | 0.210      | 2.445   | 0.071 | [-0.069,    1.096]   |
-| topic_Emergency Management                                   | -0.8183     | 0.310      | -2.643  | 0.057 | [-1.678,    0.041]   |
-| topic_Animals                                               | 0.1297      | 0.263      | 0.493   | 0.648 | [-0.601,    0.861]   |
+*Variable, Coefficient, P-Value*
+- introduced_party_republican, 0.5881, 0.096
+- topic_Government Operations and Politics, -1.1206, 0.030
+- topic_International Affairs, 0.5131, 0.071
+- topic_Emergency Management, -0.8183, 0.057
+- topic_Animals, 0.1297, 0.648
 
 
 
