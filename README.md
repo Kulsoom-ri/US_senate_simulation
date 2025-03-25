@@ -98,7 +98,11 @@ A total of 45 floor votes were selected for simulation, including votes on motio
 - *Senate.gov (“U.S. Senate: Roll Call Votes 118th Congress” 2024):* This website was utilized to obtain detailed records of senators' voting behavior during floor votes, including whether they voted "yea," "nay," were present, or did not vote.
 
 ### Target
-The target variable being predicted is a senator's vote during a specific floor vote. This can take 4 values: Yea, Nay, Present or Not Voting. 
+The target variable being predicted is a senator's vote during a specific floor vote. This can take 4 values: Yea, Nay, Present or Not Voting.
+- Yea: A vote in favor of a proposal.
+- Nay: A vote against a proposal.
+- Not Voting: A senator chooses not to vote (either absent or abstaining).
+- Present: A senator is physically present but chooses not to vote either for or against the proposal.
 
 ### Features
 The features fed into the LLM simulation were:
