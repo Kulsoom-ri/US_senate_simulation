@@ -556,7 +556,7 @@ This github repository contains all the code and data utilized to generate resul
 | Directory/File                  | Description                                                                                          |
 |---------------------------------|------------------------------------------------------------------------------------------------------|
 | **data/**                       |                                                                                                      |
-| roll_call_votes.xlsx            | Contains data on Senate roll call votes (1/3/2023 - 1/3/2025, including description and tally.            |
+| roll_call_votes.xlsx            | Contains data on Senate roll call votes (1/3/2023 - 1/3/2025), including description and vote tally.            |
 | senators_data.xlsx              | The main dataset. Contains information on senators and floor votes simulated in this study               |
 | **eda/**                        | Contains script for exploratory data analysis (EDA) of senators_data.xlsx and the generated visualizations. |
 | **results/**                    |                                                                                                      |
