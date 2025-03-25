@@ -256,7 +256,10 @@ Temperature settings were also adjusted to optimize model performance. For debat
 
 ## Methodology
 ### Exploratory Data Analysis
-
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda1.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda2.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/senators_eda3.png?raw=true" width="600"/>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/bills_eda.png?raw=true" width="600"/>
 
 ### Basic Simulation (without prompt engineering and without controlling any parameters)
 ### Vote simulation with prompt engineering, with controlling parameters
