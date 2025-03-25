@@ -380,14 +380,16 @@ The accuracy of bill predictions varied widely, ranging from 98% for the most ac
 
 
 <p align="middle">
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_5.png?raw=true" width="50%"/></p>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_5.png?raw=true" width="50%"/>
+</p>
 Overall, this advanced simulation demonstrated higher accuracy in predicting individual votes compared to the basic simulation.
 
 
 <p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_3.png?raw=true" width="32%"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_6.png?raw=true" width="32%"/>
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/></p>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_8.png?raw=true" width="32%"/>
+</p>
 Debate influenced voting outcomes in several key ways:
 - Accuracy decreased by 14.11% post-debate, suggesting that agents reconsidered and changed their decisions based on discussion.
 - The percentage of simulated votes matching actual outcomes dropped slightly from 57.78% to 55.56% (the model did not do as well in predicting overall outcomes of the vote (passed or rejected) when compared to individual votes. This was largely due to the nature of close nature-margin votes- while the model could accurately predict most individual votes, small deviations led to misclassification of the final outcome.).
@@ -396,13 +398,93 @@ Debate influenced voting outcomes in several key ways:
 
 
 <p align="middle">
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_4.png?raw=true" width="50%"/></p>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_4.png?raw=true" width="50%"/>
+</p>
 The most frequently used phrases in the debate were analyzed, with words such as "believe," "colleagues," "rule," "bill," "resolution," and "must" emerging as the most common after removing stopwords. Senators often repeated similar phrases and wording, which could be influenced by factors such as temperature settings in the model or access to previous senator comments. Additionally, some garbage outputs were observed during the debate, including unknown symbols or text in different languages, raising concerns about the quality of the output. Further NLP analysis of the generated discourse is needed to better understand these anomalies and the output.
 
 
 <p align="middle">
-<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_10.png?raw=true" width="50%"/></p>
+<img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/advanced_LLM_simulation/Figure_10.png?raw=true" width="50%"/>
+</p>
 Notably, the model demonstrated relatively stable performance across legislative sessions from 2023 to 2024, suggesting that its reasoning process was not significantly influenced by the potential inclusion of this data in its training set, which had a cutoff date of December 2023. This indicates that the model was actively engaging with the debate and the data it was fed rather than merely recalling memorized outcomes.
+
+
+### Regression Analysis
+
+#### Before Debate:
+
+| Metric                     | Value        |
+|----------------------------|--------------|
+| **Dependent Variable**     | before_debate |
+| **R-squared**              | 0.929        |
+| **Adj. R-squared**         | 0.734        |
+| **F-statistic**            | 4.769        |
+| **Prob (F-statistic)**     | 0.00451      |
+| **No. Observations**       | 42           |
+| **Log-Likelihood**         | -128.37      |
+| **AIC**                    | 318.7        |
+| **BIC**                    | 372.6        |
+
+**Five Most Statistically Significant Factors:**
+
+| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
+|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
+| final_vote_result                                           | -51.3590    | 9.663      | -5.315  | 0.000 | [-72.628,  -30.090] |
+| required_majority                                          | -4.5758     | 0.872      | -5.246  | 0.000 | [-6.496,    -2.656] |
+| topic_Civil Rights and Liberties, Minority Issues          | 80.2503     | 15.991     | 5.018   | 0.000 | [45.054,   115.446]  |
+| topic_Environmental Protection                              | 58.3085     | 10.860     | 5.369   | 0.000 | [34.407,    82.210]  |
+| topic_Energy                                               | 56.1799     | 10.929     | 5.141   | 0.000 | [32.126,    80.234]  |
+
+
+#### After Debate:
+
+| Metric                     | Value        |
+|----------------------------|--------------|
+| **Dependent Variable**     | after_debate |
+| **R-squared**              | 0.925        |
+| **Adj. R-squared**         | 0.721        |
+| **F-statistic**            | 4.527        |
+| **Prob (F-statistic)**     | 0.00563      |
+| **No. Observations**       | 42           |
+| **Log-Likelihood**         | -137.39      |
+| **AIC**                    | 336.8        |
+| **BIC**                    | 390.6        |
+
+**Five Most Statistically Significant Factors:**
+
+| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
+|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
+| final_vote_result                                           | -44.9427    | 11.978     | -3.752  | 0.003 | [-71.306,  -18.579] |
+| topic_Animals                                              | 67.8600     | 14.371     | 4.722   | 0.001 | [36.229,    99.491]  |
+| topic_Civil Rights and Liberties, Minority Issues          | 63.1719     | 19.822     | 3.187   | 0.009 | [19.545,   106.799]  |
+| topic_Environmental Protection                              | 47.7995     | 13.461     | 3.551   | 0.005 | [18.172,    77.427]  |
+| topic_Labour and Employment                                  | 59.7548     | 14.640     | 4.082   | 0.002 | [27.533,    91.976]  |
+
+
+#### Basic simulation:
+| Metric                     | Value         |
+|----------------------------|---------------|
+| **Dependent Variable**     | basic_simulation |
+| **R-squared**              | 0.923         |
+| **Adj. R-squared**         | 0.464         |
+| **F-statistic**            | 2.009         |
+| **Prob (F-statistic)**     | 0.263         |
+| **No. Observations**       | 29            |
+| **Log-Likelihood**         | 42.453        |
+| **AIC**                    | -34.91       |
+| **BIC**                    | -0.7229       |
+
+**Five Most Statistically Significant Factors:**
+
+| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
+|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
+| introduced_party_republican                                 | 0.5881      | 0.272      | 2.165   | 0.096 | [-0.166,    1.342]   |
+| topic_Government Operations and Politics                    | -1.1206     | 0.341      | -3.282  | 0.030 | [-2.069,    -0.173]  |
+| topic_International Affairs                                  | 0.5131      | 0.210      | 2.445   | 0.071 | [-0.069,    1.096]   |
+| topic_Emergency Management                                   | -0.8183     | 0.310      | -2.643  | 0.057 | [-1.678,    0.041]   |
+| topic_Animals                                               | 0.1297      | 0.263      | 0.493   | 0.648 | [-0.601,    0.861]   |
+
+
 
 ## Discussion
 ### Significance of findings for Political Science
