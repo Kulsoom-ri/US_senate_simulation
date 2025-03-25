@@ -299,6 +299,7 @@ This is what an LLM-powered senator looks like:
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="600"/>
 </p>
 
+
 ### Classification Models
 <p float="left" align="middle">
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/roc_curves/Bernoulli.png?raw=true" width="32%"/>
@@ -330,7 +331,9 @@ This is what an LLM-powered senator looks like:
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/results/models/feature_importance/AdaBoostClassifier.png?raw=true" width="32%"/>
 </p>
 
-### Classification Models
+### Basic Simulation
+
+### Advanced Simulation
 
 ## Discussion
 ### Significance of findings for Political Science
@@ -380,7 +383,3 @@ This github repository contains all the code and data utilized to generate resul
 - “U.S. Senate: About Voting.” 2024. Senate.gov. December 27, 2024. https://www.senate.gov/about/powers-procedures/voting.htm.
 - Meta-Llama. “Llama-Models/Models/Llama3_3/MODEL_CARD.md at Main · Meta-Llama/Llama-Models.” 2025. GitHub. 2025. https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md.
 - Wu, Jet. 2025 “Jw-Source/LlamaSim: Simulate Human Behavior with Mass LLMs.” GitHub. 2025. https://github.com/jw-source/LlamaSim.
-
-‌
-
-‌
