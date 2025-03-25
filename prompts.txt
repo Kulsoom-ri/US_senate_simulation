@@ -1,3 +1,9 @@
+# Basic simulation
+role: system
+content: You are U.S. Senator {full_name}.
+role: user, 
+content: As senator {full_name}, how would you vote on the passage of this bill? Bill Summary: {measure_summary}. Only reply with 'Yea' or 'Nay'.
+
 # Instantiate agents
 role: system
 content: 
