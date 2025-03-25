@@ -426,7 +426,13 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **BIC**                    | 372.6        |
 
 **Five Most Statistically Significant Factors:**
-
+| Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
+|---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
+| final_vote_result                                           | -51.3590    | 9.663      | -5.315  | 0.000 | [-72.628,  -30.090] |
+| required_majority                                          | -4.5758     | 0.872      | -5.246  | 0.000 | [-6.496,    -2.656] |
+| topic_Civil Rights and Liberties, Minority Issues          | 80.2503     | 15.991     | 5.018   | 0.000 | [45.054,   115.446]  |
+| topic_Environmental Protection                              | 58.3085     | 10.860     | 5.369   | 0.000 | [34.407,    82.210]  |
+| topic_Energy                                               | 56.1799     | 10.929     | 5.141   | 0.000 | [32.126,    80.234]  |
 
 | Variable                                                      | Coefficient | Std. Error | t       | P>|t|  | [0.025      | 0.975]   |
 |---------------------------------------------------------------|-------------|------------|---------|-------|-------------|-----------|
@@ -435,6 +441,7 @@ Notably, the model demonstrated relatively stable performance across legislative
 | topic_Civil Rights and Liberties, Minority Issues          | 80.2503     | 15.991     | 5.018   | 0.000 | [45.054,   115.446]  |
 | topic_Environmental Protection                              | 58.3085     | 10.860     | 5.369   | 0.000 | [34.407,    82.210]  |
 | topic_Energy                                               | 56.1799     | 10.929     | 5.141   | 0.000 | [32.126,    80.234]  |
+
 
 
 #### After Debate:
