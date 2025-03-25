@@ -354,8 +354,16 @@ For the target variable (vote), DW-Nominate and State PVI scores demonstrated th
 | Perceptron                 | 0.70 ± 0.04              | 0.72          | 0.712     | 0.74    |
 | MLPClassifier               | 0.92 ± 0.02              | 0.92          | 0.92     | 0.97      |
 
+Overall, the ExtraTreesClassifier and RandomForestClassifier exhibited the highest performance metrics regarding both cross-validation accuracy and test accuracy. Fine-tuning these two models based on their optimal parameters resulted in a test accuracy of 0.93 for both. The MLPClassifier also performed well, achieving a test accuracy of 0.92.
+
+Analysis of feature importance revealed that, for all these classifiers, several factors held significant predictive power: the party affiliation of the senator, the party of the bill sponsor, the DW-Nominate score, State PVI, the topic of the bill, the required majority and the legislative session.
+
+These high accuracy rates align with previous literature, which has demonstrated the effectiveness of ensemble models in modeling legislative behavior.
 
 ### Basic Simulation
+In the initial vote simulation without any adjustments, the average model accuracy for individual votes was 58.11%. The average accuracy for predicting bill outcomes- specifically whether a bill was passed or rejected- was significantly lower at 43.33%. The model demonstrated better performance on high-margin votes, characterized by strong "yea" or "nay" majorities, as well as on key legislative decisions. This improved accuracy can be attributed to the tendency of the LLM to predict uniform votes across the board.
+
+Overall, these results indicate that the baseline performance of the model was only slightly better than that of a random binary model, which would yield an accuracy rate of around 50%. 
 
 ### Advanced Simulation
 
