@@ -553,6 +553,32 @@ Finally, the explainability of the model- specifically, how the LLM arrives at i
 ## File Description
 This github repository contains all the code and data utilized to generate results for this study.
 
+| Directory/File                  | Description                                                                                          |
+|---------------------------------|------------------------------------------------------------------------------------------------------|
+| **data/**                       |                                                                                                      |
+| roll_call_votes.xlsx            | Contains data on Senate roll call votes (1/3/2023 - 1/3/2025, including description and tally.            |
+| senators_data.xlsx              | The main dataset. Contains information on senators and floor votes simulated in this study               |
+| **eda/**                        | Contains script for exploratory data analysis (EDA) of senators_data.xlsx and the generated visualizations. |
+| **results/**                    |                                                                                                      |
+| accuracy_regression.txt         | Text file containing the regression analyses with simulated accuracies as target variables.                                  |
+| accuracy_results.xlsx           | Excel file containing the accuracy of simulation in different phases for each bill.                              |
+| advanced_LLM_simulation/        | Contains result visualizations from the advanced simulations.          |
+| basic_LLM_simulation/           | Contains output for basic simulation.                                         |
+| models/           | Contains output for basic_inference.py. Also visualizations of ROC curves and feature importance for each of the 12 statistical models.                                         |
+| **simulation output/**          | Contains outputs generated from the simulations, including debate and tabulated accuracies.         |
+| **webscrapers/**                |                                                                                                      |
+| bills_reformatting.py          | Script to reformat and clean up scraped bill data for analysis.                                     |
+| cqpress_scrape.py              | Script to scrape legislative data from CQ Press.                                                    |
+| senators_scrape.py              | Script to scrape senator-related data from congress.gov.                                            |
+| **README.md**                   | Documentation file.   |
+| agent.py                        | Final code to instantiate and simulate a single agent.                      |
+| basic_inference.py            | Script to run 12 classification models on the dataset.             |
+| network.py                      | Final code to set up the network interactions.                   |
+| prompts.txt                     | File containing prompts used for instantiating agents and generating debate.        |
+| results.py                      | Script to generate result visualizations and compile outputs from the simulations.                                 |
+| run.py                          | Final script for executing the complete simulation process.                                         |
+| run_basic.py                    | Script for executing basic simulation.                                                |
+
 ## References
 - Henighan, Tom, and Scott Kravitz. 2015. “Predicting Bill Votes in the House of Representatives.” December 12, 2015. https://tomhenighan.com/pdfs/vote_prediction.pdf.
 - Nay, John J. 2017. “Predicting and Understanding Law-Making with Word Vectors and an Ensemble Model.” PLoS ONE 12 (5): e0176999–99. https://doi.org/10.1371/journal.pone.0176999.
