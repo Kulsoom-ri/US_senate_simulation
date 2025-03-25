@@ -298,7 +298,11 @@ This is what an LLM-powered senator looks like:
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="600"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="600"/>
 </p>
+The correlation matrix and scatterplot indicate a strong negative correlation of -0.78 between DW-Nominate scores and State PVI scores. This suggests that as a state becomes more Republican-leaning, politicians from that state tend to exhibit more conservative DW-Nominate scores and vice-versa for Democrat-leaning states, which makes sense.
 
+Additionally, there is a negative correlation of -0.39 between party loyalty and DW-Nominate scores, suggesting that more liberal senators may cast votes that align more closely with their party. The scatterplot also shows that as the bipartisan index increases, party loyalty decreases, indicating that senators who are more willing to cross party lines and engage in bipartisan efforts tend to exhibit lower levels of party loyalty.
+
+For the target variable (vote), DW-Nominate and State PVI scores demonstrated the highest correlations, with values of 0.35 and -0.33, respectively. This supports the notion that voting along party lines is a significant factor.
 
 ### Classification Models
 <p float="left" align="middle">
