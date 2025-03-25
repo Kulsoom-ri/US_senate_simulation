@@ -288,11 +288,27 @@ This is what an LLM-powered senator looks like:
 <img src="https://github.com/user-attachments/assets/15400582-18d9-4a41-af65-104856f574ff" width="600"/>
 
 ## Results
-### Correlations and Classifications
+### Correlations
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/correlations_feature_target.png?raw=true" width="600"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots.png?raw=true" width="600"/>
 <img src="https://github.com/Kulsoom-ri/US_senate_simulation/blob/main/eda/scatterplots2.png?raw=true" width="600"/>
+### Classification Models
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
+<img src="" width="600"/>
 
+
+### Classification Models
 
 ## Discussion
 ### Significance of findings for Political Science
