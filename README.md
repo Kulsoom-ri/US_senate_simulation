@@ -7,7 +7,7 @@ How accurately can Large Language Models (LLMs) simulate human behaviour, partic
 Political scientists have long employed quantitative methods to model legislative decision-making, but recent advancements in Large Language Models (LLMs) have opened new possibilities for simulating complex political behavior. This study examines the potential of LLMs to replicate human decision-making in the context of the US Senate, utilizing a multi-agent framework to simulate the behavior of 100 LLM agents representing the 118th US Senate. The agents vote on real-world bills after engaging in three rounds of discussion, with simulated outcomes compared to actual legislative results to assess accuracy. By expanding upon the foundational work of Baker and Azher (2024), who first demonstrated the potential of LLMs for simulating believable government action, this research introduces a more complex simulation with a larger number of agents and focuses on vote outcomes rather than just text-based debate. The findings hold potential implications for the usage of autonomous agents in decision-making and the development of AI-driven simulations in social sciences.
 
 ## Introduction
-Historically, legisltative processes and political preferences have been studied statistically since at least the 1920s, when a research article argued that the political vote can be represented as a frequency distribution of opinion (Rice 1924). Political scientists have increasingly employed quantitative predictive methods to model legislative processes in the US Congress, particularly to predict vote outcomes. These methods range from simple binary classifiers to more sophisticated models, such as logistic regression, text models and machine learning. One such logisitic regression model achieved 88% prediction accuracy without considering individual vote histories allowing it to be generalized to future new Congress members (Henighan and Kravit, 2015). Another study used word vectors to capture specific words that increase the probability of a bill becoming law and compared text models with context-only models (Nay 2017). Another study focused on social network analysis and introduced a heterogeneous graph to predict legislative votes based on legislator relationships and bill similarities (Wang, Varshney, and Aleksandra Mojsilović 2018).
+Historically, legislative processes and political preferences have been studied statistically since at least the 1920s, when a research article argued that the political vote can be represented as a frequency distribution of opinion (Rice 1924). Political scientists have increasingly employed quantitative predictive methods to model legislative processes in the US Congress, particularly to predict vote outcomes. These methods range from simple binary classifiers to more sophisticated models, such as logistic regression, text models and machine learning. One such logistic regression model achieved 88% prediction accuracy without considering individual vote histories allowing it to be generalized to future new Congress members (Henighan and Kravit, 2015). Another study used word vectors to capture specific words that increase the probability of a bill becoming law and compared text models with context-only models (Nay 2017). Another study focused on social network analysis and introduced a heterogeneous graph to predict legislative votes based on legislator relationships and bill similarities (Wang, Varshney, and Aleksandra Mojsilović 2018).
 
 With the advent of generative AI, the use of Large Language Models (LLMs) in forecasting is gaining increasing attention. A recent study demonstrated that an ensemble of LLMs could "achieve forecasting accuracy rivaling that of human crowd forecasting tournaments," effectively replicating the 'wisdom of the crowd' effect (Schoenegger et al. 2024).
 
@@ -17,7 +17,7 @@ This work offers contributions across several fields. In Political Science, it e
 
 ## Keywords
 - **Computational politics:** "Computational Politics is the study of computational methods to analyze and moderate users' behaviors related to political activities" (Haq et al. 2019)
-- **Agent:** An agent is software or hardware that can interact with its environment, collect data and use the data to autnomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
+- **Agent:** An agent is software or hardware that can interact with its environment, collect data and use the data to autonomously perform tasks based on goals predetermined by a human. (“What Are AI Agents?- Agents in Artificial Intelligence Explained - AWS” 2024)
 - **LLM:** Large Language Models or LLMs are a class of foundation models trained on massive datasets to generate human-like text. The underlying transformer is a set of neural networks. (“What Is LLM? - Large Language Models Explained - AWS” 2023)
 - **Multiagent (MA) framework:** A multiagent system or framework consists of multiple AI agents, often LLM powered (referred to as LLM-MA), working collectively and interacting with each other in either a hierarchical or non-hierarchical manner to perform tasks. (Gutowska 2024)
 - **Context window:** The context window or length is the amount of text (in tokens) that a LLM can remember at any one point. (IBM 2024)
@@ -54,7 +54,7 @@ Forecasting methodologies are generally categorized into statistical and judgmen
 
 However, judgmental forecasting is time- and labor-intensive, prompting interest in automating the process using large language models (LLMs) since they are already trained on vast amounts of cross-domain data. LLMs forecast by integrating diverse textual data, reasoning through context, and generating probabilistic predictions, in comparison to traditional ML classifiers that rely on structured data. Halawi et al. (2024) demonstrate that a retrieval-augmented LLM-based forecasting system achieves a Brier score of 0.179 and an accuracy of 71.5%, coming close to the human crowd’s 0.149 Brier score and 77.0% accuracy (Brier scores are a measure of the accuracy of probabilistic predictions, calculated as the mean squared difference between a predicted probability and the actual outcome). The system excels when the crowd is uncertain and when more relevant articles are retrieved but struggles with over-hedging in high-certainty cases.
 
-Similarly, across various disciplines studies have tested the predictive power of LLMs on diverse datasets, revealing both their strengths and limitations. In neuroscience, a study evaluted general-purpose LLMs against expert neuroscientists on BenchBrain, a benchmark designed for predicting neuroscience research outcomes. The general-purpose LLMs achieved 81% accuracy in predicting experimental outcomes and the fine-tuned model (BrainGPT) performed even better (Luo et al. 2024). Another study explored whether LLMs trained for language prediction could effectively forecast multivariate time series data, showing preliminary but definitive success in demand forecasting tasks, albeit with concerns about overfitting (Wolff et al. 2025).
+Similarly, across various disciplines studies have tested the predictive power of LLMs on diverse datasets, revealing both their strengths and limitations. In neuroscience, a study evaluated general-purpose LLMs against expert neuroscientists on BenchBrain, a benchmark designed for predicting neuroscience research outcomes. The general-purpose LLMs achieved 81% accuracy in predicting experimental outcomes and the fine-tuned model (BrainGPT) performed even better (Luo et al. 2024). Another study explored whether LLMs trained for language prediction could effectively forecast multivariate time series data, showing preliminary but definitive success in demand forecasting tasks, albeit with concerns about overfitting (Wolff et al. 2025).
 
 Another study assessed LLMs on theory of mind (ToM) tasks i.e. evaluations designed to assess an individual's ability to understand and attribute mental states (like beliefs, desires, and intentions) to others. Eleven LLMs were tested on 40 false-belief tasks, a gold-standard benchmark for evaluating ToM capabilities. While older models failed entirely, GPT-3.5-turbo achieved 20% accuracy, and GPT-4 reached 75%, performing at the level of a six-year-old child. These results suggest that ToM-like reasoning may have emerged as an unintended byproduct of language model training (Kosinski 2024). This has significant implications for forecasting and decision-making, as improved reasoning capabilities could enhance LLMs’ ability to predict human behavior, market trends, and social dynamics. However, the study also underscores limitations- LLMs may still struggle with nuanced, open-ended reasoning, meaning their forecasts could lack depth or misinterpret complex scenarios. Moreover, if these capabilities emerge unintentionally, it raises concerns about unpredictability in decision-making applications. While LLMs show promise in assisting with forecasting, their results must be interpreted with caution.
   
@@ -89,12 +89,12 @@ The final dataset has 4692 rows (one vote per senator per floor vote) and 51 col
 - *The Lugar Center (“Bipartisan Index” 2023):* The Lugar Center is a non-profit founded by former United States Senator Richard G. Lugar. It was used to obtain the Bipartisan Index, "an objective measure of how well members of opposite parties work with one another using bill sponsorship and co-sponsorship data." The index assigns scores based on how a member’s bipartisan bill sponsorship and co-sponsorship compare to a 20-year historical baseline, with positive scores indicating above-average bipartisanship and negative scores indicating below-average performance. Scores above 1.0 are considered outstanding, while those below -1.0 are very poor. Raw data is sourced from GovTrack, and certain exclusions apply: members serving less than 10 months, minority/majority leaders, and those sponsoring fewer than three qualifying bills (since the 113th Congress) are not scored to ensure fair comparisons.
 - *Voteview (“Voteview | Congress View” 2025):* Voteview, maintained by UCLA's Department of Political Science and Social Science Computing, provides ideological position scores for legislators based on roll call voting records. These scores are computed using the DW-NOMINATE (Dynamic Weighted NOMINAl Three-step Estimation) method, which maps legislators onto a spatial scale where ideological similarity is reflected by proximity. The primary dimension, consistent throughout American history, represents a left-right (liberal-conservative) spectrum, while a second dimension captures intra-party differences on issues like civil rights and economic policy. Scores typically range from -1 (most liberal) to +1 (most conservative), allowing for quantitative analysis of congressional polarization and voting behavior.
 - *CQ Press Congress Collection (“CQ Congress Collection” 2025):* A comprehensive research database containing biographical, political, and electoral data on every member of Congress since the 79th Congress (1945). This resource was utilized to obtain biographical details such as date of birth, education level, religion, race, and sex; electoral data including the percentage of votes received in the most recent election; and political data such as voting frequency, party alignment, instances of voting with or against party positions, and presidential support. Additionally, the database provides narrative biographies authored by CQ editorial staff.
-- *The Cook Political Report (“The 2023 Cook Partisan Voting Index (Cook PVISM)” 2023):* Introduced in 1997, the Cook Partisan Voting Index (Cook PVI) measures how each state and district performs at the presidential level compared to the nation as a whole. The dataset was utilized to get the 2023 Cook Partisan voting score for the state of each senator. The 2023 PVI scores were claculated using 2016 and 2020 presidential election results. The Cook PVI scores indicate a state's partisan lean by comparing its average Democratic or Republican performance to the national average, expressed in terms such as D+5 (Democratic-leaning by 5 points) or R+3 (Republican-leaning by 3 points). A score of EVEN signifies a state that votes in line with the national average.
+- *The Cook Political Report (“The 2023 Cook Partisan Voting Index (Cook PVISM)” 2023):* Introduced in 1997, the Cook Partisan Voting Index (Cook PVI) measures how each state and district performs at the presidential level compared to the nation as a whole. The dataset was utilized to get the 2023 Cook Partisan voting score for the state of each senator. The 2023 PVI scores were calculated using 2016 and 2020 presidential election results. The Cook PVI scores indicate a state's partisan lean by comparing its average Democratic or Republican performance to the national average, expressed in terms such as D+5 (Democratic-leaning by 5 points) or R+3 (Republican-leaning by 3 points). A score of EVEN signifies a state that votes in line with the national average.
 
 **For floor votes:**
 
 A total of 45 floor votes were selected for simulation, including votes on motions such as "On Motion to Discharge Committee," "On Overriding the Veto," "On Passage of the Bill," and "On Cloture on the Motion to Proceed." These votes were randomly chosen from a curated list comprising CQ Key Votes, which are identified by CQ's editorial staff as the most significant floor votes in determining legislative outcomes, as well as key pieces of legislation highlighted on Wikipedia and the most-viewed bills on Congress.gov. The selection included bills originating in both the House and Senate, as well as joint resolutions, but was limited to votes that involved at least one roll call vote in the Senate.
-- *Congress.gov (“Congress.gov | Library of Congress” 2025):* This webstie was utilized for obtaining contextual information about each bill, including its title, summary, number of co-sponsors, the party and name of the introducing senator, and its policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
+- *Congress.gov (“Congress.gov | Library of Congress” 2025):* This website was utilized for obtaining contextual information about each bill, including its title, summary, number of co-sponsors, the party and name of the introducing senator, and its policy area. Bill summaries are authored by the Congressional Research Service ("CRS provides Congress with analysis that is authoritative, confidential, objective, and non-partisan.")
 - *Senate.gov (“U.S. Senate: Roll Call Votes 118th Congress” 2024):* This website was utilized to obtain detailed records of senators' voting behavior during floor votes, including whether they voted "yea," "nay," were present, or did not vote.
 
 ### Target
@@ -109,7 +109,7 @@ The features fed into the LLM simulation were:
 1. #### For Senators:
    - name – Senator's name
    - age – Senator's age
-   - religion – Senator's religious affiliation (or Unaffliated/Not Mentioned)
+   - religion – Senator's religious affiliation (or Unaffiliated/Not Mentioned)
    - education – Senator's highest level of education
    - party – Political party affiliation
    - state – State represented by the senator
@@ -121,7 +121,7 @@ The features fed into the LLM simulation were:
    - party_unity – Measure of the senator's alignment with their party on key votes
    - presidential_support – Measure of how often the senator votes in support of the president’s agenda
    - voting_participation – Rate of participation in votes
-   - dw_nominate – Ideological score (-1 to +1, liberal to conservative) based on roll call votes
+   - dw_nominate – Ideological score (-1 to +1, liberal to conservative)
    - bipartisan_index – Measure of how frequently the senator works with the opposing party
    - backstory – Senator's biographical background
 
@@ -132,7 +132,7 @@ The features fed into the LLM simulation were:
    - sponsor – Name of the senator who introduced the bill
    - introduced_party – Political party affiliation of the sponsor
    - num_cosponsors – Number of senators who cosponsored the bill
-   - previous_action – Summary of prior legislative actions related to the bil
+   - previous_action – All prior legislative actions related to the bill
 
 ### Data Wrangling
 **Handling Missing variables:**
@@ -148,7 +148,7 @@ To avoid multicollinearity in classification models and simplify input for LLM, 
 - Key Vote Ratios: The same loyalty and defection ratios were calculated specifically for key votes to capture differences in party alignment on high-profile legislation. 
 
 **Preprocessing for Classification Models:**
-- The target variable (bill outcome) was encoded as 1 for passed and 0 for rejected. All other vote types were excluded.
+- The target variable (vote) was encoded as 1 for yea and 0 for nay. All other vote types were excluded.
 - Session extraction: The legislative session (1 or 2) was determined based on the year recorded in the vote date.
 - Religion categorization: Individual religious affiliations were grouped into broader categories for analytical consistency.
 - Label Encoding was applied to: Party affiliation, education level, state partisan direction and bill sponsor's party.
@@ -264,7 +264,7 @@ Within LlamaSim, agents can interact either in a random order or in a structured
 ### Controlling model parameters
 To ensure the reliability of the simulation, several key model parameters were controlled. The system prompt was designed to respect the models’ knowledge cutoff of December 2023, ensuring that LLM-generated responses were based on reasoning rather than memorization. This cutoff was particularly useful, as it prevented the models from having prior knowledge of the actual votes cast in 2024, allowing for an unbiased evaluation of predictive reasoning.
 
-Temperature settings were also adjusted to optimize model performance. For debate simulation, a temperature of 0.4 was used to allow for a moderate degree of randomness, fostering a diversity of arguments and reasoning styles. For debate summary generation, a lower temperature of 0.2 was set to make the output more deterministic and fact-based. Additionally, a fixed random seed was used for the reproducibility of results across multiple simulation runs (although due to the inherent output varaibility, setting a random seed in LLMs does not always guarantee deterministic outputs).
+Temperature settings were also adjusted to optimize model performance. For debate simulation, a temperature of 0.4 was used to allow for a moderate degree of randomness, fostering a diversity of arguments and reasoning styles. For debate summary generation, a lower temperature of 0.2 was set to make the output more deterministic and fact-based. Additionally, a fixed random seed was used for the reproducibility of results across multiple simulation runs (although due to the inherent output variability, setting a random seed in LLMs does not always guarantee deterministic outputs).
 
 ## Methodology
 ### Correlations and Classifications
@@ -448,7 +448,7 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **AIC**                    | 318.7        |
 | **BIC**                    | 372.6        |
 
-**Five Most Statistically Significant Factors:**
+**Five Most Statistically Significant Features:**
 *Variable, Coefficient, P-Value*
 - final_vote_result, -51.3590, 0.000
 - required_majority, -4.5758, 0.000
@@ -470,7 +470,7 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **AIC**                    | 336.8        |
 | **BIC**                    | 390.6        |
 
-**Five Most Statistically Significant Factors:**
+**Five Most Statistically Significant Features:**
 *Variable, Coefficient, P-Value*
 - final_vote_result, -44.9427, 0.003
 - topic_Civil Rights and Liberties, Minority Issues, 63.1719, 0.009
@@ -492,7 +492,7 @@ Notably, the model demonstrated relatively stable performance across legislative
 | **AIC**                    | -34.91       |
 | **BIC**                    | -0.7229       |
 
-**Five Most Statistically Significant Factors:**
+**Five Most Statistically Significant Features:**
 *Variable, Coefficient, P-Value*
 - introduced_party_republican, 0.5881, 0.096
 - topic_Government Operations and Politics, -1.1206, 0.030
@@ -543,7 +543,7 @@ This study has several significant limitations that must be acknowledged:
 5. Challenges in Explainability: Explainability remains a significant challenge in this study. Understanding how the LLM arrived at its predictions and outputs is crucial for evaluating the model's validity and reliability.
 6. Lack of Fine-Tuning: The study did not involve fine-tuning the LLM based on the specific context of U.S. Senate votes. Fine-tuning could enhance the model's predictive capabilities and improve simulation performance.
 7. Simplified Legislative Process Simulation: The simulation oversimplifies the legislative process by only simulating two rounds of debate and a single floor vote. The complexity of how bills progress through Congress is substantial, as many bills do not advance past the introduction stage and involve numerous committees and negotiations before reaching the floor for a vote. It is also extremely difficult to capture the nuances of backroom deals and strategic alliances in the simulation. Senators often engage in informal discussions and negotiations that influence the final outcome of a bill. 
-8. Garbage Outputs in Debate Simulation: Some garbage outputs were generated during the debate simulation and were not filtered out. This could have impacted how agents reacted to the debate or how the conversation summary was gneerated.
+8. Garbage Outputs in Debate Simulation: Some garbage outputs were generated during the debate simulation and were not filtered out. This could have impacted how agents reacted to the debate or how the conversation summary was generated.
 
 ### Future Work
 Future work in this area can focus on several key improvements and analyses. First, a comprehensive natural language processing (NLP) analysis of the text generated during simulations is necessary to assess its coherence and relevance, as well as to investigate intriguing insights, such as when senators are most likely to switch votes, which arguments they agreed with or disagreed with, and why there were more "nay" votes after the debate. Second, evaluating the believability of the debates is crucial. Developing metrics to assess the believability and realism of the simulated discussions will enhance understanding of the model's effectiveness in capturing authentic legislative dialogue.
