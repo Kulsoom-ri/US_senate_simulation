@@ -253,6 +253,51 @@ def plot_accuracy_by_year(all_results, bills_df):
     plt.show()
 
 
+def plot_key_vs_nonkey_accuracy(all_results):
+    """Plots a comparison of accuracy for key vs. non-key votes before and after the debate."""
+    # List of key votes
+    key_votes = {
+        "H.J.Res.30", "H.J.Res.26", "S.316", "H.J.Res.7", "H.J.Res.27", "S.870", "S.J.Res.11", "S.J.Res.9",
+        "H.J.Res.39", "S.J.Res.24", "S.J.Res.23", "H.R.3746", "H.J.Res.45", "H.J.Res.44", "S.J.Res.42",
+        "H.R.662", "H.R.6363", "S.J.Res.43", "H.R.7463", "S.3853", "S.J.Res.62", "H.R.7888", "H.J.Res.98",
+        "S.J.Res.61", "S.4072", "S.J.Res.57", "H.J.Res.109", "S.J.Res.58", "H.R.10545", "H.R.82"
+    }
+
+    # Separate the results into key and non-key votes
+    key_votes_results = [r for r in all_results if r["filename"] in key_votes]
+    non_key_votes_results = [r for r in all_results if r["filename"] not in key_votes]
+
+    # Extract accuracies before and after debate for key and non-key votes
+    key_accuracies_before = [r["accuracy_before"] for r in key_votes_results if r["accuracy_before"] is not None]
+    key_accuracies_after = [r["accuracy_after"] for r in key_votes_results if r["accuracy_after"] is not None]
+    non_key_accuracies_before = [r["accuracy_before"] for r in non_key_votes_results if r["accuracy_before"] is not None]
+    non_key_accuracies_after = [r["accuracy_after"] for r in non_key_votes_results if r["accuracy_after"] is not None]
+
+    # Calculate averages
+    avg_key_before = np.mean(key_accuracies_before) if key_accuracies_before else 0
+    avg_key_after = np.mean(key_accuracies_after) if key_accuracies_after else 0
+    avg_non_key_before = np.mean(non_key_accuracies_before) if non_key_accuracies_before else 0
+    avg_non_key_after = np.mean(non_key_accuracies_after) if non_key_accuracies_after else 0
+
+    # Create the bar plot
+    labels = ["Key Votes Before Debate", "Key Votes After Debate", "Non-Key Votes Before Debate", "Non-Key Votes After Debate"]
+    accuracies = [avg_key_before, avg_key_after, avg_non_key_before, avg_non_key_after]
+
+    plt.figure(figsize=(8, 5))
+    bars = plt.bar(labels, accuracies, color=['blue', 'red', 'green', 'orange'])
+
+    plt.ylabel("Average Accuracy (%)")
+    plt.title("Comparison of Accuracy for Key vs. Non-Key Votes Before and After Debate")
+
+    # Add percentage values on top of the bars
+    for bar in bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width() / 2, yval, f"{yval:.2f}%", ha='center', va='bottom')
+
+    plt.show()
+
+
+
 def main():
     directory = "results"
     all_results = []
@@ -274,12 +319,13 @@ def main():
     bills_df["vote_date"] = pd.to_datetime(bills_df["vote_date"], errors="coerce")
     bills_df["year"] = bills_df["vote_date"].dt.year
 
-    generate_visuals(all_results, common_phrases.most_common(20))
-    plot_comparison_accuracy(all_results)
-    plot_passage_rates(all_results)
-    plot_top_accuracies(all_results)
-    plot_vote_changes(all_results)
-    plot_accuracy_by_year(all_results, bills_df)
+    plot_key_vs_nonkey_accuracy(all_results)
+    # generate_visuals(all_results, common_phrases.most_common(20))
+    # plot_comparison_accuracy(all_results)
+    # plot_passage_rates(all_results)
+    # plot_top_accuracies(all_results)
+    # plot_vote_changes(all_results)
+    # plot_accuracy_by_year(all_results, bills_df)
 
     # REGRESSION ANALYSIS
     # Clean 'type_vote' column
@@ -291,6 +337,9 @@ def main():
     bills_df["previous_action_length"] = len(bills_df["previous_action"])
     bills_df["measure_summary_length"] = len(bills_df["measure_summary"])
 
+    # Create vote margin variable: Absolute difference between yea and nay votes
+    bills_df["margin"] = abs(bills_df["yea"] - bills_df["nay"])
+
     # Merge datasets on measure_number and measure_name
     merged_df = accuracy_df.merge(bills_df, on="measure_number", how="left")
     # Convert categorical features to dummy variables
@@ -299,7 +348,7 @@ def main():
 
     # Select relevant features
     # Get updated feature list after dummy encoding
-    features = ["year", "final_vote_result", "previous_action_length", "required_majority", "measure_summary_length", "yea", "nay", "not_voting", "num_cosponsors"] + [col for col in merged_df.columns if
+    features = ["year", "final_vote_result", "previous_action_length", "required_majority", "measure_summary_length", "not_voting", "num_cosponsors", "margin"] + [col for col in merged_df.columns if
                                                                    any(cat in col for cat in categorical_features)]
     target_variables = ["before_debate", "after_debate", "basic_simulation"]
 
